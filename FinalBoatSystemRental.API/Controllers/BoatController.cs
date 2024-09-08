@@ -22,7 +22,10 @@ public class BoatController : ControllerBase
     }
 
 
-    [HttpGet]
+    #region Owner
+    // Owner
+    [HttpGet("View Owner Boats")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetAllBoats()
     {
         var userId = User.FindFirstValue("uid");
@@ -37,16 +40,10 @@ public class BoatController : ControllerBase
         return Ok(boats);
     }
 
-    [HttpGet("AvailableBoats")]
-    public async Task<IActionResult> GetAllAvailableBoats()
-    {
 
-        var boat = new ListAvailableBoatsQuery();
-        var boats = await _mediator.Send(boat);
-        return Ok(boats);
-    }
-
+    // Owner Get specific Owner Boat
     [HttpGet("{id}")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetBoat(int id)
     {
         var userId = User.FindFirstValue("uid");
@@ -86,16 +83,6 @@ public class BoatController : ControllerBase
 
     }
 
-    #region StopUpdateBoatForNow
-    //[HttpPut]
-    //public async Task<IActionResult> Update(UpdateBoatCommand command)
-    //{
-    //   var result= await _mediator.Send(command);
-    //    if (result == null)
-    //        return BadRequest("Something Went Wrong Please Try Later");
-    //    return Ok(result);  
-    //}
-    #endregion 
 
     //Owner
     [HttpDelete]
@@ -123,6 +110,35 @@ public class BoatController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
+    #endregion
+
+    #region Customer
+    // Customer
+    [HttpGet("AvailableBoats")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
+
+    public async Task<IActionResult> GetAllAvailableBoats()
+    {
+
+        var boat = new ListAvailableBoatsQuery();
+        var boats = await _mediator.Send(boat);
+        return Ok(boats);
+    }
+    #endregion
+
+
+
+    #region StopUpdateBoatForNow
+    //[HttpPut]
+    //public async Task<IActionResult> Update(UpdateBoatCommand command)
+    //{
+    //   var result= await _mediator.Send(command);
+    //    if (result == null)
+    //        return BadRequest("Something Went Wrong Please Try Later");
+    //    return Ok(result);  
+    //}
+    #endregion
+
 
 
 

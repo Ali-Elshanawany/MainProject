@@ -13,12 +13,12 @@ public class DeleteBoatCommandValidator : AbstractValidator<DeleteBoatCommand>
 }
 
 
-public class DeleteBoatCommand:ICommand<BoatViewModel>
+public class DeleteBoatCommand : ICommand<BoatViewModel>
 {
-    public int Id { get; set; }
+    public int? Id { get; set; }
     public string? UserId { get; set; }
 
-    public DeleteBoatCommand(int id,string userId)
+    public DeleteBoatCommand(int? id, string userId)
     {
         Id = id;
         UserId = userId;
@@ -56,32 +56,34 @@ public class DeleteBoatHandler : ICommandHandler<DeleteBoatCommand, BoatViewMode
             throw new FluentValidation.ValidationException(validationResult.Errors);
         }
 
-        var ownerId=await _ownerRepository.GetOwnerIdByUserId(request.UserId);
-        var boat = await _boatRepository.GetByIdAsync(request.Id);
-        if(boat == null)
+        var boatId = (int)request.Id;
+
+        var ownerId = await _ownerRepository.GetOwnerIdByUserId(request.UserId);
+        var boat = await _boatRepository.GetByIdAsync(boatId);
+        if (boat == null)
         {
             throw new Exception("boat Not Found ");
         }
 
-        var isOwner =await _boatRepository.IsOwner(request.Id,ownerId);
-        if(!isOwner)
+        var isOwner = await _boatRepository.IsOwner(boatId, ownerId);
+        if (!isOwner)
         {
             throw new UnauthorizedAccessException("You can't access this data (you are not the owner of the boat!!)");
         }
         // Make Sure That  there is no Trip Associated With That Boat With Status ( Confirmed or active ) 
-        var isTripFound = await _tripRepository.GetConfirmedTripAsync(request.Id);
+        var isTripFound = await _tripRepository.GetConfirmedTripAsync(boatId);
         if (isTripFound)
         {
             throw new Exception("Can not Remove The boat Has Reservation Found");
         }
         // Make Sure That  there is no Boat Booking Associated With That Boat With Status ( Confirmed or active ) 
-        var isBoatFound =await _boatBookingRepository.IsBoatBookingFound(request.Id);
+        var isBoatFound = await _boatBookingRepository.IsBoatBookingFound(boatId);
         if (isBoatFound)
         {
             throw new Exception("Can not Remove The boat Has Reservation Found");
         }
-        
-        await _boatRepository.DeleteAsync(request.Id);
+
+        await _boatRepository.DeleteAsync(boatId);
         return _mapper.Map<BoatViewModel>(boat);
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 
 namespace FinalBoatSystemRental.API.Controllers;
-
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class CancellationController : ControllerBase
@@ -14,7 +14,10 @@ public class CancellationController : ControllerBase
         _mediator = mediator;
     }
 
+    #region Customer
+    // Customer
     [HttpPost("Trip")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> AddTripCancellation([FromBody] AddCancellationTripCommand command)
     {
         try
@@ -31,8 +34,10 @@ public class CancellationController : ControllerBase
         }
 
     }
-
+    // Customer
     [HttpPost("Boat")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
+
     public async Task<IActionResult> AddBoatCancellation([FromBody] AddCancellationBoatCommand command)
     {
         try
@@ -48,5 +53,8 @@ public class CancellationController : ControllerBase
         }
 
     }
+    #endregion
+
+
 
 }

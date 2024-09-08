@@ -1,6 +1,6 @@
 ﻿
 namespace FinalBoatSystemRental.API.Controllers;
-
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class BoatbookingController : ControllerBase
@@ -13,33 +13,7 @@ public class BoatbookingController : ControllerBase
         _mediator = mediator;
     }
 
-    //Customer
-    [HttpGet("BoatReservationHistory")]
-    [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
-    public async Task<IActionResult> GetBoatReservationCustomerHistory()
-    {
-        try
-        {
-            var userId = User.FindFirstValue("uid");
-
-            if (userId == null)
-            {
-                return Unauthorized();
-            }
-
-            var trip = new ListBoatBookingHistoryQuery(userId);
-            var trips = await _mediator.Send(trip);
-            return Ok(trips);
-        }
-        catch (Exception ex)
-        {
-            return BadRequest(ex.Message);
-        }
-
-
-    }
-
-
+    #region Owner 
     // Owners
     [HttpGet("OwnerBoatReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
@@ -93,6 +67,34 @@ public class BoatbookingController : ControllerBase
 
 
     }
+    #endregion
+
+    #region Customer
+    //Customer
+    [HttpGet("BoatReservationHistory")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
+    public async Task<IActionResult> GetBoatReservationCustomerHistory()
+    {
+        try
+        {
+            var userId = User.FindFirstValue("uid");
+
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+
+            var trip = new ListBoatBookingHistoryQuery(userId);
+            var trips = await _mediator.Send(trip);
+            return Ok(trips);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+
+
+    }
 
     //Customer
     [HttpPost]
@@ -119,5 +121,7 @@ public class BoatbookingController : ControllerBase
         }
 
     }
+    #endregion
+
 
 }

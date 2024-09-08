@@ -1,8 +1,6 @@
-﻿using AutoMapper;
+﻿namespace FinalBoatSystemRental.Application.Trip.Query.List;
 
-namespace FinalBoatSystemRental.Application.Trip.Query.List;
-
-public class ListAvailableTripQuery:ICommand<IEnumerable<AvailableTripsViewModel>>
+public class ListAvailableTripQuery : ICommand<IEnumerable<AvailableTripsViewModel>>
 {
 }
 

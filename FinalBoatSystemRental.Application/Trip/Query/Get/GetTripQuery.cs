@@ -1,23 +1,18 @@
-﻿using AutoMapper;
-using FinalBoatSystemRental.Application;
-using FinalBoatSystemRental.Application.Trip.Query.Get;
+﻿namespace FinalBoatSystemRental.Application.Trip.Query.Get;
 
-namespace FinalBoatSystemRental.Application.Trip.Query.Get
+public class GetTripQuery : ICommand<TripViewModel>
 {
-    public class GetTripQuery:ICommand<TripViewModel>
+
+    public int TripId { get; set; }
+
+    public string? UserId { get; set; }
+    public GetTripQuery(int tripId, string userId)
     {
-
-        public int TripId { get; set; }
-
-        public string? UserId { get; set; }
-        public GetTripQuery(int tripId, string userId)
-        {
-            TripId = tripId;
-            UserId = userId;
-        }
-
-
+        TripId = tripId;
+        UserId = userId;
     }
+
+
 }
 
 public class GetTripHandler : IQueryHandler<GetTripQuery, TripViewModel>
@@ -38,8 +33,8 @@ public class GetTripHandler : IQueryHandler<GetTripQuery, TripViewModel>
     public async Task<TripViewModel> Handle(GetTripQuery request, CancellationToken cancellationToken)
     {
         var ownerid = await _ownerRepository.GetOwnerIdByUserId(request.UserId);
-        var trip =await _tripRepository.GetByIdAsync(request.TripId);
-       
+        var trip = await _tripRepository.GetByIdAsync(request.TripId);
+
         if (trip == null)
         {
             throw new KeyNotFoundException("Trip was not found please try again!!");

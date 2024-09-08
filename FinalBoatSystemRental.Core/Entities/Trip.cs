@@ -7,15 +7,15 @@ namespace FinalBoatSystemRental.Core.Entities;
 public class Trip
 {
     public int Id { get; set; }
-    public string Name { get; set; }=string.Empty;
-    public string Description { get; set; }= string.Empty;
+    public string Name { get; set; } = string.Empty;
+    public string Description { get; set; } = string.Empty;
 
     [Column(TypeName = "decimal(18, 2)")]
-    public decimal PricePerPerson { get; set; }=decimal.Zero;
+    public decimal PricePerPerson { get; set; } = decimal.Zero;
 
-    public int MaxPeople { get; set; } 
+    public int? MaxPeople { get; set; }
 
-    public DateTime CancellationDeadLine { get; set;}
+    public DateTime CancellationDeadLine { get; set; }
 
     public string Status { get; set; } = string.Empty;
 

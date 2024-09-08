@@ -22,12 +22,12 @@ namespace FinalBoatSystemRental.Application.Addition.Command.Add
     {
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public int Price { get; set; }
+        public int? Price { get; set; }
         public string? UserId { get; set; }
 
 
 
-        public AddAdditionCommand(string name, string description, int price, string userId)
+        public AddAdditionCommand(string name, string description, int? price, string userId)
         {
             Name = name;
             Description = description;
@@ -61,6 +61,9 @@ public class AddAdditionHandler : ICommandHandler<AddAdditionCommand, AdditionVi
         {
             throw new FluentValidation.ValidationException(validationResult.Errors);
         }
+
+        var price = (int)request.Price;
+
         var ownerId = await _ownerRepository.GetOwnerIdByUserId(request.UserId);
         var isNameFound = await _additionRepository.CheckAdditionName(request.Name, ownerId);
         if (isNameFound)
@@ -71,7 +74,7 @@ public class AddAdditionHandler : ICommandHandler<AddAdditionCommand, AdditionVi
         {
             Name = request.Name,
             Description = request.Description,
-            Price = request.Price,
+            Price = price,
             OwnerId = ownerId,
             UpdatedAt = DateTime.Now,
             CreatedAt = DateTime.Now,

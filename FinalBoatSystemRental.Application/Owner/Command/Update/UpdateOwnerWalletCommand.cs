@@ -8,19 +8,19 @@ public class UpdateOwnerWalletCommandValidator : AbstractValidator<UpdateOwnerWa
 {
     public UpdateOwnerWalletCommandValidator()
     {
-        RuleFor(x => x.WalletBalance).GreaterThan(0).NotEmpty().WithMessage("Wallet Balance Must be greater than zero.");
-
+        RuleFor(x => x.WalletBalance).GreaterThan(0).WithMessage("Wallet Balance Must be greater than zero.")
+        .NotEmpty().WithMessage("Wallet Balance can't be Null.");
     }
 }
 
 
 public class UpdateOwnerWalletCommand : ICommand<OwnerViewModel>
 {
-    public decimal WalletBalance { get; set; }
+    public decimal? WalletBalance { get; set; }
     public string? UserId { get; set; }
 
 
-    public UpdateOwnerWalletCommand(decimal walletBalance, string? userId)
+    public UpdateOwnerWalletCommand(decimal? walletBalance, string? userId)
     {
         WalletBalance = walletBalance;
         UserId = userId;
@@ -50,9 +50,11 @@ public class UpdateOwnerWalletHandler : ICommandHandler<UpdateOwnerWalletCommand
             throw new FluentValidation.ValidationException(validationResult.Errors);
         }
 
+        var walletBalance = (decimal)request.WalletBalance;
+
         var owner = await _ownerRepository.GetByUserId(request.UserId);
 
-        owner.WalletBalance += request.WalletBalance;
+        owner.WalletBalance += walletBalance;
         await _ownerRepository.UpdateAsync(owner.Id, owner);
         return _mapper.Map<OwnerViewModel>(owner);
     }

@@ -19,7 +19,29 @@ public class TripController : ControllerBase
         _userManager = userManager;
     }
 
+
+
+    #region Customer
+    // Customer
+    [HttpGet("AvailableTrips")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
+    public async Task<IActionResult> GetAllAvailableBoats()
+    {
+
+        var trip = new ListAvailableTripQuery();
+        var result = await _mediator.Send(trip);
+
+        return Ok(result);
+    }
+
+    #endregion
+
+
+    #region Owner
+
+    // Owner Return All Owner Trips
     [HttpGet]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetAllTrips()
     {
         var userId = User.FindFirstValue("uid");
@@ -34,20 +56,9 @@ public class TripController : ControllerBase
         return Ok(boats);
     }
 
-
-    [HttpGet("AvailableTrips")]
-    public async Task<IActionResult> GetAllAvailableBoats()
-    {
-
-        var trip = new ListAvailableTripQuery();
-        var result = await _mediator.Send(trip);
-
-        return Ok(result);
-    }
-
-
-
+    // Owner Return Specific trip
     [HttpGet("{tripId}")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetTrip(int tripId)
     {
         var userId = User.FindFirstValue("uid");
@@ -92,4 +103,8 @@ public class TripController : ControllerBase
         }
 
     }
+
+    #endregion
+
+
 }

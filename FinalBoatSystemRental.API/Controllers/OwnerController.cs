@@ -1,6 +1,7 @@
 ﻿
 namespace FinalBoatSystemRental.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]

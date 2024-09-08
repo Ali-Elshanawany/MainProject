@@ -1,6 +1,6 @@
 ﻿
 namespace FinalBoatSystemRental.API.Controllers;
-
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class ReservationController : ControllerBase
@@ -12,6 +12,9 @@ public class ReservationController : ControllerBase
         _mediator = mediator;
     }
 
+
+
+    #region Customer
     // Customer
     [HttpPost]
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
@@ -54,7 +57,10 @@ public class ReservationController : ControllerBase
         var trips = await _mediator.Send(trip);
         return Ok(trips);
     }
+    #endregion
 
+
+    #region Owner
     //Owner
     [HttpGet("OwnerReservations")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
@@ -105,5 +111,9 @@ public class ReservationController : ControllerBase
             return BadRequest(e.Message);
         }
     }
+
+    #endregion
+
+
 
 }

@@ -8,9 +8,9 @@ namespace FinalBoatSystemRental.Application.Owner.Command.Add;
 public class PayRefundCommand : ICommand<Result>
 {
     [Range(0, int.MaxValue, ErrorMessage = "cancellation Id must be greater than 0")]
-    public int CancellationId { get; set; }
+    public int? CancellationId { get; set; }
     public string? UserId { get; set; }
-    public PayRefundCommand(int cancellationId, string userId)
+    public PayRefundCommand(int? cancellationId, string userId)
     {
         CancellationId = cancellationId;
         UserId = userId;
@@ -36,7 +36,13 @@ public class PayRefundHandler : ICommandHandler<PayRefundCommand, Result>
 
     public async Task<Result> Handle(PayRefundCommand request, CancellationToken cancellationToken)
     {
-        var cancellationData = await _cancellationRepository.GetByIdAsync(request.CancellationId);
+        if (request.CancellationId == null)
+        {
+            throw new NullReferenceException("CancellationId can't be Null");
+        }
+        var CancellationId = (int)request.CancellationId;
+
+        var cancellationData = await _cancellationRepository.GetByIdAsync(CancellationId);
         if (cancellationData == null)
         {
             throw new Exception("Cancellation Data Was not Found ");
