@@ -27,11 +27,19 @@ public class TripController : ControllerBase
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> GetAllAvailableBoats()
     {
+        try
+        {
+            var trip = new ListAvailableTripQuery();
+            var result = await _mediator.Send(trip);
+            Log.Information("View Available Trips");
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
 
-        var trip = new ListAvailableTripQuery();
-        var result = await _mediator.Send(trip);
-
-        return Ok(result);
     }
 
     #endregion
@@ -44,16 +52,26 @@ public class TripController : ControllerBase
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetAllTrips()
     {
-        var userId = User.FindFirstValue("uid");
-
-        if (userId == null)
+        try
         {
-            return Unauthorized();
-        }
+            var userId = User.FindFirstValue("uid");
 
-        var boat = new ListTripQuery(userId);
-        var boats = await _mediator.Send(boat);
-        return Ok(boats);
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+
+            Log.Information($"{userId} View Trips");
+
+            var boat = new ListTripQuery(userId);
+            var boats = await _mediator.Send(boat);
+            return Ok(boats);
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
     }
 
     // Owner Return Specific trip
@@ -61,15 +79,26 @@ public class TripController : ControllerBase
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetTrip(int tripId)
     {
-        var userId = User.FindFirstValue("uid");
-
-        if (userId == null)
+        try
         {
-            return Unauthorized();
+            var userId = User.FindFirstValue("uid");
+
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+
+            Log.Information($"{userId} view Trip ");
+
+            var trip = new GetTripQuery(tripId, userId);
+            var tripView = await _mediator.Send(trip);
+            return Ok(tripView);
         }
-        var trip = new GetTripQuery(tripId, userId);
-        var tripView = await _mediator.Send(trip);
-        return Ok(tripView);
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
     }
 
     //Owner

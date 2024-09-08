@@ -1,21 +1,44 @@
-﻿
-using AutoMapper;
-using FinalBoatSystemRental.Core.Entities;
-using FinalBoatSystemRental.Core.ViewModels.BoatBooking;
-using System.Text.Json.Serialization;
+﻿namespace FinalBoatSystemRental.Application.BoatBooking.Command.Add;
 
-namespace FinalBoatSystemRental.Application.BoatBooking.Command.Add;
+
+
+public class AddBoatBookingCommandValidator : AbstractValidator<AddBoatBookingCommand>
+{
+    public AddBoatBookingCommandValidator()
+    {
+
+
+        RuleFor(x => x.BookingDate)
+            .NotNull().WithMessage("BookingDate cannot be null.")
+            .NotEmpty().WithMessage("BookingDate is Required")
+            .GreaterThanOrEqualTo(DateTime.Now).WithMessage("Booking Date Must Be Greater than Todays Date");
+
+        RuleFor(x => x.BoatId)
+          .NotNull().WithMessage("BoatId cannot be null.")
+          .NotEmpty().WithMessage("BoatId is Required");
+
+        RuleFor(x => x.AdditionsQuantityIds)
+           .NotNull().WithMessage("Additions cannot be null.");
+
+
+
+
+
+
+    }
+}
+
 
 public class AddBoatBookingCommand : ICommand<BoatBookingViewModel>
 {
 
-    public DateTime BookingDate { get; set; }
-    public int BoatId { get; set; }
+    public DateTime? BookingDate { get; set; }
+    public int? BoatId { get; set; }
     [JsonIgnore]
     public string? UserId { get; set; }
-    public Dictionary<int, int> AdditionsQuantityIds { get; set; }
+    public Dictionary<int, int>? AdditionsQuantityIds { get; set; }
 
-    public AddBoatBookingCommand(DateTime bookingDate, int boatId, string userId, Dictionary<int, int> additionsQuantityIds)
+    public AddBoatBookingCommand(DateTime? bookingDate, int? boatId, string userId, Dictionary<int, int>? additionsQuantityIds)
     {
         BookingDate = bookingDate;
         BoatId = boatId;
@@ -33,9 +56,11 @@ public class AddBoatBookingHandler : ICommandHandler<AddBoatBookingCommand, Boat
     private readonly IBoatRepository _boatRepository;
     private readonly ICustomerRepository _customerRepository;
     private readonly IMapper _mapper;
+    private readonly IValidator<AddBoatBookingCommand> _validator;
 
     public AddBoatBookingHandler(IAdditionRepository additionRepository, IMapper mapper, IBoatRepository boatRepository,
-                                ICustomerRepository customerRepository, IBoatBookingRepository boatBooking, IBoatBookingAdditionRepository bookingAdditionRepository)
+                                ICustomerRepository customerRepository, IBoatBookingRepository boatBooking, IBoatBookingAdditionRepository bookingAdditionRepository,
+                                IValidator<AddBoatBookingCommand> validator)
     {
         _additionRepository = additionRepository;
         _mapper = mapper;
@@ -43,14 +68,27 @@ public class AddBoatBookingHandler : ICommandHandler<AddBoatBookingCommand, Boat
         _customerRepository = customerRepository;
         _boatBooking = boatBooking;
         _bookingAdditionRepository = bookingAdditionRepository;
+        _validator = validator;
     }
 
 
 
     public async Task<BoatBookingViewModel> Handle(AddBoatBookingCommand request, CancellationToken cancellationToken)
     {
+
+        var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+        if (!validationResult.IsValid)
+        {
+            throw new ValidationException(validationResult.Errors);
+        }
+
+        // Converting After Validation 
+        var boatId = (int)request.BoatId;
+        var bookingDate = (DateTime)request.BookingDate;
+
+
         // check the Date 
-        var isDateAvailable = await _boatBooking.CheckBoatAvialableDate(request.BoatId, request.BookingDate);
+        var isDateAvailable = await _boatBooking.CheckBoatAvialableDate(boatId, bookingDate);
         if (isDateAvailable)
         {
             throw new Exception("Date is Already Booked");
@@ -67,7 +105,7 @@ public class AddBoatBookingHandler : ICommandHandler<AddBoatBookingCommand, Boat
             dictTotalAdditionPrice[id] = additionTotalPrice;
             TotalAdditionPrice += additionTotalPrice;
         }
-        var boatPrice = await _boatRepository.GetReservationBoatPrice(request.BoatId);
+        var boatPrice = await _boatRepository.GetReservationBoatPrice(boatId);
         var totalReservationPrice = TotalAdditionPrice + boatPrice;
 
         // check Customer Balance
@@ -81,12 +119,12 @@ public class AddBoatBookingHandler : ICommandHandler<AddBoatBookingCommand, Boat
         await _customerRepository.UpdateAsync(customer.Id, customer);
 
 
-        var status = FinalBoatSystemRental.Application.GlobalVariables.DetermineBoatBookingStatus(request.BookingDate);
+        var status = GlobalVariables.DetermineBoatBookingStatus(bookingDate);
         var reservation = new Core.Entities.BoatBooking
         {
             CustomerId = customer.Id,
-            BoatId = request.BoatId,
-            BookingDate = request.BookingDate.Date,
+            BoatId = boatId,
+            BookingDate = bookingDate,
             TotalPrice = totalReservationPrice,
             Status = status,
             CreatesAt = DateTime.Now,

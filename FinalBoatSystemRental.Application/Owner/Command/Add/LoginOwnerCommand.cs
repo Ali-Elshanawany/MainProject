@@ -6,11 +6,10 @@ public class LoginCommandValidator : AbstractValidator<LoginCommand>
 {
     public LoginCommandValidator()
     {
-        //RuleFor(x => x.WalletBalance).GreaterThan(0).NotEmpty().WithMessage("Wallet Balance Must be greater than zero.");
-        //RuleFor(x => x.Email).NotEmpty().WithMessage("Email is Required");
-             RuleFor(x => x.Email)
-            .NotNull().WithMessage("Email cannot be null.") // Explicitly checks for null
-            .NotEmpty().WithMessage("Email is required.");
+
+        RuleFor(x => x.Email)
+       .NotNull().WithMessage("Email cannot be null.") // Explicitly checks for null
+       .NotEmpty().WithMessage("Email is required.");
         RuleFor(x => x.Password)
             .NotNull().WithMessage("Email cannot be null.")
             .NotEmpty().WithMessage("Password is Required");
@@ -21,8 +20,8 @@ public class LoginCommandValidator : AbstractValidator<LoginCommand>
 
 public class LoginCommand : IRequest<AuthModel>
 {
-    
-    public string? Email { get; set; }=string.Empty;
+
+    public string? Email { get; set; } = string.Empty;
     public string? Password { get; set; } = string.Empty;
 }
 

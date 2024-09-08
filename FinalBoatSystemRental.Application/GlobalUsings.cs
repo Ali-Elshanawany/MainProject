@@ -19,4 +19,7 @@ global using FinalBoatSystemRental.Application.Addition.Command.Add;
 global using FinalBoatSystemRental.Core.Entities;
 global using FinalBoatSystemRental.Core.ViewModels.Addition;
 global using FinalBoatSystemRental.Application.Trip.Query.Get;
-
+global using System.Text.Json.Serialization;
+global using FinalBoatSystemRental.Core.Entities;
+global using FinalBoatSystemRental.Core.ViewModels.BoatBooking;
+global using FinalBoatSystemRental.Core.ViewModels.Reservation;

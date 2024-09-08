@@ -18,15 +18,24 @@ public class CustomerController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetCustomersDetails(GetCustomerDetailsQuery query)
     {
-        var userId = User.FindFirstValue("uid");
-
-        if (userId == null)
+        try
         {
-            return Unauthorized();
+            var userId = User.FindFirstValue("uid");
+
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+            Log.Information($"{userId} View Profile");
+            var customer = new GetCustomerDetailsQuery(userId);
+            var result = await _mediator.Send(customer);
+            return Ok(result);
         }
-        var customer = new GetCustomerDetailsQuery(userId);
-        var result = await _mediator.Send(customer);
-        return Ok(result);
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
 
     }
 
@@ -35,15 +44,24 @@ public class CustomerController : ControllerBase
     [HttpPut("Details")]
     public async Task<IActionResult> UpdateCustomerDetails(UpdateCustomerDetailsCommand command)
     {
-        var userId = User.FindFirstValue("uid");
-
-        if (userId == null)
+        try
         {
-            return Unauthorized();
+            var userId = User.FindFirstValue("uid");
+
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+            Log.Information($"{userId} Update Profile");
+            command.UserId = userId;
+            var result = await _mediator.Send(command);
+            return Ok(result);
         }
-        command.UserId = userId;
-        var result = await _mediator.Send(command);
-        return Ok(result);
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
     }
 
     [HttpPut("Wallet")]
@@ -57,12 +75,14 @@ public class CustomerController : ControllerBase
             {
                 return Unauthorized();
             }
+            Log.Information($"{userId} Add Balance");
             command.UserId = userId;
             var result = await _mediator.Send(command);
             return Ok(result);
         }
         catch (Exception ex)
         {
+            Log.Fatal(ex.Message);
             return BadRequest(ex.Message);
         }
 

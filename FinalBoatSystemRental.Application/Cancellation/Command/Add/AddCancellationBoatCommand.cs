@@ -5,9 +5,9 @@ namespace FinalBoatSystemRental.Application.Cancellation.Command.Add;
 
 public class AddCancellationBoatCommand : ICommand<CancellationViewModel>
 {
-    public int BookingId { get; set; }
+    public int? BookingId { get; set; }
 
-    public AddCancellationBoatCommand(int bookingId)
+    public AddCancellationBoatCommand(int? bookingId)
     {
         BookingId = bookingId;
     }
@@ -34,7 +34,14 @@ public class AddCancellationBoatHandler : ICommandHandler<AddCancellationBoatCom
 
     public async Task<CancellationViewModel> Handle(AddCancellationBoatCommand request, CancellationToken cancellationToken)
     {
-        var reservation = await _boatBookingRepository.GetByIdAsync(request.BookingId);
+
+        if (request.BookingId == null)
+        {
+            throw new Exception("Boat id can't be null");
+        }
+        var bookingId = (int)request.BookingId;
+
+        var reservation = await _boatBookingRepository.GetByIdAsync(bookingId);
         if (reservation.Status == GlobalVariables.BoatBookingCanceledStatus)
         {
             throw new Exception("Reservation Already Canceled!!");
@@ -44,7 +51,7 @@ public class AddCancellationBoatHandler : ICommandHandler<AddCancellationBoatCom
         reservation.Status = GlobalVariables.BoatBookingCanceledStatus;
         reservation.CanceledAt = DateTime.Now;
 
-        if (reservation.BookingDate.AddDays(-boatDeadline).Date < DateTime.Now.Date)// if true then Refundable 
+        if (reservation.BookingDate.AddDays(-boatDeadline).Date > DateTime.Now.Date)// if true then Refundable 
         {
             var cancellation = new Core.Entities.Cancellation
             {
@@ -54,7 +61,8 @@ public class AddCancellationBoatHandler : ICommandHandler<AddCancellationBoatCom
                 CancellationDate = DateTime.Now,
                 RefundAmount = reservation.TotalPrice,
                 RefundedYet = false,
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.Now,
+                BoatId = reservation.BoatId
             };
 
             await _cancellationRepository.AddAsync(cancellation);
@@ -71,7 +79,9 @@ public class AddCancellationBoatHandler : ICommandHandler<AddCancellationBoatCom
                 CancellationDate = DateTime.Now,
                 RefundAmount = 0,
                 RefundedYet = true,
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.Now,
+                BoatId = reservation.BoatId
+
             };
 
             await _cancellationRepository.AddAsync(cancellation);

@@ -84,12 +84,15 @@ public class BoatbookingController : ControllerBase
                 return Unauthorized();
             }
 
+            Log.Information($"{userId} View Boat Reservation History");
+
             var trip = new ListBoatBookingHistoryQuery(userId);
             var trips = await _mediator.Send(trip);
             return Ok(trips);
         }
         catch (Exception ex)
         {
+            Log.Fatal(ex.Message);
             return BadRequest(ex.Message);
         }
 
@@ -109,6 +112,7 @@ public class BoatbookingController : ControllerBase
             {
                 return Unauthorized();
             }
+            Log.Information($"{userId} Book a boat");
             if (command == null)
                 return BadRequest("Boat Booking Data is required");
             command.UserId = userId;
@@ -117,6 +121,7 @@ public class BoatbookingController : ControllerBase
         }
         catch (Exception ex)
         {
+            Log.Error(ex.Message);
             return BadRequest(ex.Message);
         }
 

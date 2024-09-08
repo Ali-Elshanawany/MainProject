@@ -25,11 +25,14 @@ public class CancellationController : ControllerBase
 
             if (command == null)
                 return BadRequest(" Data is required");
+
+            Log.Information("Customer Cancel A trip");
             var result = await _mediator.Send(command);
             return Ok(result);
         }
         catch (Exception ex)
         {
+            Log.Fatal(ex.Message);
             return BadRequest(ex.Message);
         }
 
@@ -44,11 +47,13 @@ public class CancellationController : ControllerBase
         {
             if (command == null)
                 return BadRequest(" Data is required");
+            Log.Information("Customer Cancel A Boat");
             var result = await _mediator.Send(command);
             return Ok(result);
         }
         catch (Exception ex)
         {
+            Log.Fatal(ex.Message);
             return BadRequest(ex.Message);
         }
 

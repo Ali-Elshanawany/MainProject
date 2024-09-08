@@ -1405,4 +1405,583 @@ Error Number:547,State:0,Class:16
  09/08/2024 20:56:27 +03:00 3d0fa137-e631-4df9-a45f-b9107ca0ddbb Add Addition 
  09/08/2024 21:02:34 +03:00 Starting up the application 
  09/08/2024 21:04:33 +03:00 Starting up the application 
+ 09/08/2024 21:05:42 +03:00 Starting up the application 
+ 09/08/2024 22:25:54 +03:00 Starting up the application 
+ 09/08/2024 22:31:43 +03:00 Starting up the application 
+ 09/08/2024 22:32:26 +03:00 Validation failed: 
+ -- Model.Email: Email cannot be null. Severity: Error
+ -- Model.Email: Email is Required Severity: Error
+ -- Model.Password: Password cannot be null. Severity: Error
+ -- Model.Password: Password is Required Severity: Error
+ -- Model.UserName: UserName cannot be null. Severity: Error
+ -- Model.UserName: UserName is Required Severity: Error
+ -- Model.FirstName: FirstName cannot be null. Severity: Error
+ -- Model.FirstName: FirstName is Required Severity: Error
+ -- Model.LastName: LastName cannot be null. Severity: Error
+ -- Model.LastName: LastName is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Model.Email: Email cannot be null. Severity: Error
+ -- Model.Email: Email is Required Severity: Error
+ -- Model.Password: Password cannot be null. Severity: Error
+ -- Model.Password: Password is Required Severity: Error
+ -- Model.UserName: UserName cannot be null. Severity: Error
+ -- Model.UserName: UserName is Required Severity: Error
+ -- Model.FirstName: FirstName cannot be null. Severity: Error
+ -- Model.FirstName: FirstName is Required Severity: Error
+ -- Model.LastName: LastName cannot be null. Severity: Error
+ -- Model.LastName: LastName is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.RegisterCustomerCommandHandler.Handle(RegisterCustomerCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Customer\Command\Add\RegisterCustomerCommand.cs:line 64
+   at FinalBoatSystemRental.API.Controllers.AuthController.RegisterCustomer(RegisterCustomerCommand command) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 93
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/08/2024 22:32:52 +03:00 Validation failed: 
+ -- Model.Email: Email cannot be null. Severity: Error
+ -- Model.Email: Email is Required Severity: Error
+ -- Model.Password: Password cannot be null. Severity: Error
+ -- Model.Password: Password is Required Severity: Error
+ -- Model.UserName: UserName cannot be null. Severity: Error
+ -- Model.UserName: UserName is Required Severity: Error
+ -- Model.LastName: LastName cannot be null. Severity: Error
+ -- Model.LastName: LastName is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Model.Email: Email cannot be null. Severity: Error
+ -- Model.Email: Email is Required Severity: Error
+ -- Model.Password: Password cannot be null. Severity: Error
+ -- Model.Password: Password is Required Severity: Error
+ -- Model.UserName: UserName cannot be null. Severity: Error
+ -- Model.UserName: UserName is Required Severity: Error
+ -- Model.LastName: LastName cannot be null. Severity: Error
+ -- Model.LastName: LastName is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.RegisterCustomerCommandHandler.Handle(RegisterCustomerCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Customer\Command\Add\RegisterCustomerCommand.cs:line 64
+   at FinalBoatSystemRental.API.Controllers.AuthController.RegisterCustomer(RegisterCustomerCommand command) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 93
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/08/2024 22:33:04 +03:00 Validation failed: 
+ -- Model.Email: Email cannot be null. Severity: Error
+ -- Model.Email: Email is Required Severity: Error
+ -- Model.Password: Password cannot be null. Severity: Error
+ -- Model.Password: Password is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Model.Email: Email cannot be null. Severity: Error
+ -- Model.Email: Email is Required Severity: Error
+ -- Model.Password: Password cannot be null. Severity: Error
+ -- Model.Password: Password is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.RegisterCustomerCommandHandler.Handle(RegisterCustomerCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Customer\Command\Add\RegisterCustomerCommand.cs:line 64
+   at FinalBoatSystemRental.API.Controllers.AuthController.RegisterCustomer(RegisterCustomerCommand command) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 93
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/08/2024 22:37:04 +03:00 Starting up the application 
+ 09/08/2024 22:37:34 +03:00 Validation failed: 
+ -- Model.FirstName: FirstName cannot be null. Severity: Error
+ -- Model.FirstName: FirstName is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Model.FirstName: FirstName cannot be null. Severity: Error
+ -- Model.FirstName: FirstName is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.RegisterCustomerCommandHandler.Handle(RegisterCustomerCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Customer\Command\Add\RegisterCustomerCommand.cs:line 64
+   at FinalBoatSystemRental.API.Controllers.AuthController.RegisterCustomer(RegisterCustomerCommand command) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 93
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/08/2024 22:37:57 +03:00 Starting up the application 
+ 09/08/2024 22:37:59 +03:00 Validation failed: 
+ -- Model.FirstName: FirstName cannot be null. Severity: Error
+ -- Model.FirstName: FirstName is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Model.FirstName: FirstName cannot be null. Severity: Error
+ -- Model.FirstName: FirstName is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.RegisterCustomerCommandHandler.Handle(RegisterCustomerCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Customer\Command\Add\RegisterCustomerCommand.cs:line 64
+   at FinalBoatSystemRental.API.Controllers.AuthController.RegisterCustomer(RegisterCustomerCommand command) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 93
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/08/2024 22:39:34 +03:00 Starting up the application 
+ 09/08/2024 22:39:37 +03:00 Validation failed: 
+ -- Model.FirstName: FirstName cannot be null. Severity: Error
+ -- Model.FirstName: FirstName is Required Severity: Error 
+ 09/08/2024 22:41:04 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 22:41:04 +03:00 Validation failed: 
+ -- Email: Email cannot be null. Severity: Error
+ -- Email: Email is required. Severity: Error 
+ 09/08/2024 22:41:09 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 22:46:06 +03:00 Starting up the application 
+ 09/08/2024 22:55:46 +03:00 Starting up the application 
+ 09/08/2024 22:56:47 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 22:56:48 +03:00 Validation failed: 
+ -- BookingDate: BookingDate cannot be null. Severity: Error
+ -- BookingDate: BookingDate is Required Severity: Error 
+ 09/08/2024 22:56:56 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 22:56:56 +03:00 Validation failed: 
+ -- BookingDate: BookingDate cannot be null. Severity: Error
+ -- BookingDate: BookingDate is Required Severity: Error
+ -- BoatId: BoatId cannot be null. Severity: Error
+ -- BoatId: BoatId is Required Severity: Error 
+ 09/08/2024 22:57:01 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 22:57:01 +03:00 Validation failed: 
+ -- BookingDate: BookingDate cannot be null. Severity: Error
+ -- BookingDate: BookingDate is Required Severity: Error
+ -- BoatId: BoatId cannot be null. Severity: Error
+ -- BoatId: BoatId is Required Severity: Error 
+ 09/08/2024 22:57:02 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 22:57:02 +03:00 Validation failed: 
+ -- BookingDate: BookingDate cannot be null. Severity: Error
+ -- BookingDate: BookingDate is Required Severity: Error
+ -- BoatId: BoatId cannot be null. Severity: Error
+ -- BoatId: BoatId is Required Severity: Error 
+ 09/08/2024 22:57:07 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 22:57:07 +03:00 Validation failed: 
+ -- BookingDate: BookingDate cannot be null. Severity: Error
+ -- BookingDate: BookingDate is Required Severity: Error
+ -- BoatId: BoatId cannot be null. Severity: Error
+ -- BoatId: BoatId is Required Severity: Error
+ -- AdditionsQuantityIds: Additions cannot be null. Severity: Error 
+ 09/08/2024 22:57:12 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 22:57:12 +03:00 Validation failed: 
+ -- BookingDate: BookingDate cannot be null. Severity: Error
+ -- BookingDate: BookingDate is Required Severity: Error
+ -- BoatId: BoatId cannot be null. Severity: Error
+ -- BoatId: BoatId is Required Severity: Error 
+ 09/08/2024 22:57:24 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 22:57:24 +03:00 Validation failed: 
+ -- BookingDate: Booking Date Must Be Greater than Todays Date Severity: Error 
+ 09/08/2024 22:57:33 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 22:57:33 +03:00 Validation failed: 
+ -- BookingDate: Booking Date Must Be Greater than Todays Date Severity: Error 
+ 09/08/2024 22:57:38 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 22:57:38 +03:00 Balance Was not Enough To Book  
+ 09/08/2024 22:58:06 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/08/2024 23:00:52 +03:00 Starting up the application 
+ 09/08/2024 23:01:24 +03:00 Starting up the application 
+ 09/08/2024 23:04:49 +03:00 Starting up the application 
+ 09/08/2024 23:06:31 +03:00 Starting up the application 
+ 09/08/2024 23:06:38 +03:00 View Available Trips 
+ 09/08/2024 23:22:35 +03:00 Starting up the application 
+ 09/08/2024 23:25:31 +03:00 Starting up the application 
+ 09/08/2024 23:25:45 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/08/2024 23:26:07 +03:00 View Available Trips 
+ 09/08/2024 23:26:24 +03:00 View Available Trips 
+ 09/08/2024 23:28:31 +03:00 View Available Trips 
+ 09/08/2024 23:29:15 +03:00 Starting up the application 
+ 09/08/2024 23:29:37 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/08/2024 23:29:52 +03:00 View Available Trips 
+ 09/08/2024 23:30:14 +03:00 View Available Trips 
+ 09/08/2024 23:30:52 +03:00 View Available Trips 
+ 09/08/2024 23:31:20 +03:00 Starting up the application 
+ 09/08/2024 23:31:47 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/08/2024 23:34:32 +03:00 Starting up the application 
+ 09/08/2024 23:34:37 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/08/2024 23:35:09 +03:00 View Available Trips 
+ 09/08/2024 23:35:38 +03:00 Starting up the application 
+ 09/08/2024 23:35:42 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/08/2024 23:35:56 +03:00 View Available Trips 
+ 09/08/2024 23:48:26 +03:00 Starting up the application 
+ 09/08/2024 23:49:20 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/08/2024 23:49:35 +03:00 View Available Trips 
+ 09/08/2024 23:49:54 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/08/2024 23:49:54 +03:00 Validation failed: 
+ -- TripId: TripId cannot be null. Severity: Error
+ -- TripId: TripId is Required Severity: Error 
+ 09/08/2024 23:50:02 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/08/2024 23:50:02 +03:00 Validation failed: 
+ -- NumOfPeople: TripId cannot be null. Severity: Error
+ -- NumOfPeople: TripId is Required Severity: Error 
+ 09/08/2024 23:51:32 +03:00 Starting up the application 
+ 09/08/2024 23:51:39 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/08/2024 23:51:40 +03:00 Validation failed: 
+ -- NumOfPeople: NumOfPeople cannot be null. Severity: Error
+ -- NumOfPeople: NumOfPeople is Required Severity: Error 
+ 09/09/2024 00:03:39 +03:00 Starting up the application 
+ 09/09/2024 00:08:12 +03:00 Starting up the application 
+ 09/09/2024 00:08:37 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/09/2024 00:08:42 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/09/2024 00:08:42 +03:00 Balance Was not Enough To Book  
+ 09/09/2024 00:12:58 +03:00 Starting up the application 
+ 09/09/2024 00:13:46 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/09/2024 00:13:46 +03:00 Validation failed: 
+ -- BookingDate: Booking Date Must Be Greater than Todays Date Severity: Error 
+ 09/09/2024 00:14:01 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/09/2024 00:14:06 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/09/2024 00:14:13 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Book a boat 
+ 09/09/2024 00:16:36 +03:00 Starting up the application 
+ 09/09/2024 00:18:27 +03:00 Starting up the application 
+ 09/09/2024 00:19:14 +03:00 View Available Trips 
+ 09/09/2024 00:19:42 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/09/2024 00:20:05 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:20:05 +03:00 Reservation Id can't be null 
+ 09/09/2024 00:20:10 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:20:10 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Cancellations_Boats_BoatId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.Boats\", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a8d5c976-caca-478f-99c5-d2eeae5b5866
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Cancellations_Boats_BoatId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.Boats", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a8d5c976-caca-478f-99c5-d2eeae5b5866
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/09/2024 00:20:10 +03:00 An error occurred while saving the entity changes. See the inner exception for details. 
+ 09/09/2024 00:20:58 +03:00 Starting up the application 
+ 09/09/2024 00:21:00 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:21:02 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Cancellations_Boats_BoatId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.Boats\", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8b67e918-1e2a-41da-9bd4-82edecd30152
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Cancellations_Boats_BoatId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.Boats", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8b67e918-1e2a-41da-9bd4-82edecd30152
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/09/2024 00:21:02 +03:00 An error occurred while saving the entity changes. See the inner exception for details. 
+ 09/09/2024 00:21:09 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:21:09 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Cancellations_Boats_BoatId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.Boats\", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8b67e918-1e2a-41da-9bd4-82edecd30152
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Cancellations_Boats_BoatId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.Boats", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:8b67e918-1e2a-41da-9bd4-82edecd30152
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/09/2024 00:21:09 +03:00 An error occurred while saving the entity changes. See the inner exception for details. 
+ 09/09/2024 00:22:12 +03:00 Starting up the application 
+ 09/09/2024 00:22:16 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:23:53 +03:00 Starting up the application 
+ 09/09/2024 00:23:57 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:24:01 +03:00 Error in Reservation Found Return Null  
+ 09/09/2024 00:24:31 +03:00 Starting up the application 
+ 09/09/2024 00:24:35 +03:00 View Available Trips 
+ 09/09/2024 00:25:39 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:25:39 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Cancellations_Boats_BoatId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.Boats\", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7e9f1e1a-99d2-4ba1-920f-f2fd17a2066f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Cancellations_Boats_BoatId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.Boats", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7e9f1e1a-99d2-4ba1-920f-f2fd17a2066f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/09/2024 00:25:39 +03:00 An error occurred while saving the entity changes. See the inner exception for details. 
+ 09/09/2024 00:25:57 +03:00 Starting up the application 
+ 09/09/2024 00:26:03 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:27:12 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_Cancellations_Boats_BoatId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.Boats\", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:052f1bb7-8f1a-4de8-8df7-1c0e2695adb6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Cancellations_Boats_BoatId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.Boats", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:052f1bb7-8f1a-4de8-8df7-1c0e2695adb6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/09/2024 00:27:12 +03:00 An error occurred while saving the entity changes. See the inner exception for details. 
+ 09/09/2024 00:30:16 +03:00 Starting up the application 
+ 09/09/2024 00:30:24 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:30:31 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:30:31 +03:00 Error in Reservation  Return Null  
+ 09/09/2024 00:30:37 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:30:37 +03:00 Error in Reservation  Return Null  
+ 09/09/2024 00:30:41 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:30:47 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:31:19 +03:00 Starting up the application 
+ 09/09/2024 00:31:23 +03:00 Customer Cancel A trip 
+ 09/09/2024 00:31:24 +03:00 Reservation was not Found  
+ 09/09/2024 00:37:18 +03:00 Starting up the application 
+ 09/09/2024 00:37:37 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Update Profile 
+ 09/09/2024 00:37:38 +03:00 Validation failed: 
+ -- FirstName: FirstName cannot be null. Severity: Error
+ -- FirstName: FirstName is Required Severity: Error 
+ 09/09/2024 00:37:45 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Update Profile 
+ 09/09/2024 00:37:45 +03:00 Validation failed: 
+ -- FirstName: FirstName cannot be null. Severity: Error
+ -- FirstName: FirstName is Required Severity: Error
+ -- LastName: LastName cannot be null. Severity: Error
+ -- LastName: LastName is Required Severity: Error 
+ 09/09/2024 00:37:57 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Update Profile 
+ 09/09/2024 00:40:23 +03:00 Starting up the application 
+ 09/09/2024 00:40:40 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Add Balance 
+ 09/09/2024 00:40:41 +03:00 Balance can not be less or equal  
+ 09/09/2024 00:40:45 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Add Balance 
+ 09/09/2024 00:40:46 +03:00 Balance can not be less or equal  
+ 09/09/2024 00:40:50 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Add Balance 
+ 09/09/2024 00:40:58 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 Add Balance 
  

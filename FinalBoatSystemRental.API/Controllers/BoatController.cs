@@ -28,16 +28,25 @@ public class BoatController : ControllerBase
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetAllBoats()
     {
-        var userId = User.FindFirstValue("uid");
-
-        if (userId == null)
+        try
         {
-            return Unauthorized();
-        }
+            var userId = User.FindFirstValue("uid");
 
-        var boat = new ListBoatsQuery(userId);
-        var boats = await _mediator.Send(boat);
-        return Ok(boats);
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+            Log.Information($"{userId} View boats");
+
+            var boat = new ListBoatsQuery(userId);
+            var boats = await _mediator.Send(boat);
+            return Ok(boats);
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
     }
 
 
@@ -46,15 +55,26 @@ public class BoatController : ControllerBase
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetBoat(int id)
     {
-        var userId = User.FindFirstValue("uid");
-
-        if (userId == null)
+        try
         {
-            return Unauthorized();
+            var userId = User.FindFirstValue("uid");
+
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+
+            Log.Information($"{userId} View Boat info ");
+
+            var boat = new GetBoatQuery(id, userId);
+            var boats = await _mediator.Send(boat);
+            return Ok(boats);
         }
-        var boat = new GetBoatQuery(id, userId);
-        var boats = await _mediator.Send(boat);
-        return Ok(boats);
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
     }
     //Owner
     [HttpPost]
@@ -120,9 +140,19 @@ public class BoatController : ControllerBase
     public async Task<IActionResult> GetAllAvailableBoats()
     {
 
-        var boat = new ListAvailableBoatsQuery();
-        var boats = await _mediator.Send(boat);
-        return Ok(boats);
+        try
+        {
+            Log.Information("Customer View Available Boats");
+            var boat = new ListAvailableBoatsQuery();
+            var boats = await _mediator.Send(boat);
+            return Ok(boats);
+
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
     }
     #endregion
 

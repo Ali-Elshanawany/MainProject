@@ -28,6 +28,9 @@ public class ReservationController : ControllerBase
             {
                 return Unauthorized();
             }
+
+            Log.Information($"{userId} book a trip");
+
             if (command == null)
                 return BadRequest("Boat Booking Data is required");
             command.UserId = userId;
@@ -36,6 +39,7 @@ public class ReservationController : ControllerBase
         }
         catch (Exception ex)
         {
+            Log.Fatal(ex.Message);
             return BadRequest(ex.Message);
         }
 
@@ -46,16 +50,26 @@ public class ReservationController : ControllerBase
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> GetAllBoats()
     {
-        var userId = User.FindFirstValue("uid");
-
-        if (userId == null)
+        try
         {
-            return Unauthorized();
-        }
+            var userId = User.FindFirstValue("uid");
 
-        var trip = new ListReservationCustomerHistoryQuery(userId);
-        var trips = await _mediator.Send(trip);
-        return Ok(trips);
+            if (userId == null)
+            {
+                return Unauthorized();
+            }
+
+            Log.Information($"{userId} View Trip History");
+
+            var trip = new ListReservationCustomerHistoryQuery(userId);
+            var trips = await _mediator.Send(trip);
+            return Ok(trips);
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
     }
     #endregion
 

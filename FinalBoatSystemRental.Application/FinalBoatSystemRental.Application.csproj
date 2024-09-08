@@ -7,10 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Cancellation\Query\**" />
+    <Compile Remove="Customer\Command\Delete\**" />
     <Compile Remove="Trip\Command\Delete\**" />
     <Compile Remove="Trip\ViewModels\**" />
+    <EmbeddedResource Remove="Cancellation\Query\**" />
+    <EmbeddedResource Remove="Customer\Command\Delete\**" />
     <EmbeddedResource Remove="Trip\Command\Delete\**" />
     <EmbeddedResource Remove="Trip\ViewModels\**" />
+    <None Remove="Cancellation\Query\**" />
+    <None Remove="Customer\Command\Delete\**" />
     <None Remove="Trip\Command\Delete\**" />
     <None Remove="Trip\ViewModels\**" />
   </ItemGroup>
@@ -29,8 +35,6 @@
 
   <ItemGroup>
     <Folder Include="Addition\Query\" />
-    <Folder Include="Cancellation\Query\" />
-    <Folder Include="Customer\Command\Delete\" />
     <Folder Include="Customer\Query\List\" />
     <Folder Include="Owner\Command\Delete\" />
   </ItemGroup>

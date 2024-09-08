@@ -1,23 +1,36 @@
-﻿using AutoMapper;
-using FinalBoatSystemRental.Core.Entities;
-using FinalBoatSystemRental.Core.Interfaces;
-using FinalBoatSystemRental.Core.ViewModels.Reservation;
-using System.Text.Json.Serialization;
+﻿namespace FinalBoatSystemRental.Application.Reservation.Command;
 
-namespace FinalBoatSystemRental.Application.Reservation.Command;
+
+public class AddReservationCommandValidator : AbstractValidator<AddReservationCommand>
+{
+    public AddReservationCommandValidator()
+    {
+        RuleFor(x => x.TripId)
+            .NotNull().WithMessage("TripId cannot be null.")
+            .NotEmpty().WithMessage("TripId is Required");
+
+        RuleFor(x => x.NumOfPeople)
+          .NotNull().WithMessage("NumOfPeople cannot be null.")
+          .NotEmpty().WithMessage("NumOfPeople is Required")
+          .GreaterThan(0).WithMessage("Num of people Must be greater than 0");
+    }
+}
+
+
+
 
 public class AddReservationCommand : ICommand<ReservationViewModel>
 {
-    public int BoatId { get; set; }
-    public int TripId { get; set; }
-    public int NumOfPeople { get; set; }
+    // public int BoatId { get; set; }
+    public int? TripId { get; set; }
+    public int? NumOfPeople { get; set; }
     [JsonIgnore]
     public string? UserId { get; set; }
     public Dictionary<int, int> AdditionsQuantityIds { get; set; }
 
-    public AddReservationCommand(int boatId, string? userId, Dictionary<int, int> additionsQuantityIds, int tripId, int numOfPeople)
+    public AddReservationCommand(string? userId, Dictionary<int, int> additionsQuantityIds, int? tripId, int? numOfPeople)
     {
-        BoatId = boatId;
+        //   BoatId = boatId;
         UserId = userId;
         AdditionsQuantityIds = additionsQuantityIds;
         TripId = tripId;
@@ -35,11 +48,13 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
     private readonly ITripRepository _tripRepository;
     private readonly ICustomerRepository _customerRepository;
     private readonly IMapper _mapper;
+    private readonly IValidator<AddReservationCommand> _validator;
 
 
 
     public AddReservationHandler(IReservationRepository reservationRepository, IReservationAdditionRepository reservationAdditionRepository,
-        IOwnerRepository ownerRepository, IMapper mapper, IAdditionRepository additionRepository, ITripRepository tripRepository, ICustomerRepository customerRepository)
+        IOwnerRepository ownerRepository, IMapper mapper, IAdditionRepository additionRepository, ITripRepository tripRepository,
+        ICustomerRepository customerRepository, IValidator<AddReservationCommand> validator)
     {
         _reservationRepository = reservationRepository;
         _reservationAdditionRepository = reservationAdditionRepository;
@@ -48,10 +63,23 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
         _additionRepository = additionRepository;
         _tripRepository = tripRepository;
         _customerRepository = customerRepository;
+        _validator = validator;
     }
 
     public async Task<ReservationViewModel> Handle(AddReservationCommand request, CancellationToken cancellationToken)
     {
+        var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+        if (!validationResult.IsValid)
+        {
+            throw new ValidationException(validationResult.Errors);
+        }
+        // Converting 
+        var NumOfPeople = (int)request.NumOfPeople;
+        var TripId = (int)request.TripId;
+
+
+
+
         // Get the total Addition price
         var additionsPrice = await _additionRepository.GetAdditionPrice(request.AdditionsQuantityIds.Keys.ToList());
         var dictTotalAdditionPrice = new Dictionary<int, int>();
@@ -67,11 +95,11 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
         }
 
         // trip contain  price,Cancellation Deadline and ReservationDate
-        var trip = await _tripRepository.GetReservationTripPrice(request.TripId);
-        var totalTripPriceWithOutAddition = trip.Price * request.NumOfPeople;
+        var trip = await _tripRepository.GetByIdAsync(TripId);
+        var totalTripPriceWithOutAddition = trip.PricePerPerson * request.NumOfPeople;
 
         //calculate the Cost of the Reservation
-        var totalReservationPrice = TotalAdditionPrice + totalTripPriceWithOutAddition;
+        var totalReservationPrice = TotalAdditionPrice + (decimal)totalTripPriceWithOutAddition;
 
         var customer = await _customerRepository.GetCustomerByUserId(request.UserId);
         var isBalancedSufficient = await _customerRepository.CheckCustomerBalance(customer.Id, totalReservationPrice);
@@ -82,15 +110,25 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
         customer.WalletBalance -= totalReservationPrice;
         await _customerRepository.UpdateAsync(customer.Id, customer);
 
+        // change Trip Status
+        var availableSeats = await _tripRepository.GetAvailableSeats(TripId);
+        if (availableSeats == request.NumOfPeople)
+        {
+
+            trip.Status = GlobalVariables.TripCompletedStatus;
+            await _tripRepository.UpdateAsync(trip.Id, trip);
+
+        }
+
         var status = GlobalVariables.DetermineBoatBookingStatus(trip.CancellationDeadLine);
         var reservation = new Core.Entities.Reservation
         {
             CustomerId = customer.Id,
-            TripId = request.TripId,
-            BoatId = request.BoatId,
-            NumOfPeople = request.NumOfPeople,
+            TripId = TripId,
+            BoatId = trip.BoatId,
+            NumOfPeople = NumOfPeople,
             TotalPrice = (int)totalReservationPrice,
-            ReservationDate = trip.ReservationDate,
+            ReservationDate = trip.StartedAt,
             Status = status,
             CreatesAt = DateTime.Now,
             UpdatedAt = DateTime.Now,
@@ -113,6 +151,9 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
 
         }
         await _reservationAdditionRepository.AddRange(addRange);
+
+
+
 
         return _mapper.Map<ReservationViewModel>(reservation);
 

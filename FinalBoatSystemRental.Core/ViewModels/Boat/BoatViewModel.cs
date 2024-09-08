@@ -4,6 +4,9 @@ namespace FinalBoatSystemRental.Application.Boat.ViewModels;
 
 public class BoatViewModel
 {
+
+    public int Id { get; set; }
+
     [Required(ErrorMessage = "Name is required")]
     [Length(3, 40)]
     public string Name { get; set; } = string.Empty;

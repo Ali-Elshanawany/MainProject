@@ -64,7 +64,7 @@ public class AuthController : ControllerBase
     {
         try
         {
-            Log.Information("Accessed Register-Owner Function");
+            Log.Information("Accessed Login Action");
             var result = await _mediator.Send(command);
             if (result is null)
                 return BadRequest(result.Message);
@@ -90,14 +90,22 @@ public class AuthController : ControllerBase
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> RegisterCustomer(RegisterCustomerCommand command)
     {
-        var result = await _mediator.Send(command);
-        if (result is null)
-            return BadRequest(result.Message);
+        try
+        {
+            var result = await _mediator.Send(command);
+            if (result is null)
+                return BadRequest(result.Message);
 
-
-        if (result.Message == GlobalVariables.EmailIsRegistered || result.Message == GlobalVariables.UserNameIsRegistered)
-            return BadRequest(result.Message);
-        return Ok(result);
+            Log.Information("Register Customer");
+            if (result.Message == GlobalVariables.EmailIsRegistered || result.Message == GlobalVariables.UserNameIsRegistered)
+                return BadRequest(result.Message);
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
     }
 
 

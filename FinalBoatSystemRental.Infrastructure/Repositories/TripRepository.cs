@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 namespace FinalBoatSystemRental.Infrastructure.Repositories;
 
 
-public class TripRepository:BaseRepository<Trip>, ITripRepository
+public class TripRepository : BaseRepository<Trip>, ITripRepository
 {
     private readonly ApplicationDbContext _db;
 
@@ -20,15 +20,15 @@ public class TripRepository:BaseRepository<Trip>, ITripRepository
     {
         return await _db.Trips
                     .AsNoTracking()
-                    .SingleOrDefaultAsync(a => a.Id==tripId && a.OwnerId==ownerId);
+                    .SingleOrDefaultAsync(a => a.Id == tripId && a.OwnerId == ownerId);
     }
 
     public async new Task<IEnumerable<Trip>> GetAllAsync(int ownerid)
     {
-       return await _db.Trips
-                        .AsNoTracking()
-                        .Where(a=>a.OwnerId==ownerid)
-                        .ToListAsync();
+        return await _db.Trips
+                         .AsNoTracking()
+                         .Where(a => a.OwnerId == ownerid)
+                         .ToListAsync();
     }
 
     // Check if there is a Trip Reservation with Status (Active or Completed) and date  > the current Date 
@@ -38,13 +38,13 @@ public class TripRepository:BaseRepository<Trip>, ITripRepository
     {
         return await _db.Trips
                         .AsNoTracking()
-                        .Include(b=>b.Boat)
-                        .Where(a=>a.Status==GlobalVariables.TripActiveStatus)
+                        .Include(b => b.Boat)
+                        .Where(a => a.Status == GlobalVariables.TripActiveStatus)
                         .ToListAsync();
     }
 
     /* Check if There is a trip booked with the target id */
-   
+
     public async Task<bool> GetConfirmedTripAsync(int boatId)
     {
 
@@ -74,8 +74,10 @@ public class TripRepository:BaseRepository<Trip>, ITripRepository
 
         return await _db.Trips
                         .AsNoTracking()
+                        .Where(s => s.Status == GlobalVariables.TripActiveStatus)
                         .Select(t => new AvailableTripsViewModel
                         {
+                            Id = t.Id,
                             Name = t.Name,
                             Description = t.Description,
                             PricePerPerson = t.PricePerPerson,
@@ -84,11 +86,19 @@ public class TripRepository:BaseRepository<Trip>, ITripRepository
                             Status = t.Status,
                             StartedAt = t.StartedAt,
                             BoatName = t.Boat.Name,
-                            AvailableSeats = (t.MaxPeople- t.Reservations.Sum(b => b.NumOfPeople)),
+                            AvailableSeats = (t.MaxPeople - t.Reservations.Sum(b => b.NumOfPeople)),
                             CreatedAt = t.CreatedAt,
                             UpdatedAt = t.UpdatedAt,
                         })
                         .ToListAsync();
+    }
+
+    public async Task<int> GetAvailableSeats(int tripId)
+    {
+        return await _db.Trips.AsNoTracking()
+            .Where(a => a.Id == tripId)
+            .Select(t => (int)t.MaxPeople - t.Reservations.Sum(b => b.NumOfPeople))
+            .FirstOrDefaultAsync();
     }
 
     public async Task<GetCancellation_PriceViewModel> GetReservationTripPrice(int id)
@@ -96,16 +106,16 @@ public class TripRepository:BaseRepository<Trip>, ITripRepository
         return await _db.Trips
                                 .AsNoTracking()
                                 .Where(a => a.Id == id)
-                                .Select(s=> new GetCancellation_PriceViewModel { Price=s.PricePerPerson,CancellationDeadLine=s.CancellationDeadLine ,ReservationDate=s.StartedAt })
+                                .Select(s => new GetCancellation_PriceViewModel { Price = s.PricePerPerson, CancellationDeadLine = s.CancellationDeadLine, ReservationDate = s.StartedAt })
                                 .SingleOrDefaultAsync();
     }
 
     public async Task<DateTime> GetReservationTripDeadline(int tripId)
     {
         return await _db.Trips.AsNoTracking()
-                                .Where(a=> a.Id == tripId)
-                                .Select(b=>b.CancellationDeadLine)
+                                .Where(a => a.Id == tripId)
+                                .Select(b => b.CancellationDeadLine)
                                 .FirstOrDefaultAsync();
     }
-    
+
 }
