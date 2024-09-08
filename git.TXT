@@ -1,0 +1,17 @@
+git remote add origin https://github.com/Ali-Elshanawany/Boat.git
+
+git checkout -b Main
+git push -u origin Main
+-----------------------------------------------------------------------
+# Check current branch
+git branch
+
+# If you need to create and switch to a new branch, do so
+git checkout -b main
+
+# Add and commit files if you haven’t already
+git add .
+git commit -m "Initial commit"
+
+# Push to the remote repository
+git push -u origin main

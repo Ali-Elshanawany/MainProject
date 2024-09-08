@@ -1,0 +1,10 @@
+﻿global using FinalBoatSystemRental.Core.Entities;
+global using Microsoft.EntityFrameworkCore;
+global using FinalBoatSystemRental.Core.Interfaces;
+global using FinalBoatSystemRental.Application;
+global using FinalBoatSystemRental.Core;
+global using FinalBoatSystemRental.Infrastructure.Configurations;
+global using FinalBoatSystemRental.Infrastructure.Seeding;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;

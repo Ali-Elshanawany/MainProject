@@ -1,0 +1,990 @@
+09/06/2024 16:18:53 +03:00 HOLaaaaaaaaaaaaaaaaa 
+ 09/06/2024 16:20:44 +03:00 Starting up the application 
+ 09/06/2024 16:21:33 +03:00 Starting up the application 
+ 09/06/2024 16:21:42 +03:00 HOLaaaaaaaaaaaaaaaaa 
+ 09/06/2024 16:22:32 +03:00 Starting up the application 
+ 09/06/2024 16:22:36 +03:00 HOLaaaaaaaaaaaaaaaaa 
+ 09/06/2024 16:22:36 +03:00 An unhandled exception has occurred while executing the request. 
+ System.Exception: Test Exception
+   at FinalBoatSystemRental.API.Controllers.HelloController.Hello() in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\HelloController.cs:line 17
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/06/2024 16:31:23 +03:00 Starting up the application 
+ 09/06/2024 16:31:31 +03:00 HOLaaaaaaaaaaaaaaaaa 
+ 09/06/2024 16:31:31 +03:00 Test Exception 
+ System.Exception: Test Exception
+   at FinalBoatSystemRental.API.Controllers.HelloController.Hello() in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\HelloController.cs:line 17
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:12:22 +03:00 Starting up the application 
+ 09/06/2024 17:12:32 +03:00 HOLaaaaaaaaaaaaaaaaa 
+ 09/06/2024 17:12:32 +03:00 Sss 
+ FinalBoatSystemRental.API.Exceptions.NotFoundException: Sss
+   at FinalBoatSystemRental.API.Controllers.HelloController.Hello() in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\HelloController.cs:line 19
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:17:23 +03:00 Starting up the application 
+ 09/06/2024 17:17:30 +03:00 HOLaaaaaaaaaaaaaaaaa 
+ 09/06/2024 17:17:30 +03:00 Sss 
+ FinalBoatSystemRental.API.Exceptions.NotFoundException: Sss
+   at FinalBoatSystemRental.API.Controllers.HelloController.Hello() in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\HelloController.cs:line 19
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:18:59 +03:00 Starting up the application 
+ 09/06/2024 17:19:22 +03:00 Starting up the application 
+ 09/06/2024 17:19:25 +03:00 No store type was specified for the decimal property '"PricePerPerson"' on entity type '"Trip"'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+ 09/06/2024 17:29:55 +03:00 Starting up the application 
+ 09/06/2024 17:35:43 +03:00 Starting up the application 
+ 09/06/2024 17:36:35 +03:00 Starting up the application 
+ 09/06/2024 17:36:51 +03:00 Validation failed: 
+ -- Email: 'Email' must not be empty. Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Email: 'Email' must not be empty. Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 45
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 59
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:37:46 +03:00 Starting up the application 
+ 09/06/2024 17:37:50 +03:00 Validation failed: 
+ -- Password: 'Password' must not be empty. Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Password: 'Password' must not be empty. Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 45
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 59
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:38:46 +03:00 Starting up the application 
+ 09/06/2024 17:38:50 +03:00 Validation failed: 
+ -- Password: 'Password' must not be empty. Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Password: 'Password' must not be empty. Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 45
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 59
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:42:41 +03:00 Starting up the application 
+ 09/06/2024 17:42:59 +03:00 Starting up the application 
+ 09/06/2024 17:43:35 +03:00 Starting up the application 
+ 09/06/2024 17:44:10 +03:00 Starting up the application 
+ 09/06/2024 17:44:33 +03:00 Starting up the application 
+ 09/06/2024 17:45:25 +03:00 Starting up the application 
+ 09/06/2024 17:45:30 +03:00 Validation failed: 
+ -- Password: 'Password' must not be empty. Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Password: 'Password' must not be empty. Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 45
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:47:04 +03:00 Starting up the application 
+ 09/06/2024 17:47:08 +03:00 Validation failed: 
+ -- Password: Password is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Password: Password is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 45
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:47:40 +03:00 Validation failed: 
+ -- Email: Email is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Email: Email is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 45
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:48:15 +03:00 Starting up the application 
+ 09/06/2024 17:48:35 +03:00 Starting up the application 
+ 09/06/2024 17:49:23 +03:00 Starting up the application 
+ 09/06/2024 17:49:43 +03:00 Validation failed: 
+ -- Email: Email is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Email: Email is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 46
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:50:00 +03:00 Starting up the application 
+ 09/06/2024 17:50:17 +03:00 Starting up the application 
+ 09/06/2024 17:52:38 +03:00 Starting up the application 
+ 09/06/2024 17:53:28 +03:00 Starting up the application 
+ 09/06/2024 17:54:06 +03:00 Validation failed: 
+ -- Password: Password is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Password: Password is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 48
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:54:31 +03:00 Starting up the application 
+ 09/06/2024 17:54:36 +03:00 Validation failed: 
+ -- Password: Password is Required Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Password: Password is Required Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 50
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:54:50 +03:00 Validation failed: 
+ -- Email: Email is required. Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Email: Email is required. Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 50
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:55:32 +03:00 Validation failed: 
+ -- Email: Email is required. Severity: Error 
+ FluentValidation.ValidationException: Validation failed: 
+ -- Email: Email is required. Severity: Error
+   at FinalBoatSystemRental.Application.Owner.Command.Add.LoginCommandHandler.Handle(LoginCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Owner\Command\Add\LoginOwnerCommand.cs:line 50
+   at FinalBoatSystemRental.API.Controllers.AuthController.login(LoginCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\AuthController.cs:line 61
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 17:58:57 +03:00 Starting up the application 
+ 09/06/2024 17:59:41 +03:00 Starting up the application 
+ 09/06/2024 17:59:53 +03:00 Starting up the application 
+ 09/06/2024 18:01:50 +03:00 Starting up the application 
+ 09/06/2024 18:02:48 +03:00 Starting up the application 
+ 09/06/2024 18:11:50 +03:00 Starting up the application 
+ 09/06/2024 18:12:19 +03:00 Starting up the application 
+ 09/06/2024 18:13:04 +03:00 Starting up the application 
+ 09/06/2024 18:13:55 +03:00 Starting up the application 
+ 09/06/2024 18:14:13 +03:00 Starting up the application 
+ 09/06/2024 18:14:31 +03:00 Starting up the application 
+ 09/06/2024 18:16:32 +03:00 Starting up the application 
+ 09/06/2024 18:17:01 +03:00 Starting up the application 
+ 09/06/2024 18:18:08 +03:00 Starting up the application 
+ 09/06/2024 18:19:09 +03:00 Starting up the application 
+ 09/06/2024 18:19:14 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/06/2024 18:20:09 +03:00 Starting up the application 
+ 09/06/2024 18:20:12 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/06/2024 18:32:10 +03:00 Starting up the application 
+ 09/06/2024 18:32:32 +03:00 Starting up the application 
+ 09/06/2024 18:36:52 +03:00 Starting up the application 
+ 09/06/2024 18:37:20 +03:00 Starting up the application 
+ 09/06/2024 18:41:03 +03:00 Starting up the application 
+ 09/06/2024 21:59:32 +03:00 Starting up the application 
+ 09/06/2024 22:07:23 +03:00 Starting up the application 
+ 09/06/2024 22:49:03 +03:00 Starting up the application 
+ 09/06/2024 22:49:34 +03:00 Starting up the application 
+ 09/06/2024 22:49:37 +03:00 An exception occurred while iterating over the results of a query for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+09/06/2024 22:49:37 +03:00 Unable to cast object of type 'System.String' to type 'System.Int32'. 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.GetByIdAsync(Int32 id) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 24
+   at FinalBoatSystemRental.Application.Boat.Command.Delete.DeleteBoatHandler.Handle(DeleteBoatCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Boat\Command\Delete\DeleteBoatCommand.cs:line 38
+   at FinalBoatSystemRental.API.Controllers.BoatController.Delete(DeleteBoatCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\BoatController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 22:50:00 +03:00 An exception occurred while iterating over the results of a query for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+09/06/2024 22:50:00 +03:00 Unable to cast object of type 'System.String' to type 'System.Int32'. 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.GetByIdAsync(Int32 id) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 24
+   at FinalBoatSystemRental.Application.Boat.Command.Delete.DeleteBoatHandler.Handle(DeleteBoatCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Boat\Command\Delete\DeleteBoatCommand.cs:line 38
+   at FinalBoatSystemRental.API.Controllers.BoatController.Delete(DeleteBoatCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\BoatController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 22:51:02 +03:00 Starting up the application 
+ 09/06/2024 22:51:20 +03:00 An exception occurred while iterating over the results of a query for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+09/06/2024 22:51:20 +03:00 Unable to cast object of type 'System.String' to type 'System.Int32'. 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.GetByIdAsync(Int32 id) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 24
+   at FinalBoatSystemRental.Application.Boat.Command.Delete.DeleteBoatHandler.Handle(DeleteBoatCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Boat\Command\Delete\DeleteBoatCommand.cs:line 38
+   at FinalBoatSystemRental.API.Controllers.BoatController.Delete(DeleteBoatCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\BoatController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 22:53:17 +03:00 Starting up the application 
+ 09/06/2024 22:53:31 +03:00 An exception occurred while iterating over the results of a query for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+09/06/2024 22:53:32 +03:00 Unable to cast object of type 'System.String' to type 'System.Int32'. 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method44(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.GetByIdAsync(Int32 id) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 24
+   at FinalBoatSystemRental.Application.Boat.Command.Delete.DeleteBoatHandler.Handle(DeleteBoatCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Boat\Command\Delete\DeleteBoatCommand.cs:line 38
+   at FinalBoatSystemRental.API.Controllers.BoatController.Delete(DeleteBoatCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\BoatController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 23:01:09 +03:00 Starting up the application 
+ 09/06/2024 23:01:16 +03:00 An exception occurred while iterating over the results of a query for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method46(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()" 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method46(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+09/06/2024 23:01:16 +03:00 Unable to cast object of type 'System.String' to type 'System.Int32'. 
+ System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Int32'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method46(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BoatRepository.GetByIdAsync(Int32 id, Int32 ownerId) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Infrastructure\Repositories\BoatRepository.cs:line 15
+   at FinalBoatSystemRental.Application.Boat.Command.Delete.DeleteBoatHandler.Handle(DeleteBoatCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Boat\Command\Delete\DeleteBoatCommand.cs:line 40
+   at FinalBoatSystemRental.API.Controllers.BoatController.Delete(DeleteBoatCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\BoatController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 23:04:12 +03:00 Starting up the application 
+ 09/06/2024 23:04:12 +03:00 The host was aborted. 
+ 09/06/2024 23:04:19 +03:00 Starting up the application 
+ 09/06/2024 23:04:19 +03:00 The host was aborted. 
+ 09/06/2024 23:04:31 +03:00 Starting up the application 
+ 09/06/2024 23:04:31 +03:00 The host was aborted. 
+ 09/06/2024 23:05:10 +03:00 Starting up the application 
+ 09/06/2024 23:05:10 +03:00 The host was aborted. 
+ 09/06/2024 23:05:45 +03:00 Starting up the application 
+ 09/06/2024 23:05:45 +03:00 The host was aborted. 
+ 09/06/2024 23:05:58 +03:00 Starting up the application 
+ 09/06/2024 23:05:58 +03:00 The host was aborted. 
+ 09/06/2024 23:06:09 +03:00 Starting up the application 
+ 09/06/2024 23:06:18 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint \"FK_BoatBookingAdditions_BoatBookings_BoatBookingId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.BoatBookingAdditions\", column 'BoatBookingId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:3d9c4a82-f96d-4b8a-b328-3f9798ca871f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_BoatBookingAdditions_BoatBookings_BoatBookingId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.BoatBookingAdditions", column 'BoatBookingId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:3d9c4a82-f96d-4b8a-b328-3f9798ca871f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/06/2024 23:06:18 +03:00 An error occurred while saving the entity changes. See the inner exception for details. 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_BoatBookingAdditions_BoatBookings_BoatBookingId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.BoatBookingAdditions", column 'BoatBookingId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:3d9c4a82-f96d-4b8a-b328-3f9798ca871f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.DeleteAsync(Int32 id) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 53
+   at FinalBoatSystemRental.Application.Boat.Command.Delete.DeleteBoatHandler.Handle(DeleteBoatCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Boat\Command\Delete\DeleteBoatCommand.cs:line 60
+   at FinalBoatSystemRental.API.Controllers.BoatController.Delete(DeleteBoatCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\BoatController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 23:07:29 +03:00 Starting up the application 
+ 09/06/2024 23:08:13 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint \"FK_BoatBookingAdditions_BoatBookings_BoatBookingId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.BoatBookingAdditions\", column 'BoatBookingId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6fd6a65c-7bee-40f8-a510-75cb45e9cf6c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_BoatBookingAdditions_BoatBookings_BoatBookingId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.BoatBookingAdditions", column 'BoatBookingId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6fd6a65c-7bee-40f8-a510-75cb45e9cf6c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/06/2024 23:08:13 +03:00 An error occurred while saving the entity changes. See the inner exception for details. 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The DELETE statement conflicted with the REFERENCE constraint "FK_BoatBookingAdditions_BoatBookings_BoatBookingId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.BoatBookingAdditions", column 'BoatBookingId'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetWithRowsAffectedOnlyAsync(Int32 commandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6fd6a65c-7bee-40f8-a510-75cb45e9cf6c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.DeleteAsync(Int32 id) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 53
+   at FinalBoatSystemRental.Application.Boat.Command.Delete.DeleteBoatHandler.Handle(DeleteBoatCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Boat\Command\Delete\DeleteBoatCommand.cs:line 60
+   at FinalBoatSystemRental.API.Controllers.BoatController.Delete(DeleteBoatCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\BoatController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 23:09:30 +03:00 Starting up the application 
+ 09/06/2024 23:09:39 +03:00 Can not Remove The boat Has Reservation Found 
+ System.Exception: Can not Remove The boat Has Reservation Found
+   at FinalBoatSystemRental.Application.Boat.Command.Delete.DeleteBoatHandler.Handle(DeleteBoatCommand request, CancellationToken cancellationToken) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.Application\Boat\Command\Delete\DeleteBoatCommand.cs:line 57
+   at FinalBoatSystemRental.API.Controllers.BoatController.Delete(DeleteBoatCommand command) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\BoatController.cs:line 117
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/06/2024 23:11:41 +03:00 Starting up the application 
+ 09/06/2024 23:40:25 +03:00 Starting up the application 
+ 09/06/2024 23:48:42 +03:00 Starting up the application 
+ 09/06/2024 23:51:28 +03:00 Starting up the application 
+ 09/06/2024 23:57:28 +03:00 Starting up the application 
+ 09/06/2024 23:59:58 +03:00 Starting up the application 
+ 09/07/2024 00:00:27 +03:00 Starting up the application 
+ 09/07/2024 00:01:18 +03:00 Starting up the application 
+ 09/07/2024 00:03:11 +03:00 Starting up the application 
+ 09/07/2024 00:03:49 +03:00 Starting up the application 
+ 09/07/2024 00:04:44 +03:00 Starting up the application 
+ 09/07/2024 00:04:56 +03:00 Starting up the application 
+ 09/07/2024 00:07:59 +03:00 Starting up the application 
+ 09/07/2024 00:12:13 +03:00 Starting up the application 
+ 09/07/2024 14:48:55 +03:00 Starting up the application 
+ 09/07/2024 14:54:46 +03:00 Starting up the application 
+ 09/07/2024 15:00:21 +03:00 Starting up the application 
+ 09/07/2024 15:02:25 +03:00 Starting up the application 
+ 09/07/2024 15:57:21 +03:00 Starting up the application 
+ 09/07/2024 16:01:22 +03:00 Starting up the application 
+ 09/07/2024 16:07:55 +03:00 Starting up the application 
+ 09/07/2024 16:08:28 +03:00 Starting up the application 
+ 09/07/2024 16:22:16 +03:00 Starting up the application 
+ 09/07/2024 16:23:28 +03:00 Starting up the application 
+ 09/07/2024 16:24:37 +03:00 Starting up the application 
+ 09/07/2024 16:24:58 +03:00 Starting up the application 
+ 09/07/2024 16:25:45 +03:00 Starting up the application 
+ 09/07/2024 16:28:07 +03:00 Starting up the application 
+ 09/07/2024 16:30:49 +03:00 Starting up the application 
+ 09/07/2024 16:34:18 +03:00 Starting up the application 
+ 09/07/2024 16:34:33 +03:00 Starting up the application 
+ 09/07/2024 16:34:47 +03:00 Starting up the application 
+ 09/07/2024 16:37:16 +03:00 Starting up the application 
+ 09/07/2024 19:56:52 +03:00 Starting up the application 
+ 09/07/2024 19:57:58 +03:00 Starting up the application 
+ 09/07/2024 20:10:17 +03:00 Starting up the application 
+ 09/07/2024 20:14:24 +03:00 Starting up the application 
+ 09/07/2024 20:14:50 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Adding Boat 
+ 09/07/2024 20:16:47 +03:00 Starting up the application 
+ 09/07/2024 20:19:06 +03:00 Starting up the application 
+ 09/07/2024 20:19:15 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Adding Boat 
+ 09/07/2024 20:19:24 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Delete Boat  
+ 09/07/2024 20:19:25 +03:00 boat Not Found  
+ 09/07/2024 20:20:19 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Delete Boat  
+ 09/07/2024 20:20:29 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Delete Boat  
+ 09/07/2024 20:20:29 +03:00 boat Not Found  
+ 09/07/2024 20:23:05 +03:00 Starting up the application 
+ 09/07/2024 20:23:24 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/07/2024 20:23:25 +03:00 Can not Add This Trip on boat 13 Another Trip Already Registered At 6/1/2024 12:00:00 AM 
+ 09/07/2024 20:23:39 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/07/2024 20:23:39 +03:00 Can not Add This Trip on boat 13 Another Trip Already Registered At 6/5/2024 12:00:00 AM 
+ 09/07/2024 20:23:45 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/07/2024 20:23:45 +03:00 Validation failed: 
+ -- CancellationDeadLine: Cancellation deadline must be before the start of the trip. Severity: Error 
+ 09/07/2024 20:23:51 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/07/2024 20:23:51 +03:00 Validation failed: 
+ -- CancellationDeadLine: Cancellation deadline must be before the start of the trip. Severity: Error 
+ 09/07/2024 20:23:57 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/07/2024 20:28:24 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/07/2024 20:28:24 +03:00 Validation failed: 
+ -- Name: Trip Name is short Severity: Error 
+ 09/07/2024 20:28:33 +03:00 Starting up the application 
+ 09/07/2024 20:29:24 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/07/2024 20:29:54 +03:00 Starting up the application 
+ 09/07/2024 20:30:03 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/07/2024 20:30:10 +03:00 Validation failed: 
+ -- PricePerPerson: PricePerPerson Is Required Severity: Error
+ -- PricePerPerson: Price Must be greater than 0 Severity: Error 
+ 09/07/2024 20:42:14 +03:00 Starting up the application 
+ 09/07/2024 20:43:02 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Addition 
+ 09/07/2024 20:43:03 +03:00 Validation failed: 
+ -- Price: Price is Required Severity: Error
+ -- Price: Price Must be greater than 0 Severity: Error 
+ 09/07/2024 20:43:13 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Addition 
+ 09/07/2024 20:43:13 +03:00 Validation failed: 
+ -- Price: Price Must be greater than 0 Severity: Error 
+ 09/07/2024 20:55:27 +03:00 Starting up the application 
+ 09/07/2024 20:55:31 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Addition 
+ 09/07/2024 20:55:34 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Addition 
+ 09/07/2024 20:55:36 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Addition 
+ 09/07/2024 21:00:34 +03:00 Starting up the application 
+ 09/07/2024 21:00:38 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Addition 
+ 09/07/2024 21:00:40 +03:00 Name is ALready Registered plz Try Another Name  
+ 09/07/2024 21:01:29 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Addition 
+ 09/07/2024 21:01:31 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Addition 
+ 09/07/2024 21:01:31 +03:00 Name is ALready Registered plz Try Another Name  
+ 09/07/2024 21:06:27 +03:00 Starting up the application 
+ 09/07/2024 21:09:20 +03:00 Starting up the application 
+ 09/07/2024 21:09:35 +03:00 Starting up the application 
+ 09/07/2024 21:10:06 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Get Details  
+ 09/07/2024 21:10:15 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Get Details  
+ 09/07/2024 21:14:31 +03:00 Starting up the application 
+ 09/07/2024 21:15:12 +03:00 Update owner details 2ae0069f-2e56-45e4-9ab4-45794459d398 
+ 09/07/2024 21:15:24 +03:00 Update owner details 2ae0069f-2e56-45e4-9ab4-45794459d398 
+ 09/07/2024 21:15:24 +03:00 Validation failed: 
+ -- BusinessName: BusinessName Can't be Empty Severity: Error 
+ 09/07/2024 21:17:45 +03:00 Starting up the application 
+ 09/07/2024 21:17:47 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Add Balance 
+ 09/07/2024 21:17:55 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Add Balance 
+ 09/07/2024 22:11:22 +03:00 Starting up the application 
+ 09/07/2024 22:12:41 +03:00 Starting up the application 
+ 09/07/2024 22:13:32 +03:00 Starting up the application 
+ 09/07/2024 22:13:43 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:13:44 +03:00 ALready Refunded!!! 
+ 09/07/2024 22:13:51 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:13:51 +03:00 ALready Refunded!!! 
+ 09/07/2024 22:13:55 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:15:38 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:16:23 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:16:23 +03:00 Cancellation Data Was not Found  
+ 09/07/2024 22:16:33 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:16:33 +03:00 Cancellation Data Was not Found  
+ 09/07/2024 22:16:34 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:16:34 +03:00 Cancellation Data Was not Found  
+ 09/07/2024 22:18:14 +03:00 Starting up the application 
+ 09/07/2024 22:19:11 +03:00 Starting up the application 
+ 09/07/2024 22:19:34 +03:00 Starting up the application 
+ 09/07/2024 22:19:41 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:19:42 +03:00 ALready Refunded!!! 
+ 09/07/2024 22:19:46 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:19:46 +03:00 ALready Refunded!!! 
+ 09/07/2024 22:19:47 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:19:47 +03:00 ALready Refunded!!! 
+ 09/07/2024 22:42:43 +03:00 Starting up the application 
+ 09/07/2024 22:46:44 +03:00 Starting up the application 
+ 09/07/2024 22:49:56 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:49:56 +03:00 ALready Refunded!!! 
+ 09/07/2024 22:50:00 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:50:00 +03:00 Cancellation Data Was not Found  
+ 09/07/2024 22:50:04 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:50:04 +03:00 Cancellation Data Was not Found  
+ 09/07/2024 22:50:08 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:50:08 +03:00 ALready Refunded!!! 
+ 09/07/2024 22:50:12 +03:00 2ae0069f-2e56-45e4-9ab4-45794459d398 Pay Refund 
+ 09/07/2024 22:50:12 +03:00 ALready Refunded!!! 
+ 09/07/2024 22:50:53 +03:00 Accessed Register-Owner Function 
+ 09/07/2024 23:00:38 +03:00 Starting up the application 
+ 09/07/2024 23:01:33 +03:00 Starting up the application 
+ 09/07/2024 23:02:55 +03:00 Starting up the application 
+ 09/07/2024 23:02:59 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Get all Canceled Boat Reservation 
+ 09/07/2024 23:03:34 +03:00 Starting up the application 
+ 09/07/2024 23:11:13 +03:00 Starting up the application 
+ 09/07/2024 23:13:03 +03:00 Starting up the application 
+ 09/07/2024 23:14:13 +03:00 Starting up the application 
+ 09/07/2024 23:16:35 +03:00 Starting up the application 
+ 09/07/2024 23:16:45 +03:00 Starting up the application 
+ 09/07/2024 23:20:52 +03:00 Starting up the application 
+ 09/07/2024 23:21:30 +03:00 Starting up the application 
+ 09/07/2024 23:21:38 +03:00 No service for type 'MediatR.IRequestHandler`2[FinalBoatSystemRental.Application.Reservation.Query.List.ListCanceledOwnerReservationQuery,System.Collections.Generic.IEnumerable`1[FinalBoatSystemRental.Core.ViewModels.Reservation.ReservationViewModel]]' has been registered. 
+ System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[FinalBoatSystemRental.Application.Reservation.Query.List.ListCanceledOwnerReservationQuery,System.Collections.Generic.IEnumerable`1[FinalBoatSystemRental.Core.ViewModels.Reservation.ReservationViewModel]]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at FinalBoatSystemRental.API.Controllers.ReservationController.GetOwnerCanceledReservations() in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Controllers\ReservationController.cs:line 88
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at FinalBoatSystemRental.API.Exceptions.ExceptionHandlingMiddleware.Invoke(HttpContext context) in E:\Faculty\COURSES\.Net\test\FinalBoatSystemRental.API\Exceptions\ExceptionHandlingMiddleware.cs:line 21
+09/07/2024 23:22:11 +03:00 Starting up the application 
+ 09/07/2024 23:25:22 +03:00 Starting up the application 
+ 09/07/2024 23:26:42 +03:00 Starting up the application 
+ 09/07/2024 23:40:10 +03:00 Starting up the application 
+ 09/07/2024 23:41:28 +03:00 Starting up the application 
+ 09/07/2024 23:41:46 +03:00 Starting up the application 
+ 09/07/2024 23:42:00 +03:00 Starting up the application 
+ 09/07/2024 23:42:52 +03:00 Starting up the application 
+ 09/07/2024 23:43:36 +03:00 Starting up the application 
+ 09/07/2024 23:44:08 +03:00 Starting up the application 
+ 09/07/2024 23:45:25 +03:00 Starting up the application 
+ 09/07/2024 23:47:53 +03:00 Starting up the application 
+ 09/08/2024 11:20:47 +03:00 Starting up the application 
+ 09/08/2024 11:21:02 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:36:08 +03:00 Starting up the application 
+ 09/08/2024 11:37:49 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:37:57 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:39:13 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:39:15 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/08/2024 11:39:36 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:39:36 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/08/2024 11:39:37 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:39:37 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/08/2024 11:39:49 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:39:49 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/08/2024 11:39:53 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:39:53 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/08/2024 11:39:54 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:39:54 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/08/2024 11:41:11 +03:00 Starting up the application 
+ 09/08/2024 11:41:26 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:41:55 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/08/2024 11:42:12 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:42:29 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one uppercase ('A'-'Z') Severity: Error
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/08/2024 11:42:44 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:44:53 +03:00 Starting up the application 
+ 09/08/2024 11:46:02 +03:00 Starting up the application 
+ 09/08/2024 11:46:14 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:46:15 +03:00 Validation failed: 
+ -- Model.Password: Passwords must have at least one digit ('0'-'9') Severity: Error 
+ 09/08/2024 11:47:17 +03:00 Starting up the application 
+ 09/08/2024 11:47:21 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:49:07 +03:00 Starting up the application 
+ 09/08/2024 11:49:20 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:52:35 +03:00 Starting up the application 
+ 09/08/2024 11:52:40 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 11:53:13 +03:00 Accessed Register-Owner Function 
+ 09/08/2024 12:07:54 +03:00 Starting up the application 
+ 09/08/2024 12:08:17 +03:00 Accessed Register-Owner Function 
+ 
