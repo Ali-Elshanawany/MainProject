@@ -1,9 +1,11 @@
 ﻿using FinalBoatSystemRental.Core.ViewModels.BoatBooking;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.BoatBooking.Query.List;
 
 public class ListBoatBookingOwnerQuery : ICommand<IEnumerable<ListBoatBookingOwner>>
 {
+    [JsonIgnore]
     public string? UserId { get; set; }
 
     public ListBoatBookingOwnerQuery(string? userId)

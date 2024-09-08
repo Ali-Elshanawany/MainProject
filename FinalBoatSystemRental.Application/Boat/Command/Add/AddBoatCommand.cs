@@ -1,4 +1,6 @@
-﻿namespace FinalBoatSystemRental.Application.Boat.Command.Add;
+﻿using System.Text.Json.Serialization;
+
+namespace FinalBoatSystemRental.Application.Boat.Command.Add;
 
 public class AddBoatCommandValidator : AbstractValidator<AddBoatCommand>
 {
@@ -46,6 +48,7 @@ public class AddBoatCommand : ICommand<AddBoatViewModel>
     public int? Capacity { get; set; }
     public int? MaxCancellationDateInDays { get; set; }
     public decimal? ReservationPrice { get; set; }
+    [JsonIgnore]
     public string? UserId { get; set; }
 
     public AddBoatCommand(string name, string description, int? capacity, decimal? reservationPrice, string userid, int? maxCancellationDateInDays)

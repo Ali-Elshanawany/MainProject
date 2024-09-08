@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using System.Runtime.CompilerServices;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.Trip.Command.Add;
 
@@ -50,6 +51,7 @@ public class AddTripCommand : ICommand<TripViewModel>
     public DateTime StartedAt { get; set; } = DateTime.Now;
 
     public int? BoatId { get; set; }
+    [JsonIgnore]
     public string? UserId { get; set; }
 
     public AddTripCommand(string name, string description, decimal? pricePerPerson, int? maxPeople, DateTime cancellationDeadLine, DateTime startedAt, int? boatId, string userId)

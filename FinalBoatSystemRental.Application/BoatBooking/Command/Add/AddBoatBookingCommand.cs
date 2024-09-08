@@ -2,18 +2,20 @@
 using AutoMapper;
 using FinalBoatSystemRental.Core.Entities;
 using FinalBoatSystemRental.Core.ViewModels.BoatBooking;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.BoatBooking.Command.Add;
 
-public class AddBoatBookingCommand:ICommand<BoatBookingViewModel>
+public class AddBoatBookingCommand : ICommand<BoatBookingViewModel>
 {
- 
+
     public DateTime BookingDate { get; set; }
     public int BoatId { get; set; }
+    [JsonIgnore]
     public string? UserId { get; set; }
-    public Dictionary<int,int> AdditionsQuantityIds { get; set; }
+    public Dictionary<int, int> AdditionsQuantityIds { get; set; }
 
-    public AddBoatBookingCommand(DateTime bookingDate, int boatId,string userId, Dictionary<int, int> additionsQuantityIds)
+    public AddBoatBookingCommand(DateTime bookingDate, int boatId, string userId, Dictionary<int, int> additionsQuantityIds)
     {
         BookingDate = bookingDate;
         BoatId = boatId;
@@ -54,22 +56,22 @@ public class AddBoatBookingHandler : ICommandHandler<AddBoatBookingCommand, Boat
             throw new Exception("Date is Already Booked");
         }
         // Get the total price
-        var additionsPrice=await _additionRepository.GetAdditionPrice(request.AdditionsQuantityIds.Keys.ToList());
-        var dictTotalAdditionPrice=new Dictionary<int, int>();
+        var additionsPrice = await _additionRepository.GetAdditionPrice(request.AdditionsQuantityIds.Keys.ToList());
+        var dictTotalAdditionPrice = new Dictionary<int, int>();
         var TotalAdditionPrice = 0;
-        
+
         foreach (var addition in additionsPrice)
         {
-            var id=addition.Id;
-            var additionTotalPrice= addition.price * request.AdditionsQuantityIds[id];
-            dictTotalAdditionPrice[id]= additionTotalPrice;
-            TotalAdditionPrice+= additionTotalPrice;
+            var id = addition.Id;
+            var additionTotalPrice = addition.price * request.AdditionsQuantityIds[id];
+            dictTotalAdditionPrice[id] = additionTotalPrice;
+            TotalAdditionPrice += additionTotalPrice;
         }
         var boatPrice = await _boatRepository.GetReservationBoatPrice(request.BoatId);
         var totalReservationPrice = TotalAdditionPrice + boatPrice;
 
-       // check Customer Balance
-       var customer = await _customerRepository.GetCustomerByUserId(request.UserId);
+        // check Customer Balance
+        var customer = await _customerRepository.GetCustomerByUserId(request.UserId);
         var isBalancedSufficient = await _customerRepository.CheckCustomerBalance(customer.Id, totalReservationPrice);
         if (!isBalancedSufficient)
         {
@@ -104,7 +106,7 @@ public class AddBoatBookingHandler : ICommandHandler<AddBoatBookingCommand, Boat
                 CreatedAt = DateTime.Now,
             };
             addRange.Add(newBookBookingAddition);
-            
+
         }
         await _bookingAdditionRepository.AddRange(addRange);
 

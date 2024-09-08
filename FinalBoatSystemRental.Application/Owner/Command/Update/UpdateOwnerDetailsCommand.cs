@@ -1,4 +1,6 @@
-﻿namespace FinalBoatSystemRental.Application.Owner.Command.Update;
+﻿using System.Text.Json.Serialization;
+
+namespace FinalBoatSystemRental.Application.Owner.Command.Update;
 
 public class UpdateOwnerDetailsCommandValidator : AbstractValidator<UpdateOwnerDetailsCommand>
 {
@@ -16,6 +18,7 @@ public class UpdateOwnerDetailsCommand : ICommand<OwnerViewModel>
 {
     public string? BusinessName { get; set; }
     public string? Address { get; set; }
+    [JsonIgnore]
     public string? UserId { get; set; }
 
     public UpdateOwnerDetailsCommand(string? businessName, string? address, string? userId)

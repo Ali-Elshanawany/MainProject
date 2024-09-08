@@ -1,6 +1,7 @@
 ﻿
 using AutoMapper;
 using FluentValidation;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.Owner.Command.Update;
 
@@ -17,6 +18,8 @@ public class UpdateOwnerWalletCommandValidator : AbstractValidator<UpdateOwnerWa
 public class UpdateOwnerWalletCommand : ICommand<OwnerViewModel>
 {
     public decimal? WalletBalance { get; set; }
+    [JsonIgnore]
+
     public string? UserId { get; set; }
 
 

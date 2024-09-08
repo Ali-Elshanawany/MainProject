@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.Customer.Command.Update;
 
-public class UpdateCustomerWalletCommand:ICommand<CustomerViewModel>
+public class UpdateCustomerWalletCommand : ICommand<CustomerViewModel>
 {
     public decimal WalletBalance { get; set; }
+    [JsonIgnore]
     public string? UserId { get; set; }
 
     public UpdateCustomerWalletCommand(decimal walletBalance, string? userId)
@@ -27,7 +29,7 @@ public class UpdateCustomerWalletHandler : ICommandHandler<UpdateCustomerWalletC
 
     public async Task<CustomerViewModel> Handle(UpdateCustomerWalletCommand request, CancellationToken cancellationToken)
     {
-       var customer = await _customerRepository.GetCustomerByUserId(request.UserId);
+        var customer = await _customerRepository.GetCustomerByUserId(request.UserId);
         if (request.WalletBalance <= 0)
         {
             throw new InvalidDataException("Balance can not be less or equal ");

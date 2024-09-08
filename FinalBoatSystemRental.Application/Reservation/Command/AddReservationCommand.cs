@@ -2,14 +2,16 @@
 using FinalBoatSystemRental.Core.Entities;
 using FinalBoatSystemRental.Core.Interfaces;
 using FinalBoatSystemRental.Core.ViewModels.Reservation;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.Reservation.Command;
 
-public class AddReservationCommand:ICommand<ReservationViewModel>
+public class AddReservationCommand : ICommand<ReservationViewModel>
 {
     public int BoatId { get; set; }
     public int TripId { get; set; }
     public int NumOfPeople { get; set; }
+    [JsonIgnore]
     public string? UserId { get; set; }
     public Dictionary<int, int> AdditionsQuantityIds { get; set; }
 
@@ -66,7 +68,7 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
 
         // trip contain  price,Cancellation Deadline and ReservationDate
         var trip = await _tripRepository.GetReservationTripPrice(request.TripId);
-        var totalTripPriceWithOutAddition=trip.Price * request.NumOfPeople;
+        var totalTripPriceWithOutAddition = trip.Price * request.NumOfPeople;
 
         //calculate the Cost of the Reservation
         var totalReservationPrice = TotalAdditionPrice + totalTripPriceWithOutAddition;
@@ -77,21 +79,21 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
         {
             throw new Exception("Balance Was not Enough To Book ");
         }
-        customer.WalletBalance-=totalReservationPrice;
+        customer.WalletBalance -= totalReservationPrice;
         await _customerRepository.UpdateAsync(customer.Id, customer);
 
         var status = GlobalVariables.DetermineBoatBookingStatus(trip.CancellationDeadLine);
         var reservation = new Core.Entities.Reservation
         {
-           CustomerId= customer.Id,
-           TripId=request.TripId,
-           BoatId=request.BoatId,
-           NumOfPeople=request.NumOfPeople,
-           TotalPrice= (int) totalReservationPrice,
-           ReservationDate=trip.ReservationDate,
-           Status=status,
-           CreatesAt=DateTime.Now,
-           UpdatedAt=DateTime.Now, 
+            CustomerId = customer.Id,
+            TripId = request.TripId,
+            BoatId = request.BoatId,
+            NumOfPeople = request.NumOfPeople,
+            TotalPrice = (int)totalReservationPrice,
+            ReservationDate = trip.ReservationDate,
+            Status = status,
+            CreatesAt = DateTime.Now,
+            UpdatedAt = DateTime.Now,
         };
 
         await _reservationRepository.AddAsync(reservation);

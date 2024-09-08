@@ -1,4 +1,5 @@
 ﻿using FinalBoatSystemRental.Application.Boat.ViewModels;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.Boat.Command.Delete;
 
@@ -16,6 +17,7 @@ public class DeleteBoatCommandValidator : AbstractValidator<DeleteBoatCommand>
 public class DeleteBoatCommand : ICommand<BoatViewModel>
 {
     public int? Id { get; set; }
+    [JsonIgnore]
     public string? UserId { get; set; }
 
     public DeleteBoatCommand(int? id, string userId)

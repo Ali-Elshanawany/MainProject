@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.Customer.Command.Update;
 
-public class UpdateCustomerDetailsCommand:ICommand<CustomerViewModel>
+public class UpdateCustomerDetailsCommand : ICommand<CustomerViewModel>
 {
     public string FirstName { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
-    public string? UserId { get; set; } 
+    [JsonIgnore]
+    public string? UserId { get; set; }
 
 }
 
@@ -24,14 +26,14 @@ public class UpdateCustomerDetailsHandler : ICommandHandler<UpdateCustomerDetail
 
     public async Task<CustomerViewModel> Handle(UpdateCustomerDetailsCommand request, CancellationToken cancellationToken)
     {
-      var customer=await _customerRepository.GetCustomerByUserId(request.UserId);
+        var customer = await _customerRepository.GetCustomerByUserId(request.UserId);
         if (customer != null)
         {
             customer.FirstName = request.FirstName;
             customer.LastName = request.LastName;
-            customer.UpdatedAt= DateTime.Now;
-        await _customerRepository.UpdateAsync(customer.Id,customer);
-        return _mapper.Map<CustomerViewModel>(customer);
+            customer.UpdatedAt = DateTime.Now;
+            await _customerRepository.UpdateAsync(customer.Id, customer);
+            return _mapper.Map<CustomerViewModel>(customer);
 
         }
         throw new KeyNotFoundException("Customer Was not Found");

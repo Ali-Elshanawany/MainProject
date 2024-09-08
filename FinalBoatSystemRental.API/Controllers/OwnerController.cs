@@ -40,6 +40,32 @@ namespace FinalBoatSystemRental.API.Controllers
 
         }
 
+        //Owner
+        [HttpPost("PayRefund")]
+        public async Task<IActionResult> PayRefund(PayRefundCommand command)
+        {
+            try
+            {
+                var userId = User.FindFirstValue("uid");
+
+                if (userId == null)
+                {
+                    return Unauthorized();
+                }
+
+                Log.Information($"{userId} Pay Refund");
+
+                command.UserId = userId;
+                var result = await _mediator.Send(command);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex.Message);
+                return BadRequest(ex.Message);
+            }
+        }
+
         // Owner
         [HttpPut("Details")]
         public async Task<IActionResult> UpdateOwnerDetails(UpdateOwnerDetailsCommand command)
@@ -93,31 +119,6 @@ namespace FinalBoatSystemRental.API.Controllers
             }
 
 
-        }
-        //Owner
-        [HttpPost("PayRefund")]
-        public async Task<IActionResult> PayRefund(PayRefundCommand command)
-        {
-            try
-            {
-                var userId = User.FindFirstValue("uid");
-
-                if (userId == null)
-                {
-                    return Unauthorized();
-                }
-
-                Log.Information($"{userId} Pay Refund");
-
-                command.UserId = userId;
-                var result = await _mediator.Send(command);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                Log.Fatal(ex.Message);
-                return BadRequest(ex.Message);
-            }
         }
 
     }

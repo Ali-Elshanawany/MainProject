@@ -1,17 +1,19 @@
 ﻿using AutoMapper;
 using FinalBoatSystemRental.Application.Boat.ViewModels;
 using FinalBoatSystemRental.Core.ViewModels.Boat;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.Boat.Query.Get;
 
-public class GetBoatQuery:ICommand<AddBoatViewModel>
+public class GetBoatQuery : ICommand<AddBoatViewModel>
 {
     public int Id { get; set; }
+    [JsonIgnore]
     public string UserId { get; set; }
 
     public GetBoatQuery(int id, string userId)
     {
-        Id = id;   
+        Id = id;
         UserId = userId;
     }
 }
@@ -33,7 +35,7 @@ public class GetBoatHandler : IQueryHandler<GetBoatQuery, AddBoatViewModel>
     public async Task<AddBoatViewModel> Handle(GetBoatQuery request, CancellationToken cancellationToken)
     {
         var ownerid = await _ownerRepository.GetOwnerIdByUserId(request.UserId);
-        var boat =await _boatRepository.GetByIdAsync(request.Id,ownerid);
+        var boat = await _boatRepository.GetByIdAsync(request.Id, ownerid);
         if (boat != null)
         {
             return _mapper.Map<AddBoatViewModel>(boat);

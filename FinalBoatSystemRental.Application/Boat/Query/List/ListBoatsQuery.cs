@@ -5,13 +5,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace FinalBoatSystemRental.Application.Boat.Query.List;
 
-public class ListBoatsQuery:ICommand<IEnumerable<AddBoatViewModel>>
+public class ListBoatsQuery : ICommand<IEnumerable<AddBoatViewModel>>
 {
-    public string UserId { get; set; }=string.Empty;
+    [JsonIgnore]
+    public string UserId { get; set; } = string.Empty;
     public ListBoatsQuery(string userId)
     {
         UserId = userId;

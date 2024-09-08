@@ -1,7 +1,10 @@
-﻿namespace FinalBoatSystemRental.Application.Owner.Query.GetDetails;
+﻿using System.Text.Json.Serialization;
+
+namespace FinalBoatSystemRental.Application.Owner.Query.GetDetails;
 
 public class GetOwnerDetailsQuery : ICommand<OwnerViewModel>
 {
+    [JsonIgnore]
     public string UserId { get; set; }
 
     public GetOwnerDetailsQuery(string userId)

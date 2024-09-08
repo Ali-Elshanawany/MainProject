@@ -2,6 +2,7 @@
 
 
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace FinalBoatSystemRental.Application.Owner.Command.Add;
 
@@ -9,6 +10,7 @@ public class PayRefundCommand : ICommand<Result>
 {
     [Range(0, int.MaxValue, ErrorMessage = "cancellation Id must be greater than 0")]
     public int? CancellationId { get; set; }
+    [JsonIgnore]
     public string? UserId { get; set; }
     public PayRefundCommand(int? cancellationId, string userId)
     {

@@ -1,4 +1,7 @@
 ﻿
+using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
+
 namespace FinalBoatSystemRental.Application.Addition.Command.Add
 {
     public class AddAdditionCommandValidator : AbstractValidator<AddAdditionCommand>
@@ -23,6 +26,8 @@ namespace FinalBoatSystemRental.Application.Addition.Command.Add
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public int? Price { get; set; }
+
+        [JsonIgnore]
         public string? UserId { get; set; }
 
 
