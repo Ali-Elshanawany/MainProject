@@ -16,7 +16,7 @@ public class AdditionController : ControllerBase
 
     //Owner
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
-    [HttpPost]
+    [HttpPost("Add")]
     public async Task<IActionResult> Add(AddAdditionCommand command)
     {
         try

@@ -16,7 +16,7 @@ public class CancellationController : ControllerBase
 
     #region Customer
     // Customer
-    [HttpPost("Trip")]
+    [HttpPost("Cancel-TripReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> AddTripCancellation([FromBody] AddCancellationTripCommand command)
     {
@@ -38,7 +38,7 @@ public class CancellationController : ControllerBase
 
     }
     // Customer
-    [HttpPost("Boat")]
+    [HttpPost("Cancel-BoatReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
 
     public async Task<IActionResult> AddBoatCancellation([FromBody] AddCancellationBoatCommand command)

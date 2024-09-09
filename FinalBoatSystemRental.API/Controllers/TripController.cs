@@ -23,7 +23,7 @@ public class TripController : ControllerBase
 
     #region Customer
     // Customer
-    [HttpGet("AvailableTrips")]
+    [HttpGet("View-AvailableTrips")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> GetAllAvailableBoats()
     {
@@ -48,7 +48,7 @@ public class TripController : ControllerBase
     #region Owner
 
     // Owner Return All Owner Trips
-    [HttpGet]
+    [HttpGet("View-Trips")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetAllTrips()
     {
@@ -75,7 +75,7 @@ public class TripController : ControllerBase
     }
 
     // Owner Return Specific trip
-    [HttpGet("{tripId}")]
+    [HttpGet("Get-TripById{tripId}")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetTrip(int tripId)
     {
@@ -102,7 +102,7 @@ public class TripController : ControllerBase
     }
 
     //Owner
-    [HttpPost]
+    [HttpPost("Add-Trip")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> Add([FromBody] AddTripCommand? command)
     {

@@ -16,7 +16,7 @@ namespace FinalBoatSystemRental.API.Controllers
 
 
         // Owner
-        [HttpGet("Details")]
+        [HttpGet("View-Profile")]
         public async Task<IActionResult> GetOwner()
         {
             try
@@ -67,7 +67,7 @@ namespace FinalBoatSystemRental.API.Controllers
         }
 
         // Owner
-        [HttpPut("Details")]
+        [HttpPut("Update-Profile")]
         public async Task<IActionResult> UpdateOwnerDetails(UpdateOwnerDetailsCommand command)
         {
             try
@@ -90,7 +90,7 @@ namespace FinalBoatSystemRental.API.Controllers
             }
         }
         //Owner
-        [HttpPut("Wallet")]
+        [HttpPut("Add-WalletBalance")]
         public async Task<IActionResult> UpdateOwnerBalance(UpdateOwnerWalletCommand command)
         {
             try

@@ -15,7 +15,7 @@ public class CustomerController : ControllerBase
 
 
 
-    [HttpGet]
+    [HttpGet("View-Profile")]
     public async Task<IActionResult> GetCustomersDetails(GetCustomerDetailsQuery query)
     {
         try
@@ -41,7 +41,7 @@ public class CustomerController : ControllerBase
 
 
 
-    [HttpPut("Details")]
+    [HttpPut("Update-Profile")]
     public async Task<IActionResult> UpdateCustomerDetails(UpdateCustomerDetailsCommand command)
     {
         try
@@ -64,7 +64,7 @@ public class CustomerController : ControllerBase
         }
     }
 
-    [HttpPut("Wallet")]
+    [HttpPut("Add-WalletBalance")]
     public async Task<IActionResult> UpdateOwnerBalance(UpdateCustomerWalletCommand command)
     {
         try

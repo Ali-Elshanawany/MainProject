@@ -16,7 +16,7 @@ public class ReservationController : ControllerBase
 
     #region Customer
     // Customer
-    [HttpPost]
+    [HttpPost("Book-Trip")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> Add([FromBody] AddReservationCommand command)
     {
@@ -46,7 +46,7 @@ public class ReservationController : ControllerBase
     }
 
     //Customer
-    [HttpGet("TripHistory")]
+    [HttpGet("View-TripReservationHistory")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> GetAllBoats()
     {
@@ -76,7 +76,7 @@ public class ReservationController : ControllerBase
 
     #region Owner
     //Owner
-    [HttpGet("OwnerReservations")]
+    [HttpGet("View-Reservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetOwnerReservations()
     {
@@ -100,7 +100,7 @@ public class ReservationController : ControllerBase
         }
     }
     //Owner
-    [HttpGet("OwnerCanceledReservations")]
+    [HttpGet("View-CanceledReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetOwnerCanceledReservations()
     {
@@ -130,7 +130,7 @@ public class ReservationController : ControllerBase
 
     #region Admin
 
-    [HttpGet("AllTripsAdmin")]
+    [HttpGet("View-TripsReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
     public async Task<IActionResult> getAlltrips()
     {
@@ -150,7 +150,7 @@ public class ReservationController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
-    [HttpGet("AllCanceledTripsAdmin")]
+    [HttpGet("View-CanceledTripsReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
     public async Task<IActionResult> AllCanceledTrips()
     {
@@ -169,6 +169,6 @@ public class ReservationController : ControllerBase
         }
     }
 
-    #endregion Admin
+    #endregion 
 
 }

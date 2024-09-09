@@ -1,4 +1,6 @@
-﻿namespace FinalBoatSystemRental.Application.Reservation.Command;
+﻿using FinalBoatSystemRental.Application.Services;
+
+namespace FinalBoatSystemRental.Application.Reservation.Command;
 
 
 public class AddReservationCommandValidator : AbstractValidator<AddReservationCommand>
@@ -152,7 +154,9 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
         }
         await _reservationAdditionRepository.AddRange(addRange);
 
+        //ReservationService reservationService = new ReservationService(_reservationRepository);
 
+        //reservationService.ScheduleReservation(reservation.Id, trip.CancellationDeadLine);
 
 
         return _mapper.Map<ReservationViewModel>(reservation);

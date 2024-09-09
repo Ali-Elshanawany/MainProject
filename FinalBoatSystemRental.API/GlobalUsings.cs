@@ -38,6 +38,7 @@ global using FinalBoatSystemRental.Application.Trip.Command.Add;
 global using FinalBoatSystemRental.Application.Cancellation.Command.Add;
 global using FinalBoatSystemRental.Application.Customer.Command.Update;
 global using FinalBoatSystemRental.Application.Customer.Query.GetDetails;
+global using FinalBoatSystemRental.Application.Boat.Command.Update;
 
 // Core 
 global using FinalBoatSystemRental.Core;
@@ -46,3 +47,5 @@ global using FinalBoatSystemRental.Core.Interfaces;
 // Infrastructure 
 global using FinalBoatSystemRental.Infrastructure;
 global using FinalBoatSystemRental.Infrastructure.Repositories;
+
+

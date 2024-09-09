@@ -18,4 +18,7 @@ public interface IReservationRepository : IBaseRepository<Reservation>
     // Get ALl Owner Reservation With Status Canceled
     public Task<IEnumerable<Reservation>> GetCanceledOwnerReservation(int ownerId);
 
+    // For background job
+    public Task<IEnumerable<Reservation>> GetPendingReservation();
+
 }

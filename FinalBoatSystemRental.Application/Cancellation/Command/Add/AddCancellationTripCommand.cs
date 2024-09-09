@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using FinalBoatSystemRental.Core.ViewModels.Cancellation;
+﻿using FinalBoatSystemRental.Core.ViewModels.Cancellation;
 
 namespace FinalBoatSystemRental.Application.Cancellation.Command.Add;
 

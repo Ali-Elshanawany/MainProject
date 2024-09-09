@@ -15,7 +15,7 @@ public class BoatbookingController : ControllerBase
 
     #region Owner 
     // Owners
-    [HttpGet("OwnerBoatReservation")]
+    [HttpGet("View-BoatReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetOwnerBoatReservation()
     {
@@ -41,7 +41,7 @@ public class BoatbookingController : ControllerBase
 
     }
     // Owners
-    [HttpGet("OwnerCanceledBoatReservation")]
+    [HttpGet("View-CanceledBoatReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetCanceledOwnerBoatReservation()
     {
@@ -72,7 +72,7 @@ public class BoatbookingController : ControllerBase
 
     #region Customer
     //Customer
-    [HttpGet("BoatReservationHistory")]
+    [HttpGet("View-BoatReservations-History")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> GetBoatReservationCustomerHistory()
     {
@@ -101,7 +101,7 @@ public class BoatbookingController : ControllerBase
     }
 
     //Customer
-    [HttpPost]
+    [HttpPost("Book-Boat")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
     public async Task<IActionResult> Add([FromBody] AddBoatBookingCommand command)
     {
@@ -132,7 +132,7 @@ public class BoatbookingController : ControllerBase
 
 
     #region Admin
-    [HttpGet("GetAllBoatBookingAdmin")]
+    [HttpGet("View-BoatReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
     public async Task<IActionResult> GetAllBoatBookingAdmin()
     {
@@ -153,7 +153,7 @@ public class BoatbookingController : ControllerBase
 
     }
 
-    [HttpGet("GetAllCanceledBoatBookingAdmin")]
+    [HttpGet("View-CanceledBoatReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
     public async Task<IActionResult> GetAllCanceledBoatBookingAdmin()
     {

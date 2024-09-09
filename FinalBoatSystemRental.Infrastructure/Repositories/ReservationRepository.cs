@@ -44,6 +44,14 @@ namespace FinalBoatSystemRental.Infrastructure.Repositories
                                          .Include(i => i.Customer)
                                          .ToListAsync();
         }
+        public async Task<IEnumerable<Reservation>> GetPendingReservation()
+        {
+
+            return await _dbContext.Reservations
+                                         .Where(i => i.Status == GlobalVariables.ReservationPendingStatus)
+                                         .Include(i => i.Trip)
+                                         .ToListAsync();
+        }
         public async Task<IEnumerable<Reservation>> GetCanceledTripReservationAdmin()
         {
 

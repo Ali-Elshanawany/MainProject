@@ -43,6 +43,11 @@ public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : 
             throw new InvalidOperationException("Not Found");
         }
     }
+    public async Task UpdateRangeAsync(IEnumerable<TEntity> tentities)
+    {
+        _dbContext.UpdateRange(tentities);
+        await _dbContext.SaveChangesAsync();
+    }
 
     public async Task DeleteAsync(int id)
     {

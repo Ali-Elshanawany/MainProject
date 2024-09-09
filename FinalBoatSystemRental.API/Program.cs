@@ -1,6 +1,7 @@
 
 
 using FinalBoatSystemRental.Infrastructure.Seeding;
+using Hangfire;
 using Microsoft.OpenApi.Models;
 
 namespace FinalBoatSystemRental.API;
@@ -17,13 +18,19 @@ public class Program
             // Add services to the container.
 
 
+            builder.Services.AddHangfire(x => x.UseSqlServerStorage(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddHangfireServer();
+            builder.Services.AddScoped<RecurringReservationService>();
+
+            #region Swagger
+            // Swagger Splitting Actions
             builder.Services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("Owner", new OpenApiInfo { Title = "Owner Api", Version = "v1" });
                 options.SwaggerDoc("Customer", new OpenApiInfo { Title = "Customer Api", Version = "v1" });
                 options.SwaggerDoc("Admin", new OpenApiInfo { Title = "Admin Api", Version = "v1" });
             });
-
+            #endregion
 
 
 
@@ -153,6 +160,7 @@ public class Program
 
 
 
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -173,6 +181,10 @@ public class Program
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseHangfireDashboard("/dashboard");
+
+            RecurringJob.AddOrUpdate<RecurringReservationService>("update-expired-reservations",
+               service => service.UpdateExpiredReservationsAsync(), Cron.Daily);
 
             app.MapControllers();
 

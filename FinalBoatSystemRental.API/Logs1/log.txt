@@ -2739,4 +2739,519 @@ Error Number:547,State:0,Class:16
  09/09/2024 15:08:08 +03:00 Starting up the application 
  09/09/2024 15:08:11 +03:00  View All Canceled Trips 
  09/09/2024 15:09:34 +03:00 Starting up the application 
+ 09/09/2024 17:11:50 +03:00 Starting up the application 
+ 09/09/2024 17:11:54 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 17:11:54 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 17:11:55 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 17:11:55 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 17:11:55 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 17:11:55 +03:00 Server desktop-ht66dte:17764:f88d7b11 successfully announced in 262.4739 ms 
+ 09/09/2024 17:11:55 +03:00 Server desktop-ht66dte:17764:f88d7b11 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 17:11:55 +03:00 Server desktop-ht66dte:17764:f88d7b11 all the dispatchers started 
+ 09/09/2024 17:31:15 +03:00 Starting up the application 
+ 09/09/2024 17:31:16 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 17:31:17 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 17:31:17 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 17:31:17 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 17:31:17 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 17:31:17 +03:00 Server desktop-ht66dte:21280:38380cb8 successfully announced in 58.9672 ms 
+ 09/09/2024 17:31:17 +03:00 Server desktop-ht66dte:21280:38380cb8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 17:31:17 +03:00 Server desktop-ht66dte:21280:38380cb8 all the dispatchers started 
+ 09/09/2024 17:32:06 +03:00 Accessed Login Action 
+ 09/09/2024 17:33:23 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/09/2024 17:33:23 +03:00 Can not Add This Trip on boat 13 Another boat Booking Already Registered At 9/20/2024 12:00:00 AM 
+ 09/09/2024 17:33:32 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/09/2024 17:34:48 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/09/2024 17:34:48 +03:00 Can not Add This Trip on boat 13 Another boat Booking Already Registered At 9/10/2024 12:00:00 AM 
+ 09/09/2024 17:34:57 +03:00 2377ce80-e8b6-4d3d-8369-ec889ef52565 Add Trip 
+ 09/09/2024 17:36:17 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 17:45:37 +03:00 Starting up the application 
+ 09/09/2024 17:45:38 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 17:45:38 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 17:45:38 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 17:45:38 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 17:45:38 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 17:45:39 +03:00 Server desktop-ht66dte:30484:4ed70226 successfully announced in 148.0298 ms 
+ 09/09/2024 17:45:39 +03:00 Server desktop-ht66dte:30484:4ed70226 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 17:45:39 +03:00 Server desktop-ht66dte:30484:4ed70226 all the dispatchers started 
+ 09/09/2024 17:45:50 +03:00 View Available Trips 
+ 09/09/2024 17:46:30 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/09/2024 17:47:14 +03:00 14b2bcde-9551-49ab-a602-6d42ec520466 book a trip 
+ 09/09/2024 17:50:39 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 17:53:03 +03:00 Starting up the application 
+ 09/09/2024 17:53:05 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 17:53:05 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 17:53:05 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 17:53:05 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 17:53:05 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 17:53:05 +03:00 Server desktop-ht66dte:22876:0d7db40f successfully announced in 68.8448 ms 
+ 09/09/2024 17:53:05 +03:00 Server desktop-ht66dte:22876:0d7db40f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 17:53:05 +03:00 Server desktop-ht66dte:22876:0d7db40f all the dispatchers started 
+ 09/09/2024 17:58:05 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 18:05:31 +03:00 Starting up the application 
+ 09/09/2024 18:05:32 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 18:05:32 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 18:05:32 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 18:05:32 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 18:05:32 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 18:05:32 +03:00 Server desktop-ht66dte:6228:b6d4dec2 successfully announced in 55.5844 ms 
+ 09/09/2024 18:05:32 +03:00 Server desktop-ht66dte:6228:b6d4dec2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 18:05:33 +03:00 Server desktop-ht66dte:6228:b6d4dec2 all the dispatchers started 
+ 09/09/2024 18:08:08 +03:00 Starting up the application 
+ 09/09/2024 18:08:09 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 18:08:09 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 18:08:09 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 18:08:09 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 18:08:09 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 18:08:09 +03:00 Server desktop-ht66dte:18524:df4e5baa successfully announced in 143.1744 ms 
+ 09/09/2024 18:08:09 +03:00 Server desktop-ht66dte:18524:df4e5baa is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 18:08:09 +03:00 Server desktop-ht66dte:18524:df4e5baa all the dispatchers started 
+ 09/09/2024 18:09:15 +03:00 Starting up the application 
+ 09/09/2024 18:09:16 +03:00 Current JobStorage instance has not been initialized yet. You must set it before using Hangfire Client or Server API. For .NET Core applications please call the `IServiceCollection.AddHangfire` extension method from Hangfire.NetCore or Hangfire.AspNetCore package depending on your application type when configuring the services and ensure service-based APIs are used instead of static ones, like `IBackgroundJobClient` instead of `BackgroundJob` and `IRecurringJobManager` instead of `RecurringJob`. 
+ 09/09/2024 18:09:24 +03:00 Starting up the application 
+ 09/09/2024 18:09:25 +03:00 Current JobStorage instance has not been initialized yet. You must set it before using Hangfire Client or Server API. For .NET Core applications please call the `IServiceCollection.AddHangfire` extension method from Hangfire.NetCore or Hangfire.AspNetCore package depending on your application type when configuring the services and ensure service-based APIs are used instead of static ones, like `IBackgroundJobClient` instead of `BackgroundJob` and `IRecurringJobManager` instead of `RecurringJob`. 
+ 09/09/2024 18:09:48 +03:00 Starting up the application 
+ 09/09/2024 18:09:49 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 18:09:49 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 18:09:49 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 18:09:49 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 18:09:49 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 18:09:49 +03:00 Server desktop-ht66dte:18404:9b240799 successfully announced in 8.4691 ms 
+ 09/09/2024 18:09:49 +03:00 Server desktop-ht66dte:18404:9b240799 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 18:09:49 +03:00 Server desktop-ht66dte:18404:9b240799 all the dispatchers started 
+ 09/09/2024 18:11:22 +03:00 Starting up the application 
+ 09/09/2024 18:11:23 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 18:11:23 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 18:11:24 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 18:11:24 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 18:11:24 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 18:11:24 +03:00 Server desktop-ht66dte:23620:87f232b0 successfully announced in 17.6656 ms 
+ 09/09/2024 18:11:24 +03:00 Server desktop-ht66dte:23620:87f232b0 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 18:11:24 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 18:11:24 +03:00 Server desktop-ht66dte:23620:87f232b0 all the dispatchers started 
+ 09/09/2024 18:16:24 +03:00 3 servers were removed due to timeout 
+ 09/09/2024 18:20:51 +03:00 Starting up the application 
+ 09/09/2024 18:20:52 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 18:20:52 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 18:20:53 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 18:20:53 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 18:20:53 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 18:20:53 +03:00 Server desktop-ht66dte:11476:fb5b9f84 successfully announced in 82.4938 ms 
+ 09/09/2024 18:20:53 +03:00 Server desktop-ht66dte:11476:fb5b9f84 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 18:20:53 +03:00 Server desktop-ht66dte:11476:fb5b9f84 all the dispatchers started 
+ 09/09/2024 18:22:17 +03:00 Failed to process the job '8': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:30. 
+ System.InvalidOperationException: The instance of entity type 'Trip' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.UpdateRange(IEnumerable`1 entities)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.UpdateRangeAsync(IEnumerable`1 tentities) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 48
+   at FinalBoatSystemRental.Application.Services.RecurringReservationService.UpdateExpiredReservationsAsync() in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Services\RecurringReservationService.cs:line 24
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+09/09/2024 18:22:53 +03:00 Failed to process the job '8': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:28. 
+ System.InvalidOperationException: The instance of entity type 'Trip' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.UpdateRange(IEnumerable`1 entities)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.UpdateRangeAsync(IEnumerable`1 tentities) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 48
+   at FinalBoatSystemRental.Application.Services.RecurringReservationService.UpdateExpiredReservationsAsync() in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Services\RecurringReservationService.cs:line 24
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+09/09/2024 18:23:23 +03:00 Failed to process the job '8': an exception occurred. Retry attempt 3 of 10 will be performed in 00:01:19. 
+ System.InvalidOperationException: The instance of entity type 'Trip' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.UpdateRange(IEnumerable`1 entities)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.UpdateRangeAsync(IEnumerable`1 tentities) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 48
+   at FinalBoatSystemRental.Application.Services.RecurringReservationService.UpdateExpiredReservationsAsync() in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Services\RecurringReservationService.cs:line 24
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+09/09/2024 18:23:36 +03:00 Starting up the application 
+ 09/09/2024 18:23:39 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 18:23:39 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 18:23:39 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 18:23:39 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 18:23:39 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 18:23:39 +03:00 Server desktop-ht66dte:16512:29fd5f10 successfully announced in 11.039 ms 
+ 09/09/2024 18:23:39 +03:00 Server desktop-ht66dte:16512:29fd5f10 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 18:23:39 +03:00 Server desktop-ht66dte:16512:29fd5f10 all the dispatchers started 
+ 09/09/2024 18:25:25 +03:00 Starting up the application 
+ 09/09/2024 18:25:26 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 18:25:26 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 18:25:26 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 18:25:26 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 18:25:26 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 18:25:26 +03:00 Server desktop-ht66dte:2928:d17a2a2d successfully announced in 8.6311 ms 
+ 09/09/2024 18:25:26 +03:00 Server desktop-ht66dte:2928:d17a2a2d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 18:25:26 +03:00 Server desktop-ht66dte:2928:d17a2a2d all the dispatchers started 
+ 09/09/2024 18:25:26 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 18:25:27 +03:00 Failed to process the job '8': an exception occurred. Retry attempt 4 of 10 will be performed in 00:02:32. 
+ System.InvalidOperationException: The instance of entity type 'Trip' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.UpdateRange(IEnumerable`1 entities)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.UpdateRangeAsync(IEnumerable`1 tentities) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 48
+   at FinalBoatSystemRental.Application.Services.RecurringReservationService.UpdateExpiredReservationsAsync() in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Services\RecurringReservationService.cs:line 26
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+09/09/2024 18:26:12 +03:00 Stopping the server due to DomainUnload or ProcessExit event... 
+ 09/09/2024 18:26:12 +03:00 Server desktop-ht66dte:2928:d17a2a2d caught stopping signal... 
+ 09/09/2024 18:26:12 +03:00 Server desktop-ht66dte:2928:d17a2a2d caught stopped signal... 
+ 09/09/2024 18:26:12 +03:00 Server desktop-ht66dte:2928:d17a2a2d caught shutdown signal... 
+ 09/09/2024 18:26:12 +03:00 Server desktop-ht66dte:2928:d17a2a2d All dispatchers stopped 
+ 09/09/2024 18:26:12 +03:00 Server desktop-ht66dte:2928:d17a2a2d successfully reported itself as stopped in 5.1807 ms 
+ 09/09/2024 18:26:12 +03:00 Server desktop-ht66dte:2928:d17a2a2d has been stopped in total 12.4684 ms 
+ 09/09/2024 18:29:28 +03:00 Starting up the application 
+ 09/09/2024 18:29:30 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 18:29:30 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 18:29:30 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 18:29:30 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 18:29:30 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 18:29:30 +03:00 Server desktop-ht66dte:17712:7b6a29c6 successfully announced in 8.8776 ms 
+ 09/09/2024 18:29:30 +03:00 Server desktop-ht66dte:17712:7b6a29c6 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 18:29:30 +03:00 Server desktop-ht66dte:17712:7b6a29c6 all the dispatchers started 
+ 09/09/2024 18:29:30 +03:00 2 servers were removed due to timeout 
+ 09/09/2024 18:29:31 +03:00 Failed to process the job '9': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:32. 
+ System.InvalidOperationException: The instance of entity type 'Trip' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.UpdateRange(IEnumerable`1 entities)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.UpdateRangeAsync(IEnumerable`1 tentities) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 48
+   at FinalBoatSystemRental.Application.Services.RecurringReservationService.UpdateExpiredReservationsAsync() in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Services\RecurringReservationService.cs:line 27
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+09/09/2024 18:29:31 +03:00 Failed to process the job '8': an exception occurred. Retry attempt 5 of 10 will be performed in 00:06:36. 
+ System.InvalidOperationException: The instance of entity type 'Trip' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.UpdateRange(IEnumerable`1 entities)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.UpdateRangeAsync(IEnumerable`1 tentities) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 48
+   at FinalBoatSystemRental.Application.Services.RecurringReservationService.UpdateExpiredReservationsAsync() in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Services\RecurringReservationService.cs:line 27
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+09/09/2024 18:29:43 +03:00 Failed to process the job '10': an exception occurred. Retry attempt 1 of 10 will be performed in 00:00:31. 
+ System.InvalidOperationException: The instance of entity type 'Trip' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.UpdateRange(IEnumerable`1 entities)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.UpdateRangeAsync(IEnumerable`1 tentities) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 48
+   at FinalBoatSystemRental.Application.Services.RecurringReservationService.UpdateExpiredReservationsAsync() in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Services\RecurringReservationService.cs:line 27
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+09/09/2024 18:30:16 +03:00 Failed to process the job '9': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:54. 
+ System.InvalidOperationException: The instance of entity type 'Trip' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.UpdateRange(IEnumerable`1 entities)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.UpdateRangeAsync(IEnumerable`1 tentities) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 48
+   at FinalBoatSystemRental.Application.Services.RecurringReservationService.UpdateExpiredReservationsAsync() in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Services\RecurringReservationService.cs:line 27
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+09/09/2024 18:30:16 +03:00 Failed to process the job '10': an exception occurred. Retry attempt 2 of 10 will be performed in 00:00:30. 
+ System.InvalidOperationException: The instance of entity type 'Trip' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.SetEntityStates(IEnumerable`1 entities, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.DbContext.UpdateRange(IEnumerable`1 entities)
+   at FinalBoatSystemRental.Infrastructure.Repositories.BaseRepository`1.UpdateRangeAsync(IEnumerable`1 tentities) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Repositories\BaseRepository.cs:line 48
+   at FinalBoatSystemRental.Application.Services.RecurringReservationService.UpdateExpiredReservationsAsync() in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Application\Services\RecurringReservationService.cs:line 27
+   at InvokeStub_TaskAwaiter.GetResult(Object, Object, IntPtr*)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+09/09/2024 18:30:38 +03:00 Server desktop-ht66dte:17712:7b6a29c6 caught stopping signal... 
+ 09/09/2024 18:30:38 +03:00 Server desktop-ht66dte:17712:7b6a29c6 All dispatchers stopped 
+ 09/09/2024 18:30:38 +03:00 Server desktop-ht66dte:17712:7b6a29c6 successfully reported itself as stopped in 2.3464 ms 
+ 09/09/2024 18:30:38 +03:00 Server desktop-ht66dte:17712:7b6a29c6 has been stopped in total 23.8853 ms 
+ 09/09/2024 18:32:54 +03:00 Starting up the application 
+ 09/09/2024 18:32:56 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 18:32:56 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 18:32:56 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 18:32:56 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 18:32:56 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 18:32:56 +03:00 Server desktop-ht66dte:25080:d6cb269d successfully announced in 8.4262 ms 
+ 09/09/2024 18:32:56 +03:00 Server desktop-ht66dte:25080:d6cb269d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 18:32:56 +03:00 Server desktop-ht66dte:25080:d6cb269d all the dispatchers started 
+ 09/09/2024 19:47:57 +03:00 Starting up the application 
+ 09/09/2024 19:47:58 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 19:47:58 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 19:47:58 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 19:47:58 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 19:47:58 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 19:47:58 +03:00 Server desktop-ht66dte:30648:368e3fc2 successfully announced in 8.4016 ms 
+ 09/09/2024 19:47:58 +03:00 Server desktop-ht66dte:30648:368e3fc2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 19:47:58 +03:00 Server desktop-ht66dte:30648:368e3fc2 all the dispatchers started 
+ 09/09/2024 19:48:14 +03:00 Starting up the application 
+ 09/09/2024 19:48:15 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 19:48:16 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 19:48:16 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 19:48:16 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 19:48:16 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 19:48:16 +03:00 Server desktop-ht66dte:29140:e10f8778 successfully announced in 5.4203 ms 
+ 09/09/2024 19:48:16 +03:00 Server desktop-ht66dte:29140:e10f8778 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 19:48:16 +03:00 Server desktop-ht66dte:29140:e10f8778 all the dispatchers started 
+ 09/09/2024 19:50:09 +03:00 Starting up the application 
+ 09/09/2024 19:50:10 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 19:50:10 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 19:50:10 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 19:50:10 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 19:50:10 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 19:50:10 +03:00 Server desktop-ht66dte:19800:a71d2ff2 successfully announced in 9.9001 ms 
+ 09/09/2024 19:50:10 +03:00 Server desktop-ht66dte:19800:a71d2ff2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 19:50:10 +03:00 Server desktop-ht66dte:19800:a71d2ff2 all the dispatchers started 
+ 09/09/2024 19:54:39 +03:00 Starting up the application 
+ 09/09/2024 19:54:40 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 19:54:40 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 19:54:40 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 19:54:40 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 19:54:40 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 19:54:40 +03:00 Server desktop-ht66dte:17564:5bb724ca successfully announced in 83.8844 ms 
+ 09/09/2024 19:54:40 +03:00 Server desktop-ht66dte:17564:5bb724ca is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 19:54:40 +03:00 2 servers were removed due to timeout 
+ 09/09/2024 19:54:40 +03:00 Server desktop-ht66dte:17564:5bb724ca all the dispatchers started 
+ 09/09/2024 19:55:09 +03:00 Starting up the application 
+ 09/09/2024 19:55:10 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 19:55:10 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 19:55:10 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 19:55:10 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 19:55:10 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 19:55:11 +03:00 Server desktop-ht66dte:14096:2f754187 successfully announced in 80.7395 ms 
+ 09/09/2024 19:55:11 +03:00 Server desktop-ht66dte:14096:2f754187 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 19:55:11 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 19:55:11 +03:00 Server desktop-ht66dte:14096:2f754187 all the dispatchers started 
+ 09/09/2024 19:57:18 +03:00 Starting up the application 
+ 09/09/2024 19:57:19 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 19:57:19 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 19:57:20 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 19:57:20 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 19:57:20 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 19:57:20 +03:00 Server desktop-ht66dte:25968:efb1bceb successfully announced in 12.985 ms 
+ 09/09/2024 19:57:20 +03:00 Server desktop-ht66dte:25968:efb1bceb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 19:57:20 +03:00 Server desktop-ht66dte:25968:efb1bceb all the dispatchers started 
+ 09/09/2024 20:02:21 +03:00 Starting up the application 
+ 09/09/2024 20:02:22 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:02:22 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:02:23 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:02:23 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:02:23 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:02:23 +03:00 Server desktop-ht66dte:17348:c7c1f264 successfully announced in 9.8714 ms 
+ 09/09/2024 20:02:23 +03:00 Server desktop-ht66dte:17348:c7c1f264 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:02:23 +03:00 Server desktop-ht66dte:17348:c7c1f264 all the dispatchers started 
+ 09/09/2024 20:02:23 +03:00 3 servers were removed due to timeout 
+ 09/09/2024 20:04:02 +03:00 Starting up the application 
+ 09/09/2024 20:04:03 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:04:03 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:04:04 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:04:04 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:04:04 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:04:04 +03:00 Server desktop-ht66dte:2692:c1bd3bf2 successfully announced in 14.8618 ms 
+ 09/09/2024 20:04:04 +03:00 Server desktop-ht66dte:2692:c1bd3bf2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:04:04 +03:00 Server desktop-ht66dte:2692:c1bd3bf2 all the dispatchers started 
+ 09/09/2024 20:05:25 +03:00 Starting up the application 
+ 09/09/2024 20:05:26 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:05:27 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:05:27 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:05:27 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:05:27 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:05:27 +03:00 Server desktop-ht66dte:13864:8f3ef42d successfully announced in 84.4294 ms 
+ 09/09/2024 20:05:27 +03:00 Server desktop-ht66dte:13864:8f3ef42d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:05:27 +03:00 Server desktop-ht66dte:13864:8f3ef42d all the dispatchers started 
+ 09/09/2024 20:06:03 +03:00 Starting up the application 
+ 09/09/2024 20:06:04 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:06:05 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:06:05 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:06:05 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:06:05 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:06:05 +03:00 Server desktop-ht66dte:6180:b2e03f79 successfully announced in 79.5778 ms 
+ 09/09/2024 20:06:05 +03:00 Server desktop-ht66dte:6180:b2e03f79 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:06:05 +03:00 Server desktop-ht66dte:6180:b2e03f79 all the dispatchers started 
+ 09/09/2024 20:11:05 +03:00 4 servers were removed due to timeout 
  

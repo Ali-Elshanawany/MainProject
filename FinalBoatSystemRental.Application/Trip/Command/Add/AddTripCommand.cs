@@ -1,4 +1,5 @@
-﻿using FluentValidation;
+﻿using FinalBoatSystemRental.Application.Services;
+using FluentValidation;
 using System.Runtime.CompilerServices;
 using System.Text.Json.Serialization;
 
@@ -133,6 +134,10 @@ public class AddTripHandler : ICommandHandler<AddTripCommand, TripViewModel>
 
         };
         await _tripRepository.AddAsync(trip);
+
+
+
+
         return _mapper.Map<TripViewModel>(trip);
 
     }

@@ -14,5 +14,6 @@ public interface IBaseRepository<TEntity> where TEntity : class
 
     Task DeleteAsync(int id);
 
+    public Task UpdateRangeAsync(IEnumerable<TEntity> tentities);
 
 }

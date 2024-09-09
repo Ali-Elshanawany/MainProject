@@ -1,10 +1,4 @@
-﻿
-
-
-
-using FinalBoatSystemRental.Application.Boat.Command.Update;
-
-namespace FinalBoatSystemRental.API.Controllers;
+﻿namespace FinalBoatSystemRental.API.Controllers;
 
 [Authorize]
 [Route("api/[controller]")]
@@ -26,7 +20,7 @@ public class BoatController : ControllerBase
 
     #region Owner
     // Owner
-    [HttpGet("View Owner Boats")]
+    [HttpGet("View-Boats")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetAllBoats()
     {
@@ -53,7 +47,7 @@ public class BoatController : ControllerBase
 
 
     // Owner Get specific Owner Boat
-    [HttpGet("{id}")]
+    [HttpGet("GetBoatById{id}")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetBoat(int id)
     {
@@ -79,7 +73,7 @@ public class BoatController : ControllerBase
         }
     }
     //Owner
-    [HttpPost]
+    [HttpPost("Add-Boat")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> Add([FromBody] AddBoatCommand command)
     {
@@ -107,7 +101,7 @@ public class BoatController : ControllerBase
 
 
     //Owner
-    [HttpDelete]
+    [HttpDelete("Delete-Boat")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> Delete(DeleteBoatCommand command)
     {
@@ -136,7 +130,7 @@ public class BoatController : ControllerBase
 
     #region Customer
     // Customer
-    [HttpGet("AvailableBoats")]
+    [HttpGet("View-AvailableBoats")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Customer)]
 
     public async Task<IActionResult> GetAllAvailableBoats()
@@ -160,7 +154,7 @@ public class BoatController : ControllerBase
 
 
     #region Admin 
-    [HttpPost("ApproveBoat")]
+    [HttpPost("Approve-Boat")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
     public async Task<IActionResult> ApproveBoat(UpdateBoatStatusCommand command)
     {
@@ -188,7 +182,7 @@ public class BoatController : ControllerBase
 
     }
 
-    [HttpGet("PendingBoats")]
+    [HttpGet("View-PendingBoats")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
 
     public async Task<IActionResult> GetAllPendingBoats()
