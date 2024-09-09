@@ -20,6 +20,9 @@ public interface IBoatBookingRepository : IBaseRepository<BoatBooking>
     // Get ALl Owner Reservation With Status Canceled
     public Task<IEnumerable<BoatBooking>> GetCanceledBoatBookingOwner(int ownerId);
 
+    // return all boat booking reservation for Admin to oversee 
+    public Task<IEnumerable<BoatBooking>> GetAllBoatBookingAdmin();
+    public Task<IEnumerable<BoatBooking>> GetAllCanceledBoatBookingAdmin();
 
 
 

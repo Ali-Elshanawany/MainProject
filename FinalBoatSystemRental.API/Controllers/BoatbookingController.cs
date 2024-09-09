@@ -69,6 +69,7 @@ public class BoatbookingController : ControllerBase
     }
     #endregion
 
+
     #region Customer
     //Customer
     [HttpGet("BoatReservationHistory")]
@@ -128,5 +129,50 @@ public class BoatbookingController : ControllerBase
     }
     #endregion
 
+
+
+    #region Admin
+    [HttpGet("GetAllBoatBookingAdmin")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
+    public async Task<IActionResult> GetAllBoatBookingAdmin()
+    {
+        try
+        {
+
+            Log.Information($" Get all  Boat Reservation");
+            var trip = new ListAllBoatBookingAdminQuery();
+            var trips = await _mediator.Send(trip);
+            return Ok(trips);
+
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex.Message);
+            return BadRequest(ex.Message);
+        }
+
+    }
+
+    [HttpGet("GetAllCanceledBoatBookingAdmin")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
+    public async Task<IActionResult> GetAllCanceledBoatBookingAdmin()
+    {
+        try
+        {
+
+            Log.Information($" Get all Canceled Boat Reservation");
+            var trip = new ListAllCanceledBoatBookingAdminQuery();
+            var trips = await _mediator.Send(trip);
+            return Ok(trips);
+
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex.Message);
+            return BadRequest(ex.Message);
+        }
+
+    }
+    #endregion
 
 }

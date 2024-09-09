@@ -21,6 +21,8 @@ public class MappingProfile : Profile
         CreateMap<Boat, AddBoatViewModel>().ReverseMap();
         CreateMap<Boat, UpdateBoatViewModel>().ReverseMap();
         CreateMap<Boat, BoatViewModel>().ReverseMap();
+        CreateMap<Boat, UpdateBoatStatusViewModel>().ReverseMap();
+        CreateMap<IEnumerable<Boat>, UpdateBoatStatusViewModel>().ReverseMap();
         CreateMap<IEnumerable<Boat>, UpdateBoatViewModel>().ReverseMap();
 
 
@@ -48,10 +50,12 @@ public class MappingProfile : Profile
         CreateMap<BoatBooking, BoatBookingViewModel>().ReverseMap();
         CreateMap<BoatBooking, BoatBookingHistoryViewModel>().ReverseMap();
         CreateMap<BoatBooking, ListBoatBookingOwner>().ReverseMap();
+        CreateMap<BoatBooking, ListBoatBookingAdmin>().ReverseMap();
 
         // Reservation 
 
         CreateMap<Reservation, ReservationViewModel>().ReverseMap();
+        CreateMap<Reservation, AdminReservationViewModel>().ReverseMap();
 
         // Cancellation
         CreateMap<Cancellation, CancellationViewModel>().ReverseMap();

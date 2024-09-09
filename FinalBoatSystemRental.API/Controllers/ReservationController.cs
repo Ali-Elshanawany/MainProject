@@ -128,6 +128,47 @@ public class ReservationController : ControllerBase
 
     #endregion
 
+    #region Admin
 
+    [HttpGet("AllTripsAdmin")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
+    public async Task<IActionResult> getAlltrips()
+    {
+        try
+        {
+
+
+            Log.Information($" View All Trips");
+
+            var trip = new ListAllTripReservationAdminQuery();
+            var trips = await _mediator.Send(trip);
+            return Ok(trips);
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
+    }
+    [HttpGet("AllCanceledTripsAdmin")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
+    public async Task<IActionResult> AllCanceledTrips()
+    {
+        try
+        {
+            Log.Information($" View All Canceled Trips");
+
+            var trip = new ListAllCanceledTripReservationAdminQuery();
+            var trips = await _mediator.Send(trip);
+            return Ok(trips);
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
+    }
+
+    #endregion Admin
 
 }

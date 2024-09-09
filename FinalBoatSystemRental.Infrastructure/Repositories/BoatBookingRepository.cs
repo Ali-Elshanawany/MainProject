@@ -48,9 +48,34 @@ public class BoatBookingRepository : BaseRepository<BoatBooking>, IBoatBookingRe
         return await _db.BoatBookings.AsNoTracking()
                                      .Where(i => i.CustomerId == customerId &&
                                                  (i.Status == GlobalVariables.BoatBookingCanceledStatus ||
-                                                  i.BookingDate.Date < now))
+                                                  i.BookingDate.Date < now)).OrderByDescending(i => i.BookingDate)
                                      .ToListAsync();
     }
+
+    // return all boat booking reservation for admin to oversee 
+    public async Task<IEnumerable<BoatBooking>> GetAllBoatBookingAdmin()
+    {
+        var now = DateTime.Now.Date; // Cache current date to avoid multiple calls
+        return await _db.BoatBookings.AsNoTracking()
+                                     .Where(i => i.Status != GlobalVariables.BoatBookingCanceledStatus)
+                                     .Include(i => i.Boat)
+                                     .OrderByDescending(i => i.BookingDate)
+                                     .ToListAsync();
+    }
+    public async Task<IEnumerable<BoatBooking>> GetAllCanceledBoatBookingAdmin()
+    {
+        var now = DateTime.Now.Date; // Cache current date to avoid multiple calls
+        return await _db.BoatBookings.AsNoTracking()
+                                     .Where(i => i.Status == GlobalVariables.BoatBookingCanceledStatus)
+                                     .Include(i => i.Boat)
+                                     .OrderByDescending(i => i.BookingDate)
+                                     .ToListAsync();
+    }
+
+
+
+
+
     public async Task<IEnumerable<BoatBooking>> GetBoatBookingOwner(int ownerId)
     {
         return await _db.BoatBookings.AsNoTracking()

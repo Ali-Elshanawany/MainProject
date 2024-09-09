@@ -1,12 +1,13 @@
 ﻿
+using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 
 namespace FinalBoatSystemRental.Infrastructure;
 
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options):base(options)
-    {     
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    {
     }
 
     public DbSet<Addition> Additions { get; set; }

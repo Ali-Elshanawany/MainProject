@@ -1,8 +1,4 @@
-﻿using AutoMapper;
-using FinalBoatSystemRental.Core.ViewModels.Reservation;
-using System.Text.Json.Serialization;
-
-namespace FinalBoatSystemRental.Application.Reservation.Query.List;
+﻿namespace FinalBoatSystemRental.Application.Reservation.Query.List;
 
 public class ListReservationCustomerHistoryQuery : ICommand<IEnumerable<ReservationViewModel>>
 {

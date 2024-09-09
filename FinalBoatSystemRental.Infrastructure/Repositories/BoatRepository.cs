@@ -27,6 +27,12 @@ public class BoatRepository : BaseRepository<Boat>, IBoatRepository
                                 .Where(b => b.Status == GlobalVariables.BoatApprovedStatus)
                                 .ToListAsync();
     }
+    public async Task<IEnumerable<Boat>> GetAllPendingBoatsAsync()
+    {
+        return await _dbcontext.Boats
+                                .Where(b => b.Status == GlobalVariables.BoatPendingStatus)
+                                .ToListAsync();
+    }
 
 
     public async Task<bool> CheckBoatName(int id, string name)

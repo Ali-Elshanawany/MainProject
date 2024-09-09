@@ -1,12 +1,13 @@
 
 
+using FinalBoatSystemRental.Infrastructure.Seeding;
 using Microsoft.OpenApi.Models;
 
 namespace FinalBoatSystemRental.API;
 
 public class Program
 {
-    public static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
         try
         {
@@ -20,6 +21,7 @@ public class Program
             {
                 options.SwaggerDoc("Owner", new OpenApiInfo { Title = "Owner Api", Version = "v1" });
                 options.SwaggerDoc("Customer", new OpenApiInfo { Title = "Customer Api", Version = "v1" });
+                options.SwaggerDoc("Admin", new OpenApiInfo { Title = "Admin Api", Version = "v1" });
             });
 
 
@@ -134,6 +136,23 @@ public class Program
             Log.Information("Starting up the application");
             var app = builder.Build();
 
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                try
+                {
+                    await DbInitializer.Initialize(services);
+                }
+                catch (Exception ex)
+                {
+                    var logger = services.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "An error occurred during seeding the database.");
+                }
+            }
+
+
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
@@ -142,6 +161,7 @@ public class Program
                 {
                     c.SwaggerEndpoint($"/swagger/{GlobalVariables.Owner}/swagger.json", "Owner Api");
                     c.SwaggerEndpoint($"/swagger/{GlobalVariables.Customer}/swagger.json", "Customer Api");
+                    c.SwaggerEndpoint($"/swagger/{GlobalVariables.Admin}/swagger.json", "Admin Api");
                 });
             }
 

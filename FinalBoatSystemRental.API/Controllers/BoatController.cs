@@ -2,6 +2,8 @@
 
 
 
+using FinalBoatSystemRental.Application.Boat.Command.Update;
+
 namespace FinalBoatSystemRental.API.Controllers;
 
 [Authorize]
@@ -11,14 +13,14 @@ public class BoatController : ControllerBase
 {
     private readonly IMapper _mapper;
     private readonly IMediator _mediator;
-    private readonly UserManager<ApplicationUser> _userManager;
 
 
-    public BoatController(IMediator mediator, IMapper mapper, UserManager<ApplicationUser> userManager)
+
+    public BoatController(IMediator mediator, IMapper mapper)
     {
         _mediator = mediator;
         _mapper = mapper;
-        _userManager = userManager;
+
     }
 
 
@@ -157,6 +159,57 @@ public class BoatController : ControllerBase
     #endregion
 
 
+    #region Admin 
+    [HttpPost("ApproveBoat")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
+    public async Task<IActionResult> ApproveBoat(UpdateBoatStatusCommand command)
+    {
+        try
+        {
+            if (!User.IsInRole(GlobalVariables.Admin))
+            {
+                throw new UnauthorizedAccessException("You can't Access this Action");
+            }
+
+            Log.Information("Approve Boat");
+            if (command == null)
+                return BadRequest("Boat Data is required");
+
+            var result = await _mediator.Send(command);
+
+            return Ok(result);
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
+
+
+    }
+
+    [HttpGet("PendingBoats")]
+    [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
+
+    public async Task<IActionResult> GetAllPendingBoats()
+    {
+
+        try
+        {
+            Log.Information("Admin View Available Boats");
+            var boat = new ListPendingBoatsQuery();
+            var boats = await _mediator.Send(boat);
+            return Ok(boats);
+
+        }
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
+    }
+
+    #endregion
 
     #region StopUpdateBoatForNow
     //[HttpPut]

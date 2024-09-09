@@ -6,7 +6,8 @@ public static class GlobalVariables
 {
 
     // Roles 
-    public const string Admin = "admin";
+    public const string Admin = "Admin";
+    public const string AdminPassword = "Password123!";
     public const string Customer = "Customer";
     public const string Owner = "Owner";
 

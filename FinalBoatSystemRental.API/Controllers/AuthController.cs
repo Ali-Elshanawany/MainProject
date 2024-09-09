@@ -46,7 +46,7 @@ public class AuthController : ControllerBase
     }
 
 
-
+    [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
     [HttpPost("verify-owner")]
     public async Task<IActionResult> VerifyOwner(VerifyOwnerCommand command)
     {

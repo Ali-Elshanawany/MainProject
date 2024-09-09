@@ -35,6 +35,25 @@ namespace FinalBoatSystemRental.Infrastructure.Repositories
                                          .ToListAsync();
         }
 
+        public async Task<IEnumerable<Reservation>> GetTripReservationAdmin()
+        {
+
+            return await _dbContext.Reservations.AsNoTracking()
+                                         .Where(i => i.Status != GlobalVariables.ReservationCanceledStatus)
+                                         .Include(i => i.Boat)
+                                         .Include(i => i.Customer)
+                                         .ToListAsync();
+        }
+        public async Task<IEnumerable<Reservation>> GetCanceledTripReservationAdmin()
+        {
+
+            return await _dbContext.Reservations.AsNoTracking()
+                                         .Where(i => i.Status == GlobalVariables.ReservationCanceledStatus)
+                                         .Include(i => i.Boat)
+                                         .Include(i => i.Customer)
+                                         .ToListAsync();
+        }
+
         public async Task<IEnumerable<Reservation>> GetOwnerReservation(int ownerId)
         {
             return await _dbContext.Reservations.AsNoTracking()
