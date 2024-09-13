@@ -46,9 +46,7 @@ public class BoatBookingRepository : BaseRepository<BoatBooking>, IBoatBookingRe
     {
         var now = DateTime.Now.Date; // Cache current date to avoid multiple calls
         return await _db.BoatBookings.AsNoTracking()
-                                     .Where(i => i.CustomerId == customerId &&
-                                                 (i.Status == GlobalVariables.BoatBookingCanceledStatus ||
-                                                  i.BookingDate.Date < now)).OrderByDescending(i => i.BookingDate)
+                                     .Where(i => i.CustomerId == customerId).OrderByDescending(i => i.CreatesAt)
                                      .ToListAsync();
     }
 
@@ -82,14 +80,27 @@ public class BoatBookingRepository : BaseRepository<BoatBooking>, IBoatBookingRe
                                      .Include(i => i.Boat)
                                      .Where(i => i.Boat.OwnerId == ownerId &&
                                                  (i.Status != GlobalVariables.BoatBookingCanceledStatus)).OrderByDescending(a => a.BookingDate)
+
                                      .ToListAsync();
     }
-    public async Task<IEnumerable<BoatBooking>> GetCanceledBoatBookingOwner(int ownerId)
+    public async Task<IEnumerable<ListCanceledBoatBookingOwner>> GetCanceledBoatBookingOwner(int ownerId)
     {
         return await _db.BoatBookings.AsNoTracking()
                                      .Include(i => i.Boat)
                                      .Where(i => i.Boat.OwnerId == ownerId &&
                                                  (i.Status == GlobalVariables.BoatBookingCanceledStatus)).OrderByDescending(a => a.BookingDate)
+                                                 .Include(i => i.Cancellation).Select(i => new ListCanceledBoatBookingOwner
+                                                 {
+                                                     Id = i.Id,
+                                                     BookingDate = i.BookingDate,
+                                                     BoatId = i.BoatId,
+                                                     CanceledAt = i.CanceledAt,
+                                                     CancellationId = i.Cancellation.Id,
+                                                     CreatesAt = i.CreatesAt,
+                                                     Status = i.Status,
+                                                     TotalPrice = i.TotalPrice,
+                                                     UpdatedAt = i.UpdatedAt,
+                                                 })
                                      .ToListAsync();
     }
 

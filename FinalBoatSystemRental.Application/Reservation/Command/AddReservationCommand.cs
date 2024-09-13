@@ -80,10 +80,15 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
         var TripId = (int)request.TripId;
 
 
+        var trip = await _tripRepository.GetByIdAsync(TripId);
+        if (trip == null)
+            throw new Exception("Trip was not found");
 
 
         // Get the total Addition price
         var additionsPrice = await _additionRepository.GetAdditionPrice(request.AdditionsQuantityIds.Keys.ToList());
+        //if (!additionsPrice.Any())
+        //    throw new Exception("Additions Was not Found");
         var dictTotalAdditionPrice = new Dictionary<int, int>();
         var TotalAdditionPrice = 0;
 
@@ -97,7 +102,6 @@ public class AddReservationHandler : ICommandHandler<AddReservationCommand, Rese
         }
 
         // trip contain  price,Cancellation Deadline and ReservationDate
-        var trip = await _tripRepository.GetByIdAsync(TripId);
         var totalTripPriceWithOutAddition = trip.PricePerPerson * request.NumOfPeople;
 
         //calculate the Cost of the Reservation

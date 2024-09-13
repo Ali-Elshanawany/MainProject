@@ -20,6 +20,7 @@ public interface IBoatRepository : IBaseRepository<Boat>
 
     // Check If the User Is really The Owner Of The Boat 
     Task<bool> IsOwner(int boatId, int ownerid);
+    Task<Boat> GetBoatStatusandCapacity(int boatId);
 
 
 

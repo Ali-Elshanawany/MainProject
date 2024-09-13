@@ -23,8 +23,8 @@ namespace FinalBoatSystemRental.Application.Addition.Command.Add
 
     public class AddAdditionCommand : ICommand<AdditionViewModel>
     {
-        public string Name { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
+        public string? Name { get; set; } = string.Empty;
+        public string? Description { get; set; } = string.Empty;
         public int? Price { get; set; }
 
         [JsonIgnore]
@@ -32,7 +32,7 @@ namespace FinalBoatSystemRental.Application.Addition.Command.Add
 
 
 
-        public AddAdditionCommand(string name, string description, int? price, string userId)
+        public AddAdditionCommand(string? name, string? description, int? price, string? userId)
         {
             Name = name;
             Description = description;
@@ -64,7 +64,7 @@ public class AddAdditionHandler : ICommandHandler<AddAdditionCommand, AdditionVi
         var validationResult = await _validator.ValidateAsync(request, cancellationToken);
         if (!validationResult.IsValid)
         {
-            throw new FluentValidation.ValidationException(validationResult.Errors);
+            throw new ValidationException(validationResult.Errors);
         }
 
         var price = (int)request.Price;

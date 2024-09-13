@@ -1,7 +1,5 @@
 ﻿
-
 using Microsoft.Extensions.DependencyInjection;
-
 namespace FinalBoatSystemRental.Infrastructure.Seeding;
 
 public static class DbInitializer
@@ -20,6 +18,7 @@ public static class DbInitializer
 
             // Seed Users
             await SeedDefaultUserAsync(userManager);
+            // await SeedOwnerAsync(userManager);
         }
     }
 
@@ -37,8 +36,10 @@ public static class DbInitializer
             EmailConfirmed = true
         };
         var result = await userManager.CreateAsync(user, GlobalVariables.AdminPassword);
-
-
         await userManager.AddToRoleAsync(user, GlobalVariables.Admin);
+
     }
+
 }
+
+

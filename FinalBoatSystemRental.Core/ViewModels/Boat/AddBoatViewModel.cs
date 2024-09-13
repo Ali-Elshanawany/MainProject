@@ -8,8 +8,8 @@ public class AddBoatViewModel
 
     public int Id { get; set; }
 
-    [Required(ErrorMessage ="Name is required")]
-    [Length(3,40)]
+    [Required(ErrorMessage = "Name is required")]
+    [Length(3, 40)]
     public string Name { get; set; } = string.Empty;
     [Required(ErrorMessage = "Description is required")]
     [MinLength(20)]
@@ -18,6 +18,10 @@ public class AddBoatViewModel
     public string Capacity { get; set; } = string.Empty;
     [Required(ErrorMessage = "ReservationPrice is required")]
     public decimal ReservationPrice { get; set; }
+
+    public string Status { get; set; }
+
+
 
 
 }

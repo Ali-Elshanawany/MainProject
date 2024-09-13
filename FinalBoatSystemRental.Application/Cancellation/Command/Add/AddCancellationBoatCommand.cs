@@ -37,7 +37,7 @@ public class AddCancellationBoatHandler : ICommandHandler<AddCancellationBoatCom
 
         if (request.BookingId == null)
         {
-            throw new Exception("Boat id can't be null");
+            throw new Exception("Booking Id can't be null");
         }
         var bookingId = (int)request.BookingId;
 

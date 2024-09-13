@@ -16,11 +16,14 @@ public class TripRepository : BaseRepository<Trip>, ITripRepository
     }
 
     // Get Trip By id and Check That the Owner of the trip is the user Asking For Trip Details 
-    public async new Task<Trip> GetByIdAsync(int tripId, int ownerId)
+    public async new Task<Trip> GetByIdAsync(int tripId)
     {
         return await _db.Trips
                     .AsNoTracking()
-                    .SingleOrDefaultAsync(a => a.Id == tripId && a.OwnerId == ownerId);
+                    .Include(i => i.Reservations)
+                    .Where(i => i.Reservations.Sum(a => a.NumOfPeople) < i.MaxPeople)
+                    .SingleOrDefaultAsync(a => a.Id == tripId);
+
     }
 
     public async new Task<IEnumerable<Trip>> GetAllAsync(int ownerid)

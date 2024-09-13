@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalBoatSystemRental.Core.ViewModels.Owner;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FinalBoatSystemRental.Infrastructure.Repositories
 {
-    public class OwnerRepository:BaseRepository<Owner>, IOwnerRepository
+    public class OwnerRepository : BaseRepository<Owner>, IOwnerRepository
     {
         private readonly ApplicationDbContext _dbcontext;
         public OwnerRepository(ApplicationDbContext dbContext) : base(dbContext)
@@ -16,15 +17,24 @@ namespace FinalBoatSystemRental.Infrastructure.Repositories
 
         public async Task<Owner> GetByUserId(string userId)
         {
-           return await _dbcontext.Owners.FirstOrDefaultAsync(o=>o.User.Id == userId);
-        } 
+            return await _dbcontext.Owners.FirstOrDefaultAsync(o => o.User.Id == userId);
+        }
         public async Task<int> GetOwnerIdByUserId(string userId)
         {
-           return await _dbcontext.Owners
-                .AsNoTracking()
-                .Where(i=>i.UserId == userId)
-                .Select(a=>a.Id)
-                .FirstOrDefaultAsync();
+            return await _dbcontext.Owners
+                 .AsNoTracking()
+                 .Where(i => i.UserId == userId)
+                 .Select(a => a.Id)
+                 .FirstOrDefaultAsync();
         }
+
+
+        public async Task<IEnumerable<Owner>> GetAllPendingOwners()
+        {
+            return await _dbcontext.Owners.Where(i => i.IsVerified == false).Include(i => i.User)
+                                           .ToListAsync();
+        }
+
+
     }
 }

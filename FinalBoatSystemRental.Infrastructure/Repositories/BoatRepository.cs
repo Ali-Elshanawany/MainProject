@@ -65,8 +65,14 @@ public class BoatRepository : BaseRepository<Boat>, IBoatRepository
                                .Where(a => a.OwnerId == ownerid && a.Id == boatId)
                                .AnyAsync();
     }
+    public async Task<Boat> GetBoatStatusandCapacity(int boatId)
+    {
+        return await _dbcontext.Boats
+                               .Where(a => a.Id == boatId).Select(a => new Boat { Capacity = a.Capacity, Status = a.Status })
+                               .FirstOrDefaultAsync();
+    }
 
-    // Check if there is a reservation on the boat at specific day
+
 
 
 }

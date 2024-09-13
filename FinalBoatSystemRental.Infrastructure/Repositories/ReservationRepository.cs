@@ -29,9 +29,9 @@ namespace FinalBoatSystemRental.Infrastructure.Repositories
         {
             var now = DateTime.Now.Date; // Cache current date to avoid multiple calls
             return await _dbContext.Reservations.AsNoTracking()
-                                         .Where(i => i.CustomerId == customerId &&
-                                                     (i.Status == GlobalVariables.ReservationCanceledStatus ||
-                                                      i.ReservationDate.Date < now))
+                                         .Where(i => i.CustomerId == customerId)
+                                         .OrderByDescending(i => i.CreatesAt)
+
                                          .ToListAsync();
         }
 

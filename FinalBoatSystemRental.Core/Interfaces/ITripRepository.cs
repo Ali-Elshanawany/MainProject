@@ -4,7 +4,7 @@ namespace FinalBoatSystemRental.Core.Interfaces;
 
 public interface ITripRepository : IBaseRepository<Trip>
 {
-    public Task<Trip> GetByIdAsync(int tripId, int ownerId);
+    public new Task<Trip> GetByIdAsync(int tripId);
 
     Task<IEnumerable<Trip>> GetAllAsync(int ownerid);
 

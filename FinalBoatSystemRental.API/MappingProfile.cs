@@ -38,6 +38,9 @@ public class MappingProfile : Profile
         // Owner Mapping
 
         CreateMap<Owner, OwnerViewModel>().ReverseMap();
+        CreateMap<Owner, PendingOwnerViewModel>()
+            .ForMember(dest => dest.FirstName, opt => opt.MapFrom(src => src.User.FirstName))
+            .ReverseMap();
 
 
         // Customer Mapping
@@ -49,8 +52,11 @@ public class MappingProfile : Profile
 
         CreateMap<BoatBooking, BoatBookingViewModel>().ReverseMap();
         CreateMap<BoatBooking, BoatBookingHistoryViewModel>().ReverseMap();
-        CreateMap<BoatBooking, ListBoatBookingOwner>().ReverseMap();
+        CreateMap<BoatBooking, ListCanceledBoatBookingOwner>()
+            .ForMember(dest => dest.CancellationId, opt => opt.MapFrom(i => i.Cancellation.Id))
+            .ReverseMap();
         CreateMap<BoatBooking, ListBoatBookingAdmin>().ReverseMap();
+        CreateMap<BoatBooking, ListBoatBookingOwner>().ReverseMap();
 
         // Reservation 
 

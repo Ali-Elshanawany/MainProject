@@ -6,7 +6,7 @@ namespace FinalBoatSystemRental.Application.BoatBooking.Query.List;
 
 
 
-public class ListCanceledBoatBookingOwnersQuery : ICommand<IEnumerable<ListBoatBookingOwner>>
+public class ListCanceledBoatBookingOwnersQuery : ICommand<IEnumerable<ListCanceledBoatBookingOwner>>
 {
     [JsonIgnore]
     public string? UserId { get; set; }
@@ -17,7 +17,7 @@ public class ListCanceledBoatBookingOwnersQuery : ICommand<IEnumerable<ListBoatB
     }
 }
 
-public class ListCanceledBoatBookingOwnersHandler : IQueryHandler<ListCanceledBoatBookingOwnersQuery, IEnumerable<ListBoatBookingOwner>>
+public class ListCanceledBoatBookingOwnersHandler : IQueryHandler<ListCanceledBoatBookingOwnersQuery, IEnumerable<ListCanceledBoatBookingOwner>>
 {
 
     private readonly IOwnerRepository _ownerRepository;
@@ -31,7 +31,7 @@ public class ListCanceledBoatBookingOwnersHandler : IQueryHandler<ListCanceledBo
         _ownerRepository = ownerRepository;
     }
 
-    public async Task<IEnumerable<ListBoatBookingOwner>> Handle(ListCanceledBoatBookingOwnersQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<ListCanceledBoatBookingOwner>> Handle(ListCanceledBoatBookingOwnersQuery request, CancellationToken cancellationToken)
     {
         if (request.UserId == null)
         {
@@ -43,7 +43,7 @@ public class ListCanceledBoatBookingOwnersHandler : IQueryHandler<ListCanceledBo
         var result = await _boatBookingRepository.GetCanceledBoatBookingOwner(ownerId);
         if (result != null)
         {
-            return _mapper.Map<IEnumerable<ListBoatBookingOwner>>(result);
+            return _mapper.Map<IEnumerable<ListCanceledBoatBookingOwner>>(result);
         }
         else
         {

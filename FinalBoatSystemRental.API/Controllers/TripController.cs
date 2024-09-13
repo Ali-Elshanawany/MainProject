@@ -75,7 +75,7 @@ public class TripController : ControllerBase
     }
 
     // Owner Return Specific trip
-    [HttpGet("Get-TripById{tripId}")]
+    [HttpGet("Get-TripById/{tripId}")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetTrip(int tripId)
     {

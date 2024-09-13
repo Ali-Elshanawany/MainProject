@@ -132,7 +132,7 @@ public class BoatbookingController : ControllerBase
 
 
     #region Admin
-    [HttpGet("View-BoatReservation")]
+    [HttpGet("Admin-View-BoatReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
     public async Task<IActionResult> GetAllBoatBookingAdmin()
     {
@@ -153,7 +153,7 @@ public class BoatbookingController : ControllerBase
 
     }
 
-    [HttpGet("View-CanceledBoatReservation")]
+    [HttpGet("Admin-View-CanceledBoatReservation")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Admin)]
     public async Task<IActionResult> GetAllCanceledBoatBookingAdmin()
     {

@@ -37,7 +37,7 @@ public class AdditionController : ControllerBase
         catch (Exception ex)
         {
             Log.Fatal(ex.Message);
-            return StatusCode((int)HttpStatusCode.InternalServerError, new { message = ex.Message });
+            return BadRequest(ex.Message);
         }
     }
 

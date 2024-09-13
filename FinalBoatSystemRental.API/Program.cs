@@ -150,6 +150,7 @@ public class Program
                 try
                 {
                     await DbInitializer.Initialize(services);
+
                 }
                 catch (Exception ex)
                 {

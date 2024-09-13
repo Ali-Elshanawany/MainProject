@@ -2,7 +2,11 @@
 {
     public class VerifyOwnerCommand : IRequest<Result>
     {
-        public int OwnerId { get; set; }
+        public int? OwnerId { get; set; }
+        public VerifyOwnerCommand(int? ownerId)
+        {
+            OwnerId = ownerId;
+        }
     }
 
     public class VerifyOwnerCommandHandler : IRequestHandler<VerifyOwnerCommand, Result>
@@ -15,15 +19,31 @@
         }
         public async Task<Result> Handle(VerifyOwnerCommand request, CancellationToken cancellationToken)
         {
-            var owner = await _ownerRepository.GetByIdAsync(request.OwnerId);
+
+            if (request.OwnerId == null)
+            {
+                throw new Exception("Owner Id Can't be Null");
+            }
+
+            var owner = await _ownerRepository.GetByIdAsync((int)request.OwnerId);
             if (owner == null)
             {
-                return Result.Failure("Owner not found");
+                throw new Exception($"Owner Was not Found");
+            }
+            if (owner.IsVerified == true)
+            {
+                throw new Exception("Owner Already Verified");
             }
             owner.IsVerified = true;
             await _ownerRepository.UpdateAsync(owner.Id, owner);
 
-            return Result.Success();
+            var res = new Result
+            {
+                IsSuccess = true,
+                Message = "Owner Verified Successfully"
+            };
+
+            return res;
         }
     }
 

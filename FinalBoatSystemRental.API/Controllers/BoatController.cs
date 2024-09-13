@@ -47,7 +47,7 @@ public class BoatController : ControllerBase
 
 
     // Owner Get specific Owner Boat
-    [HttpGet("GetBoatById{id}")]
+    [HttpGet("GetBoatById/{id}")]
     [ApiExplorerSettings(GroupName = GlobalVariables.Owner)]
     public async Task<IActionResult> GetBoat(int id)
     {

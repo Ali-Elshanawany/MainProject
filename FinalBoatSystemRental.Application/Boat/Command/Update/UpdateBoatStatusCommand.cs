@@ -38,6 +38,9 @@ public class UpdateBoatStatusCommandHandler : ICommandHandler<UpdateBoatStatusCo
         if (boat == null)
             throw new Exception("Boat was not Found");
 
+        if (boat.Status == GlobalVariables.BoatApprovedStatus)
+            throw new Exception("Boat is already Approved");
+
         boat.Status = GlobalVariables.BoatApprovedStatus;
         await _boatRepository.UpdateAsync(boatId, boat);
         return _mapper.Map<UpdateBoatStatusViewModel>(boat);

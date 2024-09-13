@@ -12,7 +12,7 @@ namespace FinalBoatSystemRental.Core.Entities
 
         [Column(TypeName = "decimal(18, 2)")]
         public decimal TotalPrice { get; set; }
-        public string Status { get; set; }=string.Empty;
+        public string Status { get; set; } = string.Empty;
         public DateTime? CanceledAt { get; set; }
         public DateTime CreatesAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
@@ -25,6 +25,7 @@ namespace FinalBoatSystemRental.Core.Entities
 
         public ICollection<BoatBookingAddition> BoatBookingAdditions { get; set; } = default!;
 
+        public Cancellation Cancellation { get; set; } = default!;
 
     }
 }

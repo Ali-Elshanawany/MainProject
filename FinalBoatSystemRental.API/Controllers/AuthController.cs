@@ -50,12 +50,21 @@ public class AuthController : ControllerBase
     [HttpPost("verify-owner")]
     public async Task<IActionResult> VerifyOwner(VerifyOwnerCommand command)
     {
-        var result = await _mediator.Send(command);
-        if (result == null)
+        try
         {
-            return BadRequest(result.Message);
+            Log.Information("Verify Owner");
+            var result = await _mediator.Send(command);
+            if (result == null)
+            {
+                return BadRequest(result.Message);
+            }
+            return Ok(result);
         }
-        return Ok(result.IsSuccess);
+        catch (Exception ex)
+        {
+            Log.Fatal(ex.Message);
+            return BadRequest(ex.Message);
+        }
     }
 
     //All Owner-Customer-Admin

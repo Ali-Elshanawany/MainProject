@@ -3254,4 +3254,1665 @@ Error Number:547,State:0,Class:16
  09/09/2024 20:06:05 +03:00 Server desktop-ht66dte:6180:b2e03f79 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
  09/09/2024 20:06:05 +03:00 Server desktop-ht66dte:6180:b2e03f79 all the dispatchers started 
  09/09/2024 20:11:05 +03:00 4 servers were removed due to timeout 
+ 09/09/2024 20:23:44 +03:00 Stopping the server due to DomainUnload or ProcessExit event... 
+ 09/09/2024 20:23:44 +03:00 Server desktop-ht66dte:6180:b2e03f79 caught stopping signal... 
+ 09/09/2024 20:23:44 +03:00 Server desktop-ht66dte:6180:b2e03f79 caught stopped signal... 
+ 09/09/2024 20:23:44 +03:00 Server desktop-ht66dte:6180:b2e03f79 caught shutdown signal... 
+ 09/09/2024 20:23:44 +03:00 Server desktop-ht66dte:6180:b2e03f79 stopped non-gracefully due to Worker. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods. 
+ 09/09/2024 20:23:44 +03:00 Server desktop-ht66dte:6180:b2e03f79 successfully reported itself as stopped in 78.3273 ms 
+ 09/09/2024 20:23:44 +03:00 Server desktop-ht66dte:6180:b2e03f79 has been stopped in total 89.1993 ms 
+ 09/09/2024 20:27:57 +03:00 Starting up the application 
+ 09/09/2024 20:27:59 +03:00 An error occurred during seeding the database. 
+ System.InvalidOperationException: Role ADMIN does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.SeedDefaultUserAsync(UserManager`1 userManager) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 42
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.Initialize(IServiceProvider serviceProvider) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 22
+   at FinalBoatSystemRental.API.Program.Main(String[] args) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Program.cs:line 152
+09/09/2024 20:27:59 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:27:59 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:27:59 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:27:59 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:27:59 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:27:59 +03:00 Server desktop-ht66dte:1472:3549aacd successfully announced in 85.3115 ms 
+ 09/09/2024 20:27:59 +03:00 Server desktop-ht66dte:1472:3549aacd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:27:59 +03:00 Server desktop-ht66dte:1472:3549aacd all the dispatchers started 
+ 09/09/2024 20:30:46 +03:00 Starting up the application 
+ 09/09/2024 20:30:48 +03:00 An error occurred during seeding the database. 
+ System.InvalidOperationException: Role ADMIN does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.SeedDefaultUserAsync(UserManager`1 userManager) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 40
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.Initialize(IServiceProvider serviceProvider) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 22
+   at FinalBoatSystemRental.API.Program.Main(String[] args) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Program.cs:line 152
+09/09/2024 20:30:48 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:30:48 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:30:48 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:30:48 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:30:48 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:30:48 +03:00 Server desktop-ht66dte:27448:06d2c4fd successfully announced in 82.8312 ms 
+ 09/09/2024 20:30:48 +03:00 Server desktop-ht66dte:27448:06d2c4fd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:30:48 +03:00 Server desktop-ht66dte:27448:06d2c4fd all the dispatchers started 
+ 09/09/2024 20:33:23 +03:00 Starting up the application 
+ 09/09/2024 20:33:24 +03:00 An error occurred during seeding the database. 
+ System.InvalidOperationException: Role ADMIN does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.SeedDefaultUserAsync(UserManager`1 userManager) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 41
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.Initialize(IServiceProvider serviceProvider) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 22
+   at FinalBoatSystemRental.API.Program.Main(String[] args) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Program.cs:line 152
+09/09/2024 20:33:24 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:33:24 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:33:24 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:33:24 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:33:24 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:33:24 +03:00 Server desktop-ht66dte:15476:f16f7119 successfully announced in 81.8707 ms 
+ 09/09/2024 20:33:24 +03:00 Server desktop-ht66dte:15476:f16f7119 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:33:24 +03:00 Server desktop-ht66dte:15476:f16f7119 all the dispatchers started 
+ 09/09/2024 20:33:40 +03:00 Stopping the server due to DomainUnload or ProcessExit event... 
+ 09/09/2024 20:33:40 +03:00 Server desktop-ht66dte:15476:f16f7119 caught stopping signal... 
+ 09/09/2024 20:33:40 +03:00 Server desktop-ht66dte:15476:f16f7119 caught stopped signal... 
+ 09/09/2024 20:33:40 +03:00 Server desktop-ht66dte:15476:f16f7119 caught shutdown signal... 
+ 09/09/2024 20:33:40 +03:00 Server desktop-ht66dte:15476:f16f7119 stopped non-gracefully due to Worker. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods. 
+ 09/09/2024 20:33:40 +03:00 Server desktop-ht66dte:15476:f16f7119 successfully reported itself as stopped in 76.7597 ms 
+ 09/09/2024 20:33:40 +03:00 Server desktop-ht66dte:15476:f16f7119 has been stopped in total 83.1311 ms 
+ 09/09/2024 20:34:36 +03:00 Starting up the application 
+ 09/09/2024 20:34:38 +03:00 An error occurred during seeding the database. 
+ System.InvalidOperationException: Role ADMIN does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.SeedDefaultUserAsync(UserManager`1 userManager) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 41
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.Initialize(IServiceProvider serviceProvider) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 22
+   at FinalBoatSystemRental.API.Program.Main(String[] args) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Program.cs:line 152
+09/09/2024 20:34:38 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:34:38 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:34:38 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:34:38 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:34:38 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:34:38 +03:00 Server desktop-ht66dte:27460:8ceb300a successfully announced in 82.2945 ms 
+ 09/09/2024 20:34:38 +03:00 Server desktop-ht66dte:27460:8ceb300a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:34:38 +03:00 Server desktop-ht66dte:27460:8ceb300a all the dispatchers started 
+ 09/09/2024 20:36:39 +03:00 Starting up the application 
+ 09/09/2024 20:36:40 +03:00 An error occurred during seeding the database. 
+ System.InvalidOperationException: Role ADMIN does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.SeedDefaultUserAsync(UserManager`1 userManager) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 41
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.Initialize(IServiceProvider serviceProvider) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 22
+   at FinalBoatSystemRental.API.Program.Main(String[] args) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Program.cs:line 152
+09/09/2024 20:36:40 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:36:40 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:36:40 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:36:40 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:36:40 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:36:40 +03:00 Server desktop-ht66dte:26512:72d0e023 successfully announced in 8.6586 ms 
+ 09/09/2024 20:36:41 +03:00 Server desktop-ht66dte:26512:72d0e023 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:36:41 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 20:36:41 +03:00 Server desktop-ht66dte:26512:72d0e023 all the dispatchers started 
+ 09/09/2024 20:37:22 +03:00 Starting up the application 
+ 09/09/2024 20:37:22 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:37:23 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:37:23 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:37:23 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:37:23 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:37:23 +03:00 Server desktop-ht66dte:23988:897d217e successfully announced in 78.8471 ms 
+ 09/09/2024 20:37:23 +03:00 Server desktop-ht66dte:23988:897d217e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:37:23 +03:00 Server desktop-ht66dte:23988:897d217e all the dispatchers started 
+ 09/09/2024 20:37:56 +03:00 Starting up the application 
+ 09/09/2024 20:37:56 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:37:56 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:37:57 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:37:57 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:37:57 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:37:57 +03:00 Server desktop-ht66dte:17720:dce00522 successfully announced in 13.8044 ms 
+ 09/09/2024 20:37:57 +03:00 Server desktop-ht66dte:17720:dce00522 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:37:57 +03:00 Server desktop-ht66dte:17720:dce00522 all the dispatchers started 
+ 09/09/2024 20:42:05 +03:00 Starting up the application 
+ 09/09/2024 20:42:06 +03:00 Failed executing DbCommand ("79"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 256), @p12='?' (Size = 256), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 4000), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);" 
+ 09/09/2024 20:42:07 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_AspNetUserRoles_AspNetUsers_UserId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.AspNetUsers\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:ec7eb6da-bb3b-4078-9788-97dd6ee7d4f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:ec7eb6da-bb3b-4078-9788-97dd6ee7d4f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/09/2024 20:42:07 +03:00 An error occurred during seeding the database. 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:ec7eb6da-bb3b-4078-9788-97dd6ee7d4f9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.SeedOwnerAsync(UserManager`1 userManager) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 55
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.Initialize(IServiceProvider serviceProvider) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 23
+   at FinalBoatSystemRental.API.Program.Main(String[] args) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Program.cs:line 152
+09/09/2024 20:42:07 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:42:07 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:42:07 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:42:07 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:42:07 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:42:07 +03:00 Server desktop-ht66dte:8764:193b4adb successfully announced in 62.6265 ms 
+ 09/09/2024 20:42:07 +03:00 Server desktop-ht66dte:8764:193b4adb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:42:07 +03:00 2 servers were removed due to timeout 
+ 09/09/2024 20:42:07 +03:00 Server desktop-ht66dte:8764:193b4adb all the dispatchers started 
+ 09/09/2024 20:42:53 +03:00 Starting up the application 
+ 09/09/2024 20:42:56 +03:00 Failed executing DbCommand ("5"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 256), @p12='?' (Size = 256), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 4000), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);" 
+ 09/09/2024 20:42:56 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_AspNetUserRoles_AspNetUsers_UserId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.AspNetUsers\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d58dbeed-3196-480d-858f-af444b752417
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d58dbeed-3196-480d-858f-af444b752417
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/09/2024 20:42:56 +03:00 An error occurred during seeding the database. 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:d58dbeed-3196-480d-858f-af444b752417
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.SeedOwnerAsync(UserManager`1 userManager) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 55
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.Initialize(IServiceProvider serviceProvider) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 23
+   at FinalBoatSystemRental.API.Program.Main(String[] args) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Program.cs:line 152
+09/09/2024 20:42:56 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:42:56 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:42:56 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:42:56 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:42:56 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:42:56 +03:00 Server desktop-ht66dte:6784:0a64fb6e successfully announced in 80.1068 ms 
+ 09/09/2024 20:42:56 +03:00 Server desktop-ht66dte:6784:0a64fb6e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:42:56 +03:00 2 servers were removed due to timeout 
+ 09/09/2024 20:42:56 +03:00 Server desktop-ht66dte:6784:0a64fb6e all the dispatchers started 
+ 09/09/2024 20:43:15 +03:00 Stopping the server due to DomainUnload or ProcessExit event... 
+ 09/09/2024 20:43:15 +03:00 Server desktop-ht66dte:6784:0a64fb6e caught stopping signal... 
+ 09/09/2024 20:43:15 +03:00 Server desktop-ht66dte:6784:0a64fb6e caught stopped signal... 
+ 09/09/2024 20:43:15 +03:00 Server desktop-ht66dte:6784:0a64fb6e All dispatchers stopped 
+ 09/09/2024 20:43:15 +03:00 Server desktop-ht66dte:6784:0a64fb6e caught shutdown signal... 
+ 09/09/2024 20:43:15 +03:00 Server desktop-ht66dte:6784:0a64fb6e successfully reported itself as stopped in 76.9069 ms 
+ 09/09/2024 20:43:15 +03:00 Server desktop-ht66dte:6784:0a64fb6e has been stopped in total 84.2271 ms 
+ 09/09/2024 20:43:18 +03:00 Starting up the application 
+ 09/09/2024 20:43:19 +03:00 Failed executing DbCommand ("5"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 256), @p12='?' (Size = 256), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 4000), @p17='?' (DbType = Boolean), @p18='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18);" 
+ 09/09/2024 20:43:19 +03:00 An exception occurred in the database while saving changes for context type '"FinalBoatSystemRental.Infrastructure.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_AspNetUserRoles_AspNetUsers_UserId\". The conflict occurred in database \"FinalBoatRentalSystem\", table \"dbo.AspNetUsers\", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6ece89d5-12d3-4586-8aa3-7d3cd4aceb40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6ece89d5-12d3-4586-8aa3-7d3cd4aceb40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+09/09/2024 20:43:19 +03:00 An error occurred during seeding the database. 
+ Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "FinalBoatRentalSystem", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6ece89d5-12d3-4586-8aa3-7d3cd4aceb40
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.CreateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.CreateAsync(TUser user, String password)
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.SeedOwnerAsync(UserManager`1 userManager) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 55
+   at FinalBoatSystemRental.Infrastructure.Seeding.DbInitializer.Initialize(IServiceProvider serviceProvider) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.Infrastructure\Seeding\DbInitializer.cs:line 23
+   at FinalBoatSystemRental.API.Program.Main(String[] args) in E:\Faculty\COURSES\DataScience\C# Projects\MainProject\FinalBoatSystemRental.API\Program.cs:line 152
+09/09/2024 20:43:19 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:43:19 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:43:19 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:43:19 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:43:19 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:43:20 +03:00 Server desktop-ht66dte:17752:3df611c7 successfully announced in 12.691 ms 
+ 09/09/2024 20:43:20 +03:00 Server desktop-ht66dte:17752:3df611c7 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:43:20 +03:00 Server desktop-ht66dte:17752:3df611c7 all the dispatchers started 
+ 09/09/2024 20:43:41 +03:00 Starting up the application 
+ 09/09/2024 20:43:42 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:43:42 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:43:42 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:43:42 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:43:42 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:43:42 +03:00 Server desktop-ht66dte:19644:9d4e62c2 successfully announced in 80.0487 ms 
+ 09/09/2024 20:43:42 +03:00 Server desktop-ht66dte:19644:9d4e62c2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:43:42 +03:00 Server desktop-ht66dte:19644:9d4e62c2 all the dispatchers started 
+ 09/09/2024 20:43:48 +03:00 Stopping the server due to DomainUnload or ProcessExit event... 
+ 09/09/2024 20:43:48 +03:00 Server desktop-ht66dte:19644:9d4e62c2 caught stopping signal... 
+ 09/09/2024 20:43:48 +03:00 Server desktop-ht66dte:19644:9d4e62c2 caught stopped signal... 
+ 09/09/2024 20:43:48 +03:00 Server desktop-ht66dte:19644:9d4e62c2 All dispatchers stopped 
+ 09/09/2024 20:43:48 +03:00 Server desktop-ht66dte:19644:9d4e62c2 caught shutdown signal... 
+ 09/09/2024 20:43:48 +03:00 Server desktop-ht66dte:19644:9d4e62c2 successfully reported itself as stopped in 77.0628 ms 
+ 09/09/2024 20:43:48 +03:00 Server desktop-ht66dte:19644:9d4e62c2 has been stopped in total 82.8651 ms 
+ 09/09/2024 20:44:00 +03:00 Starting up the application 
+ 09/09/2024 20:44:02 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:44:02 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:44:02 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:44:02 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:44:02 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:44:02 +03:00 Server desktop-ht66dte:11000:82994243 successfully announced in 80.2781 ms 
+ 09/09/2024 20:44:02 +03:00 Server desktop-ht66dte:11000:82994243 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:44:02 +03:00 Server desktop-ht66dte:11000:82994243 all the dispatchers started 
+ 09/09/2024 20:49:02 +03:00 3 servers were removed due to timeout 
+ 09/09/2024 20:51:56 +03:00 Starting up the application 
+ 09/09/2024 20:51:57 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:51:57 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:51:57 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:51:57 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:51:57 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:51:57 +03:00 Server desktop-ht66dte:13100:f220d1aa successfully announced in 8.0962 ms 
+ 09/09/2024 20:51:57 +03:00 Server desktop-ht66dte:13100:f220d1aa is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:51:57 +03:00 Server desktop-ht66dte:13100:f220d1aa all the dispatchers started 
+ 09/09/2024 20:53:41 +03:00 Stopping the server due to DomainUnload or ProcessExit event... 
+ 09/09/2024 20:53:41 +03:00 Server desktop-ht66dte:13100:f220d1aa caught stopping signal... 
+ 09/09/2024 20:53:41 +03:00 Server desktop-ht66dte:13100:f220d1aa caught stopped signal... 
+ 09/09/2024 20:53:41 +03:00 Server desktop-ht66dte:13100:f220d1aa caught shutdown signal... 
+ 09/09/2024 20:53:41 +03:00 Server desktop-ht66dte:13100:f220d1aa stopped non-gracefully due to Worker. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods. 
+ 09/09/2024 20:53:41 +03:00 Server desktop-ht66dte:13100:f220d1aa successfully reported itself as stopped in 78.9156 ms 
+ 09/09/2024 20:53:41 +03:00 Server desktop-ht66dte:13100:f220d1aa has been stopped in total 85.5379 ms 
+ 09/09/2024 20:53:46 +03:00 Starting up the application 
+ 09/09/2024 20:53:47 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 20:53:47 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 20:53:47 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 20:53:47 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 20:53:47 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 20:53:48 +03:00 Server desktop-ht66dte:4428:c6a39508 successfully announced in 84.8468 ms 
+ 09/09/2024 20:53:48 +03:00 Server desktop-ht66dte:4428:c6a39508 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 20:53:48 +03:00 Server desktop-ht66dte:4428:c6a39508 all the dispatchers started 
+ 09/09/2024 20:56:11 +03:00 Accessed Register-Owner Function 
+ 09/09/2024 20:56:31 +03:00 Accessed Register-Owner Function 
+ 09/09/2024 20:58:48 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 20:59:08 +03:00 Accessed Login Action 
+ 09/09/2024 21:18:02 +03:00 Starting up the application 
+ 09/09/2024 21:18:04 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:18:04 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:18:04 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:18:04 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:18:04 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:18:04 +03:00 Server desktop-ht66dte:23432:1154de98 successfully announced in 84.422 ms 
+ 09/09/2024 21:18:04 +03:00 Server desktop-ht66dte:23432:1154de98 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:18:04 +03:00 Server desktop-ht66dte:23432:1154de98 all the dispatchers started 
+ 09/09/2024 21:19:05 +03:00 View Pending Owners  
+ 09/09/2024 21:19:05 +03:00 Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[FinalBoatSystemRental.Core.Entities.Owner, FinalBoatSystemRental.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[FinalBoatSystemRental.Core.ViewModels.Owner.PendingOwnerViewModel, FinalBoatSystemRental.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 
+ 09/09/2024 21:19:27 +03:00 Starting up the application 
+ 09/09/2024 21:19:28 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:19:29 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:19:29 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:19:29 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:19:29 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:19:29 +03:00 Server desktop-ht66dte:6576:4b8f4c5f successfully announced in 9.6909 ms 
+ 09/09/2024 21:19:29 +03:00 Server desktop-ht66dte:6576:4b8f4c5f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:19:29 +03:00 Server desktop-ht66dte:6576:4b8f4c5f all the dispatchers started 
+ 09/09/2024 21:19:31 +03:00 View Pending Owners  
+ 09/09/2024 21:20:35 +03:00 Starting up the application 
+ 09/09/2024 21:20:36 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:20:36 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:20:37 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:20:37 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:20:37 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:20:37 +03:00 Server desktop-ht66dte:14892:b7efda1c successfully announced in 10.0478 ms 
+ 09/09/2024 21:20:37 +03:00 Server desktop-ht66dte:14892:b7efda1c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:20:37 +03:00 Server desktop-ht66dte:14892:b7efda1c all the dispatchers started 
+ 09/09/2024 21:20:39 +03:00 View Pending Owners  
+ 09/09/2024 21:20:53 +03:00 Starting up the application 
+ 09/09/2024 21:20:55 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:20:55 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:20:55 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:20:55 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:20:55 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:20:55 +03:00 Server desktop-ht66dte:8280:6fa86e7c successfully announced in 5.455 ms 
+ 09/09/2024 21:20:55 +03:00 Server desktop-ht66dte:8280:6fa86e7c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:20:55 +03:00 Server desktop-ht66dte:8280:6fa86e7c all the dispatchers started 
+ 09/09/2024 21:20:56 +03:00 View Pending Owners  
+ 09/09/2024 21:21:33 +03:00 Starting up the application 
+ 09/09/2024 21:21:34 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:21:34 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:21:34 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:21:34 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:21:34 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:21:35 +03:00 Server desktop-ht66dte:8120:4530797c successfully announced in 83.4547 ms 
+ 09/09/2024 21:21:35 +03:00 Server desktop-ht66dte:8120:4530797c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:21:35 +03:00 Server desktop-ht66dte:8120:4530797c all the dispatchers started 
+ 09/09/2024 21:21:35 +03:00 View Pending Owners  
+ 09/09/2024 21:21:35 +03:00 The expression 'i.User.FirstName' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see https://go.microsoft.com/fwlink/?LinkID=746393. 
+ 09/09/2024 21:21:40 +03:00 View Pending Owners  
+ 09/09/2024 21:21:40 +03:00 The expression 'i.User.FirstName' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see https://go.microsoft.com/fwlink/?LinkID=746393. 
+ 09/09/2024 21:21:44 +03:00 Starting up the application 
+ 09/09/2024 21:21:46 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:21:46 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:21:46 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:21:46 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:21:46 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:21:46 +03:00 Server desktop-ht66dte:29672:a9c76c2f successfully announced in 82.3224 ms 
+ 09/09/2024 21:21:46 +03:00 Server desktop-ht66dte:29672:a9c76c2f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:21:46 +03:00 Server desktop-ht66dte:29672:a9c76c2f all the dispatchers started 
+ 09/09/2024 21:21:47 +03:00 View Pending Owners  
+ 09/09/2024 21:22:06 +03:00 Starting up the application 
+ 09/09/2024 21:22:08 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:22:08 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:22:08 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:22:08 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:22:08 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:22:08 +03:00 Server desktop-ht66dte:9684:34172067 successfully announced in 6.7942 ms 
+ 09/09/2024 21:22:08 +03:00 Server desktop-ht66dte:9684:34172067 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:22:08 +03:00 Server desktop-ht66dte:9684:34172067 all the dispatchers started 
+ 09/09/2024 21:22:09 +03:00 View Pending Owners  
+ 09/09/2024 21:25:54 +03:00 Starting up the application 
+ 09/09/2024 21:25:56 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:25:56 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:25:56 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:25:56 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:25:56 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:25:56 +03:00 Server desktop-ht66dte:21416:870bfb51 successfully announced in 80.9935 ms 
+ 09/09/2024 21:25:56 +03:00 Server desktop-ht66dte:21416:870bfb51 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:25:56 +03:00 4 servers were removed due to timeout 
+ 09/09/2024 21:25:56 +03:00 Server desktop-ht66dte:21416:870bfb51 all the dispatchers started 
+ 09/09/2024 21:25:58 +03:00 View Pending Owners  
+ 09/09/2024 21:28:02 +03:00 Starting up the application 
+ 09/09/2024 21:28:03 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:28:03 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:28:03 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:28:03 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:28:03 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:28:03 +03:00 Server desktop-ht66dte:24424:bdead2bb successfully announced in 82.5077 ms 
+ 09/09/2024 21:28:03 +03:00 Server desktop-ht66dte:24424:bdead2bb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:28:03 +03:00 Server desktop-ht66dte:24424:bdead2bb all the dispatchers started 
+ 09/09/2024 21:28:03 +03:00 3 servers were removed due to timeout 
+ 09/09/2024 21:29:22 +03:00 Starting up the application 
+ 09/09/2024 21:29:23 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:29:24 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:29:24 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:29:24 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:29:24 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:29:24 +03:00 Server desktop-ht66dte:25340:a547df39 successfully announced in 81.7347 ms 
+ 09/09/2024 21:29:24 +03:00 Server desktop-ht66dte:25340:a547df39 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:29:24 +03:00 Server desktop-ht66dte:25340:a547df39 all the dispatchers started 
+ 09/09/2024 21:29:39 +03:00 Verify Owner 
+ 09/09/2024 21:29:39 +03:00 Owner Id Can't be Null 
+ 09/09/2024 21:29:44 +03:00 Verify Owner 
+ 09/09/2024 21:30:42 +03:00 Starting up the application 
+ 09/09/2024 21:30:43 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:30:43 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:30:43 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:30:43 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:30:43 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:30:43 +03:00 Server desktop-ht66dte:8564:71ec6553 successfully announced in 79.6745 ms 
+ 09/09/2024 21:30:43 +03:00 Server desktop-ht66dte:8564:71ec6553 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:30:43 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 21:30:43 +03:00 Server desktop-ht66dte:8564:71ec6553 all the dispatchers started 
+ 09/09/2024 21:30:44 +03:00 Verify Owner 
+ 09/09/2024 21:30:48 +03:00 Verify Owner 
+ 09/09/2024 21:30:52 +03:00 Verify Owner 
+ 09/09/2024 21:30:56 +03:00 Verify Owner 
+ 09/09/2024 21:31:37 +03:00 Starting up the application 
+ 09/09/2024 21:31:38 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:31:38 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:31:38 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:31:38 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:31:38 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:31:38 +03:00 Server desktop-ht66dte:5020:2da76176 successfully announced in 8.3591 ms 
+ 09/09/2024 21:31:38 +03:00 Server desktop-ht66dte:5020:2da76176 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:31:38 +03:00 Server desktop-ht66dte:5020:2da76176 all the dispatchers started 
+ 09/09/2024 21:31:44 +03:00 Verify Owner 
+ 09/09/2024 21:31:44 +03:00 Owner Already Verified 
+ 09/09/2024 21:32:13 +03:00 Starting up the application 
+ 09/09/2024 21:32:15 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:32:15 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:32:15 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:32:15 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:32:15 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:32:15 +03:00 Server desktop-ht66dte:15424:8d857950 successfully announced in 6.1164 ms 
+ 09/09/2024 21:32:15 +03:00 Server desktop-ht66dte:15424:8d857950 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:32:15 +03:00 Server desktop-ht66dte:15424:8d857950 all the dispatchers started 
+ 09/09/2024 21:32:19 +03:00 Verify Owner 
+ 09/09/2024 21:32:20 +03:00 Owner Already Verified 
+ 09/09/2024 21:32:50 +03:00 Verify Owner 
+ 09/09/2024 21:33:47 +03:00 Starting up the application 
+ 09/09/2024 21:33:49 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 21:33:49 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 21:33:49 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 21:33:49 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 21:33:49 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 21:33:49 +03:00 Server desktop-ht66dte:8868:421e1c9d successfully announced in 82.7213 ms 
+ 09/09/2024 21:33:49 +03:00 Server desktop-ht66dte:8868:421e1c9d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 21:33:49 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 21:33:49 +03:00 Server desktop-ht66dte:8868:421e1c9d all the dispatchers started 
+ 09/09/2024 21:33:52 +03:00 Verify Owner 
+ 09/09/2024 21:33:52 +03:00 Owner Was not Found 
+ 09/09/2024 21:38:49 +03:00 5 servers were removed due to timeout 
+ 09/09/2024 22:22:09 +03:00 Accessed Login Action 
+ 09/09/2024 22:22:57 +03:00 Accessed Login Action 
+ 09/09/2024 22:23:27 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View boats 
+ 09/09/2024 22:24:13 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Adding Boat 
+ 09/09/2024 22:24:13 +03:00 Validation failed: 
+ -- Name: Name cannot be null. Severity: Error
+ -- Name: Name is Required Severity: Error
+ -- Description: Description cannot be null. Severity: Error
+ -- Description: Description is Required Severity: Error
+ -- Capacity: Capacity cannot be null. Severity: Error
+ -- Capacity: Capacity is Required Severity: Error
+ -- ReservationPrice: ReservationPrice cannot be null. Severity: Error
+ -- ReservationPrice: ReservationPrice is Required Severity: Error
+ -- MaxCancellationDateInDays: ReservationPrice cannot be null. Severity: Error
+ -- MaxCancellationDateInDays: ReservationPrice is Required Severity: Error 
+ 09/09/2024 22:24:49 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Adding Boat 
+ 09/09/2024 22:25:27 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Adding Boat 
+ 09/09/2024 22:25:43 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Adding Boat 
+ 09/09/2024 22:25:50 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View boats 
+ 09/09/2024 22:27:11 +03:00 Starting up the application 
+ 09/09/2024 22:27:12 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 22:27:12 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 22:27:12 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 22:27:12 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 22:27:12 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 22:27:12 +03:00 Server desktop-ht66dte:6424:813a48d9 successfully announced in 85.1731 ms 
+ 09/09/2024 22:27:12 +03:00 Server desktop-ht66dte:6424:813a48d9 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 22:27:12 +03:00 Server desktop-ht66dte:6424:813a48d9 all the dispatchers started 
+ 09/09/2024 22:27:14 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View boats 
+ 09/09/2024 22:27:58 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View boats 
+ 09/09/2024 22:32:12 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 22:32:29 +03:00 Starting up the application 
+ 09/09/2024 22:32:30 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 22:32:30 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 22:32:31 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 22:32:31 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 22:32:31 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 22:32:31 +03:00 Server desktop-ht66dte:5592:72bae881 successfully announced in 85.0888 ms 
+ 09/09/2024 22:32:31 +03:00 Server desktop-ht66dte:5592:72bae881 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 22:32:31 +03:00 Server desktop-ht66dte:5592:72bae881 all the dispatchers started 
+ 09/09/2024 22:32:32 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/09/2024 22:32:32 +03:00 Validation failed: 
+ -- Name: Name Is Required Severity: Error
+ -- Description: Description Is Required Severity: Error
+ -- PricePerPerson: PricePerPerson Is Required Severity: Error
+ -- PricePerPerson: Price Per Person can't be null Severity: Error
+ -- MaxPeople: Num of people Is Required Severity: Error
+ -- MaxPeople: Max Number of People can't be null Severity: Error
+ -- BoatId: BoatId Is Required Severity: Error
+ -- BoatId: BoatId can't be null Severity: Error
+ -- CancellationDeadLine: Cancellation DeadLine is required Severity: Error
+ -- StartedAt: StartedAt DeadLine is required Severity: Error 
+ 09/09/2024 22:37:31 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 22:43:38 +03:00 Starting up the application 
+ 09/09/2024 22:43:40 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 22:43:40 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 22:43:40 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 22:43:40 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 22:43:40 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 22:43:40 +03:00 Server desktop-ht66dte:17776:25933a87 successfully announced in 12.0244 ms 
+ 09/09/2024 22:43:40 +03:00 Server desktop-ht66dte:17776:25933a87 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 22:43:40 +03:00 Server desktop-ht66dte:17776:25933a87 all the dispatchers started 
+ 09/09/2024 22:43:41 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/09/2024 22:43:41 +03:00 Validation failed: 
+ -- Description: Description Is Required Severity: Error
+ -- PricePerPerson: PricePerPerson Is Required Severity: Error
+ -- PricePerPerson: Price Per Person can't be null Severity: Error
+ -- MaxPeople: Num of people Is Required Severity: Error
+ -- MaxPeople: Max Number of People can't be null Severity: Error
+ -- BoatId: BoatId Is Required Severity: Error
+ -- BoatId: BoatId can't be null Severity: Error
+ -- CancellationDeadLine: Cancellation DeadLine is required Severity: Error
+ -- StartedAt: StartedAt DeadLine is required Severity: Error 
+ 09/09/2024 22:48:40 +03:00 1 servers were removed due to timeout 
+ 09/09/2024 22:50:26 +03:00 Starting up the application 
+ 09/09/2024 22:50:28 +03:00 Start installing Hangfire SQL objects... 
+ 09/09/2024 22:50:28 +03:00 Hangfire SQL objects installed. 
+ 09/09/2024 22:50:28 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/09/2024 22:50:28 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/09/2024 22:50:28 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/09/2024 22:50:28 +03:00 Server desktop-ht66dte:16852:ab89c19d successfully announced in 9.9626 ms 
+ 09/09/2024 22:50:28 +03:00 Server desktop-ht66dte:16852:ab89c19d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/09/2024 22:50:28 +03:00 Server desktop-ht66dte:16852:ab89c19d all the dispatchers started 
+ 09/09/2024 22:50:37 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/09/2024 22:50:37 +03:00 Validation failed: 
+ -- BoatId: BoatId Is Required Severity: Error
+ -- BoatId: BoatId can't be null Severity: Error 
+ 09/09/2024 22:50:51 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/09/2024 22:50:51 +03:00 Boat is not Approved Plz Contact with the Admin 
+ 09/09/2024 22:51:21 +03:00 Approve Boat 
+ 09/09/2024 22:51:21 +03:00 Boat Id is required can't be Null  
+ 09/09/2024 22:51:28 +03:00 Approve Boat 
+ 09/09/2024 22:51:39 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/09/2024 22:51:39 +03:00 Boat Capacity is 10 can't be more than that 
+ 09/13/2024 14:45:51 +03:00 Starting up the application 
+ 09/13/2024 14:45:54 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 14:45:55 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 14:45:55 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 14:45:55 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 14:45:55 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 14:45:55 +03:00 Server desktop-ht66dte:2676:cf8f2a15 successfully announced in 10.697 ms 
+ 09/13/2024 14:45:55 +03:00 Server desktop-ht66dte:2676:cf8f2a15 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 14:45:55 +03:00 Server desktop-ht66dte:2676:cf8f2a15 all the dispatchers started 
+ 09/13/2024 14:45:55 +03:00 2 servers were removed due to timeout 
+ 09/13/2024 14:46:03 +03:00 Approve Boat 
+ 09/13/2024 14:46:07 +03:00 Approve Boat 
+ 09/13/2024 14:46:08 +03:00 Approve Boat 
+ 09/13/2024 14:46:09 +03:00 Approve Boat 
+ 09/13/2024 14:46:15 +03:00 Approve Boat 
+ 09/13/2024 14:47:47 +03:00 Starting up the application 
+ 09/13/2024 14:47:49 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 14:47:49 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 14:47:49 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 14:47:49 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 14:47:49 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 14:47:49 +03:00 Server desktop-ht66dte:17676:5ca8f1d3 successfully announced in 7.9599 ms 
+ 09/13/2024 14:47:49 +03:00 Server desktop-ht66dte:17676:5ca8f1d3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 14:47:49 +03:00 Server desktop-ht66dte:17676:5ca8f1d3 all the dispatchers started 
+ 09/13/2024 14:47:50 +03:00 Approve Boat 
+ 09/13/2024 14:47:51 +03:00 Boat is already Approved 
+ 09/13/2024 14:48:11 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View boats 
+ 09/13/2024 14:51:07 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View Boat info  
+ 09/13/2024 14:52:11 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View Boat info  
+ 09/13/2024 14:52:11 +03:00 Boat Was not Found Please Try Again! 
+ 09/13/2024 14:52:49 +03:00 1 servers were removed due to timeout 
+ 09/13/2024 14:53:05 +03:00 Starting up the application 
+ 09/13/2024 14:53:07 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 14:53:07 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 14:53:07 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 14:53:07 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 14:53:07 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 14:53:07 +03:00 Server desktop-ht66dte:4620:b165e059 successfully announced in 8.3212 ms 
+ 09/13/2024 14:53:07 +03:00 Server desktop-ht66dte:4620:b165e059 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 14:53:07 +03:00 Server desktop-ht66dte:4620:b165e059 all the dispatchers started 
+ 09/13/2024 14:53:14 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View Boat info  
+ 09/13/2024 14:53:14 +03:00 Boat Was not Found Please Try Again! 
+ 09/13/2024 14:53:22 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View Boat info  
+ 09/13/2024 14:53:22 +03:00 Boat Was not Found Please Try Again! 
+ 09/13/2024 14:53:26 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View Boat info  
+ 09/13/2024 14:53:50 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Adding Boat 
+ 09/13/2024 14:53:58 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Adding Boat 
+ 09/13/2024 14:53:58 +03:00 Validation failed: 
+ -- Name: Name cannot be null. Severity: Error
+ -- Name: Name is Required Severity: Error 
+ 09/13/2024 14:54:10 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Adding Boat 
+ 09/13/2024 14:54:10 +03:00 Validation failed: 
+ -- Name: Name cannot be null. Severity: Error
+ -- Name: Name is Required Severity: Error
+ -- Description: Description cannot be null. Severity: Error
+ -- Description: Description is Required Severity: Error
+ -- Capacity: Capacity cannot be null. Severity: Error
+ -- Capacity: Capacity is Required Severity: Error
+ -- ReservationPrice: ReservationPrice cannot be null. Severity: Error
+ -- ReservationPrice: ReservationPrice is Required Severity: Error
+ -- MaxCancellationDateInDays: ReservationPrice cannot be null. Severity: Error
+ -- MaxCancellationDateInDays: ReservationPrice is Required Severity: Error 
+ 09/13/2024 14:54:23 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View boats 
+ 09/13/2024 14:54:44 +03:00 Approve Boat 
+ 09/13/2024 14:54:48 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View boats 
+ 09/13/2024 14:55:12 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Delete Boat  
+ 09/13/2024 14:55:12 +03:00 Validation failed: 
+ -- Id: Id is required Severity: Error 
+ 09/13/2024 14:55:18 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Delete Boat  
+ 09/13/2024 14:56:44 +03:00 An unhandled exception has occurred while executing the request. 
+ Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+FinalBoatSystemRental.API.Controllers.BoatbookingController.GetOwnerBoatReservation (FinalBoatSystemRental.API)
+FinalBoatSystemRental.API.Controllers.BoatbookingController.GetAllBoatBookingAdmin (FinalBoatSystemRental.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/13/2024 14:56:52 +03:00 An unhandled exception has occurred while executing the request. 
+ Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+FinalBoatSystemRental.API.Controllers.BoatbookingController.GetOwnerBoatReservation (FinalBoatSystemRental.API)
+FinalBoatSystemRental.API.Controllers.BoatbookingController.GetAllBoatBookingAdmin (FinalBoatSystemRental.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/13/2024 14:57:09 +03:00 An unhandled exception has occurred while executing the request. 
+ Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+FinalBoatSystemRental.API.Controllers.BoatbookingController.GetOwnerBoatReservation (FinalBoatSystemRental.API)
+FinalBoatSystemRental.API.Controllers.BoatbookingController.GetAllBoatBookingAdmin (FinalBoatSystemRental.API)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+09/13/2024 14:58:07 +03:00 1 servers were removed due to timeout 
+ 09/13/2024 14:58:16 +03:00 Starting up the application 
+ 09/13/2024 14:58:18 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 14:58:18 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 14:58:18 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 14:58:18 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 14:58:18 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 14:58:18 +03:00 Server desktop-ht66dte:21036:229a0f35 successfully announced in 7.9283 ms 
+ 09/13/2024 14:58:18 +03:00 Server desktop-ht66dte:21036:229a0f35 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 14:58:18 +03:00 Server desktop-ht66dte:21036:229a0f35 all the dispatchers started 
+ 09/13/2024 14:58:21 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 14:58:33 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Canceled Boat Reservation 
+ 09/13/2024 14:58:51 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get Details  
+ 09/13/2024 14:59:02 +03:00 Update owner details 72907e7a-d9d6-4163-92df-edd90293088f 
+ 09/13/2024 14:59:22 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get Details  
+ 09/13/2024 14:59:40 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Balance 
+ 09/13/2024 14:59:41 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Balance 
+ 09/13/2024 14:59:46 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get Details  
+ 09/13/2024 15:00:06 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Trip reservation 
+ 09/13/2024 15:00:15 +03:00 72907e7a-d9d6-4163-92df-edd90293088f get all canceled Tips 
+ 09/13/2024 15:00:45 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View Trips 
+ 09/13/2024 15:01:02 +03:00 72907e7a-d9d6-4163-92df-edd90293088f view Trip  
+ 09/13/2024 15:01:02 +03:00 Trip was not found please try again!! 
+ 09/13/2024 15:01:07 +03:00 72907e7a-d9d6-4163-92df-edd90293088f view Trip  
+ 09/13/2024 15:01:07 +03:00 Trip was not found please try again!! 
+ 09/13/2024 15:01:11 +03:00 72907e7a-d9d6-4163-92df-edd90293088f view Trip  
+ 09/13/2024 15:01:11 +03:00 Trip was not found please try again!! 
+ 09/13/2024 15:01:29 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/13/2024 15:01:29 +03:00 Boat Capacity is 10 can't be more than that 
+ 09/13/2024 15:02:43 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/13/2024 15:02:55 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/13/2024 15:02:55 +03:00 Can not Add This Trip on boat 27 Another Trip Already Registered At 10/20/2024 12:00:00 AM 
+ 09/13/2024 15:03:07 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/13/2024 15:03:15 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Trip 
+ 09/13/2024 15:03:15 +03:00 Boat Capacity is 10 can't be more than that 
+ 09/13/2024 15:03:18 +03:00 1 servers were removed due to timeout 
+ 09/13/2024 15:03:32 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View Trips 
+ 09/13/2024 15:04:17 +03:00 Starting up the application 
+ 09/13/2024 15:04:19 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:04:19 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:04:20 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:04:20 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:04:20 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:04:20 +03:00 Server desktop-ht66dte:17264:9909a664 successfully announced in 10.1214 ms 
+ 09/13/2024 15:04:20 +03:00 Server desktop-ht66dte:17264:9909a664 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:04:20 +03:00 Server desktop-ht66dte:17264:9909a664 all the dispatchers started 
+ 09/13/2024 15:04:22 +03:00 72907e7a-d9d6-4163-92df-edd90293088f View Trips 
+ 09/13/2024 15:04:30 +03:00 72907e7a-d9d6-4163-92df-edd90293088f view Trip  
+ 09/13/2024 15:05:22 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Addition 
+ 09/13/2024 15:05:22 +03:00 Validation failed: 
+ -- Price: Price is Required Severity: Error 
+ 09/13/2024 15:07:14 +03:00 Starting up the application 
+ 09/13/2024 15:07:16 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:07:16 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:07:16 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:07:16 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:07:16 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:07:16 +03:00 Server desktop-ht66dte:18516:b635e36c successfully announced in 8.2728 ms 
+ 09/13/2024 15:07:16 +03:00 Server desktop-ht66dte:18516:b635e36c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:07:16 +03:00 Server desktop-ht66dte:18516:b635e36c all the dispatchers started 
+ 09/13/2024 15:07:17 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Addition 
+ 09/13/2024 15:07:17 +03:00 Validation failed: 
+ -- Description: Description is Required Severity: Error
+ -- Price: Price is Required Severity: Error 
+ 09/13/2024 15:07:26 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Addition 
+ 09/13/2024 15:07:26 +03:00 Validation failed: 
+ -- Description: Description is Required Severity: Error
+ -- Price: Price is Required Severity: Error 
+ 09/13/2024 15:07:54 +03:00 Starting up the application 
+ 09/13/2024 15:07:56 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:07:56 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:07:56 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:07:56 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:07:56 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:07:56 +03:00 Server desktop-ht66dte:22344:1ceb1c00 successfully announced in 9.7138 ms 
+ 09/13/2024 15:07:56 +03:00 Server desktop-ht66dte:22344:1ceb1c00 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:07:56 +03:00 Server desktop-ht66dte:22344:1ceb1c00 all the dispatchers started 
+ 09/13/2024 15:07:57 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Addition 
+ 09/13/2024 15:07:58 +03:00 Validation failed: 
+ -- Description: Description is Required Severity: Error
+ -- Price: Price is Required Severity: Error 
+ 09/13/2024 15:08:10 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Addition 
+ 09/13/2024 15:08:13 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Addition 
+ 09/13/2024 15:08:13 +03:00 Name is ALready Registered plz Try Another Name  
+ 09/13/2024 15:08:19 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Addition 
+ 09/13/2024 15:12:31 +03:00 Register Customer 
+ 09/13/2024 15:12:44 +03:00 Accessed Login Action 
+ 09/13/2024 15:12:56 +03:00 3 servers were removed due to timeout 
+ 09/13/2024 15:13:15 +03:00 Customer View Available Boats 
+ 09/13/2024 15:13:56 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 15:14:48 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 Book a boat 
+ 09/13/2024 15:14:50 +03:00 Balance Was not Enough To Book  
+ 09/13/2024 15:15:10 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Profile 
+ 09/13/2024 15:15:18 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 Update Profile 
+ 09/13/2024 15:15:35 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 Add Balance 
+ 09/13/2024 15:15:41 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 Book a boat 
+ 09/13/2024 15:16:15 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 Book a boat 
+ 09/13/2024 15:17:12 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 15:17:33 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 15:18:38 +03:00 Starting up the application 
+ 09/13/2024 15:18:39 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:18:40 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:18:40 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:18:40 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:18:40 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:18:40 +03:00 Server desktop-ht66dte:16280:837d7326 successfully announced in 8.2037 ms 
+ 09/13/2024 15:18:40 +03:00 Server desktop-ht66dte:16280:837d7326 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:18:40 +03:00 Server desktop-ht66dte:16280:837d7326 all the dispatchers started 
+ 09/13/2024 15:18:41 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 15:18:43 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 15:18:44 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 15:19:22 +03:00 Starting up the application 
+ 09/13/2024 15:19:23 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:19:23 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:19:24 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:19:24 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:19:24 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:19:24 +03:00 Server desktop-ht66dte:17384:b4b6cfb2 successfully announced in 80.531 ms 
+ 09/13/2024 15:19:24 +03:00 Server desktop-ht66dte:17384:b4b6cfb2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:19:24 +03:00 Server desktop-ht66dte:17384:b4b6cfb2 all the dispatchers started 
+ 09/13/2024 15:19:24 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 15:20:10 +03:00 Starting up the application 
+ 09/13/2024 15:20:11 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:20:12 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:20:12 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:20:12 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:20:12 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:20:12 +03:00 Server desktop-ht66dte:23640:804cfc30 successfully announced in 83.1888 ms 
+ 09/13/2024 15:20:12 +03:00 Server desktop-ht66dte:23640:804cfc30 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:20:12 +03:00 Server desktop-ht66dte:23640:804cfc30 all the dispatchers started 
+ 09/13/2024 15:20:14 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 15:21:18 +03:00 Customer Cancel A Boat 
+ 09/13/2024 15:21:18 +03:00 Boat id can't be null 
+ 09/13/2024 15:21:24 +03:00 Customer Cancel A Boat 
+ 09/13/2024 15:21:41 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Trip reservation 
+ 09/13/2024 15:21:47 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:21:52 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Canceled Boat Reservation 
+ 09/13/2024 15:22:28 +03:00 Starting up the application 
+ 09/13/2024 15:22:29 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:22:30 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:22:30 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:22:30 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:22:30 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:22:30 +03:00 Server desktop-ht66dte:8000:cca9302e successfully announced in 80.8325 ms 
+ 09/13/2024 15:22:30 +03:00 Server desktop-ht66dte:8000:cca9302e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:22:30 +03:00 Server desktop-ht66dte:8000:cca9302e all the dispatchers started 
+ 09/13/2024 15:22:48 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Canceled Boat Reservation 
+ 09/13/2024 15:23:18 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Pay Refund 
+ 09/13/2024 15:23:18 +03:00 Cancellation Data Was not Found  
+ 09/13/2024 15:24:39 +03:00 Starting up the application 
+ 09/13/2024 15:24:40 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:24:41 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:24:41 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:24:41 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:24:41 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:24:41 +03:00 Server desktop-ht66dte:10056:d6b7b846 successfully announced in 87.939 ms 
+ 09/13/2024 15:24:41 +03:00 Server desktop-ht66dte:10056:d6b7b846 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:24:41 +03:00 Server desktop-ht66dte:10056:d6b7b846 all the dispatchers started 
+ 09/13/2024 15:24:41 +03:00 2 servers were removed due to timeout 
+ 09/13/2024 15:24:48 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:25:05 +03:00 Starting up the application 
+ 09/13/2024 15:25:06 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:25:06 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:25:06 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:25:07 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:25:07 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:25:07 +03:00 Server desktop-ht66dte:13272:89ef1783 successfully announced in 11.1128 ms 
+ 09/13/2024 15:25:07 +03:00 Server desktop-ht66dte:13272:89ef1783 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:25:07 +03:00 Server desktop-ht66dte:13272:89ef1783 all the dispatchers started 
+ 09/13/2024 15:25:07 +03:00 1 servers were removed due to timeout 
+ 09/13/2024 15:25:07 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:28:18 +03:00 Starting up the application 
+ 09/13/2024 15:28:19 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:28:20 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:28:20 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:28:20 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:28:20 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:28:20 +03:00 Server desktop-ht66dte:27652:5531ae70 successfully announced in 86.8603 ms 
+ 09/13/2024 15:28:20 +03:00 Server desktop-ht66dte:27652:5531ae70 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:28:20 +03:00 Server desktop-ht66dte:27652:5531ae70 all the dispatchers started 
+ 09/13/2024 15:28:20 +03:00 1 servers were removed due to timeout 
+ 09/13/2024 15:28:46 +03:00 Starting up the application 
+ 09/13/2024 15:28:47 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:28:47 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:28:48 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:28:48 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:28:48 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:28:48 +03:00 Server desktop-ht66dte:9072:b28a08a3 successfully announced in 7.3149 ms 
+ 09/13/2024 15:28:48 +03:00 Server desktop-ht66dte:9072:b28a08a3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:28:48 +03:00 Server desktop-ht66dte:9072:b28a08a3 all the dispatchers started 
+ 09/13/2024 15:28:49 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:29:06 +03:00 Starting up the application 
+ 09/13/2024 15:29:07 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:29:07 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:29:07 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:29:07 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:29:07 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:29:07 +03:00 Server desktop-ht66dte:19096:0d6ab03d successfully announced in 79.6381 ms 
+ 09/13/2024 15:29:07 +03:00 Server desktop-ht66dte:19096:0d6ab03d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:29:07 +03:00 Server desktop-ht66dte:19096:0d6ab03d all the dispatchers started 
+ 09/13/2024 15:29:08 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:29:10 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:30:45 +03:00 Starting up the application 
+ 09/13/2024 15:30:46 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:30:47 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:30:47 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:30:47 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:30:47 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:30:47 +03:00 Server desktop-ht66dte:6828:e9b43b9a successfully announced in 84.4278 ms 
+ 09/13/2024 15:30:47 +03:00 Server desktop-ht66dte:6828:e9b43b9a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:30:47 +03:00 2 servers were removed due to timeout 
+ 09/13/2024 15:30:47 +03:00 Server desktop-ht66dte:6828:e9b43b9a all the dispatchers started 
+ 09/13/2024 15:30:48 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:30:52 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:30:53 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:31:01 +03:00 Starting up the application 
+ 09/13/2024 15:31:03 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:31:03 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:31:03 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:31:03 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:31:03 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:31:03 +03:00 Server desktop-ht66dte:8824:b369f5c1 successfully announced in 5.5404 ms 
+ 09/13/2024 15:31:03 +03:00 Server desktop-ht66dte:8824:b369f5c1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:31:03 +03:00 Server desktop-ht66dte:8824:b369f5c1 all the dispatchers started 
+ 09/13/2024 15:31:04 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:31:05 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:31:07 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:31:08 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:31:08 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:31:35 +03:00 Starting up the application 
+ 09/13/2024 15:31:36 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:31:37 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:31:37 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:31:37 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:31:37 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:31:37 +03:00 Server desktop-ht66dte:9476:bf820a4b successfully announced in 13.5441 ms 
+ 09/13/2024 15:31:37 +03:00 Server desktop-ht66dte:9476:bf820a4b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:31:37 +03:00 Server desktop-ht66dte:9476:bf820a4b all the dispatchers started 
+ 09/13/2024 15:31:38 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:31:39 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:31:52 +03:00 Starting up the application 
+ 09/13/2024 15:31:54 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:31:54 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:31:54 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:31:54 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:31:54 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:31:54 +03:00 Server desktop-ht66dte:23196:493e083b successfully announced in 78.3483 ms 
+ 09/13/2024 15:31:54 +03:00 Server desktop-ht66dte:23196:493e083b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:31:54 +03:00 Server desktop-ht66dte:23196:493e083b all the dispatchers started 
+ 09/13/2024 15:31:55 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:31:56 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:33:28 +03:00 Starting up the application 
+ 09/13/2024 15:33:29 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:33:30 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:33:30 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:33:30 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:33:30 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:33:30 +03:00 Server desktop-ht66dte:10920:1c45f1ab successfully announced in 82.997 ms 
+ 09/13/2024 15:33:30 +03:00 Server desktop-ht66dte:10920:1c45f1ab is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:33:30 +03:00 2 servers were removed due to timeout 
+ 09/13/2024 15:33:30 +03:00 Server desktop-ht66dte:10920:1c45f1ab all the dispatchers started 
+ 09/13/2024 15:33:55 +03:00 Starting up the application 
+ 09/13/2024 15:33:55 +03:00 The host was aborted. 
+ 09/13/2024 15:33:56 +03:00 Starting up the application 
+ 09/13/2024 15:33:57 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:33:57 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:33:57 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:33:57 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:33:57 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:33:57 +03:00 Server desktop-ht66dte:7384:7bfd4514 successfully announced in 85.1752 ms 
+ 09/13/2024 15:33:57 +03:00 Server desktop-ht66dte:7384:7bfd4514 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:33:57 +03:00 1 servers were removed due to timeout 
+ 09/13/2024 15:33:57 +03:00 Server desktop-ht66dte:7384:7bfd4514 all the dispatchers started 
+ 09/13/2024 15:34:10 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:34:11 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:34:15 +03:00 Stopping the server due to DomainUnload or ProcessExit event... 
+ 09/13/2024 15:34:15 +03:00 Server desktop-ht66dte:7384:7bfd4514 caught stopping signal... 
+ 09/13/2024 15:34:15 +03:00 Server desktop-ht66dte:7384:7bfd4514 caught stopped signal... 
+ 09/13/2024 15:34:15 +03:00 Server desktop-ht66dte:7384:7bfd4514 caught shutdown signal... 
+ 09/13/2024 15:34:15 +03:00 Server desktop-ht66dte:7384:7bfd4514 stopped non-gracefully due to Worker. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods. 
+ 09/13/2024 15:34:15 +03:00 Server desktop-ht66dte:7384:7bfd4514 successfully reported itself as stopped in 1.9294 ms 
+ 09/13/2024 15:34:15 +03:00 Server desktop-ht66dte:7384:7bfd4514 has been stopped in total 7.7921 ms 
+ 09/13/2024 15:34:35 +03:00 Starting up the application 
+ 09/13/2024 15:34:37 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:34:37 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:34:38 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:34:38 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:34:38 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:34:38 +03:00 Server desktop-ht66dte:2168:0144101c successfully announced in 88.7599 ms 
+ 09/13/2024 15:34:38 +03:00 Server desktop-ht66dte:2168:0144101c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:34:38 +03:00 Server desktop-ht66dte:2168:0144101c all the dispatchers started 
+ 09/13/2024 15:34:42 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:38:03 +03:00 Starting up the application 
+ 09/13/2024 15:38:05 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:38:05 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:38:05 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:38:05 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:38:05 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:38:05 +03:00 Server desktop-ht66dte:19748:5f1d0e69 successfully announced in 84.2658 ms 
+ 09/13/2024 15:38:05 +03:00 Server desktop-ht66dte:19748:5f1d0e69 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:38:05 +03:00 4 servers were removed due to timeout 
+ 09/13/2024 15:38:05 +03:00 Server desktop-ht66dte:19748:5f1d0e69 all the dispatchers started 
+ 09/13/2024 15:38:06 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:38:08 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:38:09 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:38:22 +03:00 Starting up the application 
+ 09/13/2024 15:38:24 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:38:25 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:38:25 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:38:25 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:38:25 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:38:25 +03:00 Server desktop-ht66dte:29312:726ca74e successfully announced in 9.5296 ms 
+ 09/13/2024 15:38:25 +03:00 Server desktop-ht66dte:29312:726ca74e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:38:25 +03:00 1 servers were removed due to timeout 
+ 09/13/2024 15:38:25 +03:00 Server desktop-ht66dte:29312:726ca74e all the dispatchers started 
+ 09/13/2024 15:38:29 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:38:35 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:38:36 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:41:05 +03:00 Starting up the application 
+ 09/13/2024 15:41:06 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:41:06 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:41:06 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:41:06 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:41:06 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:41:07 +03:00 Server desktop-ht66dte:10840:38f0fc92 successfully announced in 9.2449 ms 
+ 09/13/2024 15:41:07 +03:00 Server desktop-ht66dte:10840:38f0fc92 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:41:07 +03:00 2 servers were removed due to timeout 
+ 09/13/2024 15:41:07 +03:00 Server desktop-ht66dte:10840:38f0fc92 all the dispatchers started 
+ 09/13/2024 15:41:07 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:41:34 +03:00 Starting up the application 
+ 09/13/2024 15:41:35 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:41:35 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:41:35 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:41:35 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:41:35 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:41:35 +03:00 Server desktop-ht66dte:2912:68f7a66b successfully announced in 82.1259 ms 
+ 09/13/2024 15:41:35 +03:00 Server desktop-ht66dte:2912:68f7a66b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:41:35 +03:00 Server desktop-ht66dte:2912:68f7a66b all the dispatchers started 
+ 09/13/2024 15:41:47 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:42:04 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Canceled Boat Reservation 
+ 09/13/2024 15:42:06 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Canceled Boat Reservation 
+ 09/13/2024 15:42:08 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:42:20 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Canceled Boat Reservation 
+ 09/13/2024 15:46:21 +03:00 Starting up the application 
+ 09/13/2024 15:46:23 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:46:23 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:46:23 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:46:23 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:46:23 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:46:23 +03:00 Server desktop-ht66dte:22364:4f07e24b successfully announced in 79.9154 ms 
+ 09/13/2024 15:46:23 +03:00 Server desktop-ht66dte:22364:4f07e24b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:46:23 +03:00 Server desktop-ht66dte:22364:4f07e24b all the dispatchers started 
+ 09/13/2024 15:46:23 +03:00 3 servers were removed due to timeout 
+ 09/13/2024 15:46:24 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:46:24 +03:00 Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[FinalBoatSystemRental.Core.Entities.BoatBooking, FinalBoatSystemRental.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[FinalBoatSystemRental.Core.ViewModels.BoatBooking.ListBoatBookingOwner, FinalBoatSystemRental.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 
+ 09/13/2024 15:46:26 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:46:26 +03:00 Error mapping types.
+
+Mapping types:
+List`1 -> IEnumerable`1
+System.Collections.Generic.List`1[[FinalBoatSystemRental.Core.Entities.BoatBooking, FinalBoatSystemRental.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[FinalBoatSystemRental.Core.ViewModels.BoatBooking.ListBoatBookingOwner, FinalBoatSystemRental.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] 
+ 09/13/2024 15:46:49 +03:00 Starting up the application 
+ 09/13/2024 15:46:51 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 15:46:51 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 15:46:51 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 15:46:51 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 15:46:51 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 15:46:51 +03:00 Server desktop-ht66dte:3000:ccb3a72a successfully announced in 78.499 ms 
+ 09/13/2024 15:46:51 +03:00 Server desktop-ht66dte:3000:ccb3a72a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 15:46:51 +03:00 Server desktop-ht66dte:3000:ccb3a72a all the dispatchers started 
+ 09/13/2024 15:46:52 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 15:46:57 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Canceled Boat Reservation 
+ 09/13/2024 15:47:12 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Pay Refund 
+ 09/13/2024 15:47:12 +03:00 your available balance doesn't cover the amount of the refund 
+ 09/13/2024 15:47:24 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Add Balance 
+ 09/13/2024 15:47:28 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Pay Refund 
+ 09/13/2024 15:47:46 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Profile 
+ 09/13/2024 15:51:51 +03:00 2 servers were removed due to timeout 
+ 09/13/2024 15:53:33 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 15:54:35 +03:00 View Available Trips 
+ 09/13/2024 15:55:23 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 15:55:23 +03:00 Object reference not set to an instance of an object. 
+ 09/13/2024 15:55:49 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 15:55:49 +03:00 Object reference not set to an instance of an object. 
+ 09/13/2024 15:55:50 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 15:55:50 +03:00 Object reference not set to an instance of an object. 
+ 09/13/2024 15:55:52 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 15:55:52 +03:00 Object reference not set to an instance of an object. 
+ 09/13/2024 15:56:14 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 15:56:14 +03:00 Object reference not set to an instance of an object. 
+ 09/13/2024 15:56:24 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 15:56:24 +03:00 Object reference not set to an instance of an object. 
+ 09/13/2024 15:56:25 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 15:56:25 +03:00 Object reference not set to an instance of an object. 
+ 09/13/2024 15:56:36 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 15:56:36 +03:00 Object reference not set to an instance of an object. 
+ 09/13/2024 15:58:59 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:00:09 +03:00 Starting up the application 
+ 09/13/2024 16:00:10 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 16:00:10 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 16:00:11 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 16:00:11 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 16:00:11 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 16:00:11 +03:00 Server desktop-ht66dte:25368:d354acff successfully announced in 82.783 ms 
+ 09/13/2024 16:00:11 +03:00 Server desktop-ht66dte:25368:d354acff is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 16:00:11 +03:00 Server desktop-ht66dte:25368:d354acff all the dispatchers started 
+ 09/13/2024 16:00:11 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:00:14 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:00:31 +03:00 Starting up the application 
+ 09/13/2024 16:00:33 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 16:00:33 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 16:00:33 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 16:00:33 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 16:00:33 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 16:00:33 +03:00 Server desktop-ht66dte:12448:68dd6ebb successfully announced in 7.9809 ms 
+ 09/13/2024 16:00:33 +03:00 Server desktop-ht66dte:12448:68dd6ebb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 16:00:33 +03:00 Server desktop-ht66dte:12448:68dd6ebb all the dispatchers started 
+ 09/13/2024 16:00:36 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:02:03 +03:00 Starting up the application 
+ 09/13/2024 16:02:04 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 16:02:04 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 16:02:04 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 16:02:04 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 16:02:04 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 16:02:04 +03:00 Server desktop-ht66dte:23752:13802830 successfully announced in 8.5835 ms 
+ 09/13/2024 16:02:04 +03:00 Server desktop-ht66dte:23752:13802830 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 16:02:04 +03:00 Server desktop-ht66dte:23752:13802830 all the dispatchers started 
+ 09/13/2024 16:02:08 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:02:08 +03:00 Additions Was not Found 
+ 09/13/2024 16:03:42 +03:00 View Available Trips 
+ 09/13/2024 16:05:01 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:05:01 +03:00 Additions Was not Found 
+ 09/13/2024 16:05:02 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:05:03 +03:00 Additions Was not Found 
+ 09/13/2024 16:05:19 +03:00 Starting up the application 
+ 09/13/2024 16:05:20 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 16:05:20 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 16:05:20 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 16:05:20 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 16:05:20 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 16:05:20 +03:00 Server desktop-ht66dte:21128:e9e40cbf successfully announced in 81.0711 ms 
+ 09/13/2024 16:05:20 +03:00 Server desktop-ht66dte:21128:e9e40cbf is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 16:05:20 +03:00 2 servers were removed due to timeout 
+ 09/13/2024 16:05:20 +03:00 Server desktop-ht66dte:21128:e9e40cbf all the dispatchers started 
+ 09/13/2024 16:05:22 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:05:22 +03:00 Additions Was not Found 
+ 09/13/2024 16:05:23 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:05:23 +03:00 Additions Was not Found 
+ 09/13/2024 16:06:01 +03:00 Starting up the application 
+ 09/13/2024 16:06:02 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 16:06:03 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 16:06:03 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 16:06:03 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 16:06:03 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 16:06:03 +03:00 Server desktop-ht66dte:1064:4ddda86f successfully announced in 49.5663 ms 
+ 09/13/2024 16:06:03 +03:00 Server desktop-ht66dte:1064:4ddda86f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 16:06:03 +03:00 1 servers were removed due to timeout 
+ 09/13/2024 16:06:03 +03:00 Server desktop-ht66dte:1064:4ddda86f all the dispatchers started 
+ 09/13/2024 16:06:04 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:10:58 +03:00 Starting up the application 
+ 09/13/2024 16:10:59 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 16:10:59 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 16:11:00 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 16:11:00 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 16:11:00 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 16:11:00 +03:00 Server desktop-ht66dte:12128:9fc271e4 successfully announced in 10.8232 ms 
+ 09/13/2024 16:11:00 +03:00 Server desktop-ht66dte:12128:9fc271e4 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 16:11:00 +03:00 Server desktop-ht66dte:12128:9fc271e4 all the dispatchers started 
+ 09/13/2024 16:11:00 +03:00 2 servers were removed due to timeout 
+ 09/13/2024 16:11:01 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:11:03 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:11:05 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:11:13 +03:00 Starting up the application 
+ 09/13/2024 16:11:15 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 16:11:15 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 16:11:16 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 16:11:16 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 16:11:16 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 16:11:16 +03:00 Server desktop-ht66dte:8796:70b270f8 successfully announced in 81.4878 ms 
+ 09/13/2024 16:11:16 +03:00 Server desktop-ht66dte:8796:70b270f8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 16:11:16 +03:00 Server desktop-ht66dte:8796:70b270f8 all the dispatchers started 
+ 09/13/2024 16:11:19 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:13:16 +03:00 Starting up the application 
+ 09/13/2024 16:13:17 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 16:13:17 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 16:13:17 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 16:13:17 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 16:13:17 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 16:13:17 +03:00 Server desktop-ht66dte:14512:15e7cc08 successfully announced in 9.4253 ms 
+ 09/13/2024 16:13:17 +03:00 Server desktop-ht66dte:14512:15e7cc08 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 16:13:17 +03:00 Server desktop-ht66dte:14512:15e7cc08 all the dispatchers started 
+ 09/13/2024 16:13:19 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 book a trip 
+ 09/13/2024 16:13:19 +03:00 Trip was not found 
+ 09/13/2024 16:18:17 +03:00 3 servers were removed due to timeout 
+ 09/13/2024 16:39:33 +03:00 Stopping the server due to DomainUnload or ProcessExit event... 
+ 09/13/2024 16:39:33 +03:00 Server desktop-ht66dte:14512:15e7cc08 caught stopping signal... 
+ 09/13/2024 16:39:33 +03:00 Server desktop-ht66dte:14512:15e7cc08 caught stopped signal... 
+ 09/13/2024 16:39:33 +03:00 Server desktop-ht66dte:14512:15e7cc08 All dispatchers stopped 
+ 09/13/2024 16:39:33 +03:00 Server desktop-ht66dte:14512:15e7cc08 caught shutdown signal... 
+ 09/13/2024 16:39:33 +03:00 Server desktop-ht66dte:14512:15e7cc08 successfully reported itself as stopped in 42.1137 ms 
+ 09/13/2024 16:39:33 +03:00 Server desktop-ht66dte:14512:15e7cc08 has been stopped in total 49.1115 ms 
+ 09/13/2024 17:18:57 +03:00 Starting up the application 
+ 09/13/2024 17:19:00 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 17:19:00 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 17:19:01 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 17:19:01 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 17:19:01 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 17:19:01 +03:00 Server desktop-ht66dte:20640:4b5a15bc successfully announced in 9.7948 ms 
+ 09/13/2024 17:19:01 +03:00 Server desktop-ht66dte:20640:4b5a15bc is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 17:19:01 +03:00 Server desktop-ht66dte:20640:4b5a15bc all the dispatchers started 
+ 09/13/2024 17:19:09 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Trip History 
+ 09/13/2024 17:20:40 +03:00 Starting up the application 
+ 09/13/2024 17:20:41 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 17:20:41 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 17:20:42 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 17:20:42 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 17:20:42 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 17:20:42 +03:00 Server desktop-ht66dte:5476:b462e27d successfully announced in 83.5605 ms 
+ 09/13/2024 17:20:42 +03:00 Server desktop-ht66dte:5476:b462e27d is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 17:20:42 +03:00 Server desktop-ht66dte:5476:b462e27d all the dispatchers started 
+ 09/13/2024 17:20:42 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Trip History 
+ 09/13/2024 17:21:53 +03:00 Customer Cancel A trip 
+ 09/13/2024 17:22:49 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 17:23:37 +03:00 Starting up the application 
+ 09/13/2024 17:23:39 +03:00 Start installing Hangfire SQL objects... 
+ 09/13/2024 17:23:39 +03:00 Hangfire SQL objects installed. 
+ 09/13/2024 17:23:39 +03:00 Starting Hangfire Server using job storage: 'SQL Server: .@FinalBoatRentalSystem' 
+ 09/13/2024 17:23:39 +03:00 Using the following options for SQL Server job storage: Queue poll interval: 00:00:00. 
+ 09/13/2024 17:23:39 +03:00 Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15 
+ 09/13/2024 17:23:39 +03:00 Server desktop-ht66dte:5180:d3a20fa2 successfully announced in 8.9623 ms 
+ 09/13/2024 17:23:39 +03:00 Server desktop-ht66dte:5180:d3a20fa2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler... 
+ 09/13/2024 17:23:39 +03:00 Server desktop-ht66dte:5180:d3a20fa2 all the dispatchers started 
+ 09/13/2024 17:23:40 +03:00 c84546fe-f28b-4bc4-9bc1-66c4271f6621 View Boat Reservation History 
+ 09/13/2024 17:24:19 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all  Boat Reservation 
+ 09/13/2024 17:24:24 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Canceled Boat Reservation 
+ 09/13/2024 17:24:29 +03:00 72907e7a-d9d6-4163-92df-edd90293088f Get all Trip reservation 
+ 09/13/2024 17:24:36 +03:00 72907e7a-d9d6-4163-92df-edd90293088f get all canceled Tips 
+ 09/13/2024 17:25:06 +03:00 Admin View Available Boats 
  
