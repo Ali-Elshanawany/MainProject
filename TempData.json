@@ -1,0 +1,201 @@
+{
+    "AdminAccount": {
+        "email": "admin@example.com",
+        "password": "Password123!"
+    },
+    "OwnerAccounts": [
+        {
+            "model": {
+                "firstName": "First_Owner1",
+                "lastName": "Last_Owner1",
+                "userName": "Owner1_UserName",
+                "email": "Owner1@example.com",
+                "password": "Password123!"
+            }
+        },
+        {
+            "model": {
+                "firstName": "First_Owner2",
+                "lastName": "Last_Owner2",
+                "userName": "Owner2_UserName",
+                "email": "Owner2@example.com",
+                "password": "Password123!"
+            }
+        }
+    ],
+    "CustomerAccounts": [
+        {
+            "model": {
+                "firstName": "First_Customer1",
+                "lastName": "Last_Customer1",
+                "userName": "Customer1_UserName",
+                "email": "Customer1@example.com",
+                "password": "Password123!"
+            }
+        },
+        {
+            "model": {
+                "firstName": "First_Customer2",
+                "lastName": "Last_Customer2",
+                "userName": "Customer2_UserName",
+                "email": "Customer2@example.com",
+                "password": "Password123!"
+            }
+        }
+    ],
+    "Boats": [
+        {
+            "name": "Ocean Breeze",
+            "description": "A luxurious yacht equipped with modern amenities, including a hot tub, gourmet kitchen, and spacious lounging areas.",
+            "capacity": 20,
+            "maxCancellationDateInDays": 7,
+            "reservationPrice": 2999.99
+        },
+        {
+            "name": "The Angler",
+            "description": "A well-equipped fishing boat with all the necessary gear for a successful fishing trip. Includes sonar and multiple fishing rods.",
+            "capacity": 15,
+            "maxCancellationDateInDays": 2,
+            "reservationPrice": 299.95
+        },
+        {
+            "name": "Wind Whisperer",
+            "description": "A sleek sailboat designed for both leisurely sailing and competitive racing. Features comfortable cabins and a state-of-the-art navigation system.",
+            "capacity": 12,
+            "maxCancellationDateInDays": 5,
+            "reservationPrice": 499.50
+        },
+        {
+            "name": "Lake Cruiser",
+            "description": "A spacious pontoon boat perfect for relaxing on the lake. Comes with a sun deck, stereo system, and a small BBQ grill.",
+            "capacity": 25,
+            "maxCancellationDateInDays": 3,
+            "reservationPrice": 199.75
+        }
+    ],
+    "Trips": [
+        {
+            "name": "Sunset Cruise",
+            "description": "Enjoy a relaxing evening cruise with breathtaking views of the sunset. Includes light refreshments and comfortable seating.",
+            "pricePerPerson": 180,
+            "maxPeople": 20,
+            "cancellationDeadLine": "2024-10-15",
+            "startedAt": "2024-10-25",
+            "boatId": 12
+        },
+        {
+            "name": "Deep Sea Fishing Expedition",
+            "description": "Experience a thrilling day of deep sea fishing. Equipped with top-of-the-line fishing gear and professional guides.",
+            "pricePerPerson": 350,
+            "maxPeople": 8,
+            "cancellationDeadLine": "2024-10-12",
+            "startedAt": "2024-10-28",
+            "boatId": 34
+        },
+        {
+            "name": "Island Hopping Tour",
+            "description": "Explore multiple beautiful islands in one day. Includes stops for swimming, snorkeling, and beachside picnics.",
+            "pricePerPerson": 275,
+            "maxPeople": 15,
+            "cancellationDeadLine": "2024-10-18",
+            "startedAt": "2024-11-01",
+            "boatId": 7
+        },
+        {
+            "name": "Romantic Dinner Cruise",
+            "description": "An intimate dinner cruise featuring a gourmet meal and live music. Perfect for a special occasion or a romantic evening.",
+            "pricePerPerson": 400,
+            "maxPeople": 10,
+            "cancellationDeadLine": "2024-10-14",
+            "startedAt": "2024-10-30",
+            "boatId": 23
+        }
+    ],
+    "Additions": [
+        {
+            "name": "Fishing Gear Package",
+            "description": "Includes high-quality fishing rods, reels, and tackle boxes. Ideal for serious anglers.",
+            "price": 150
+        },
+        {
+            "name": "Luxury Sun Deck",
+            "description": "A spacious sun deck with comfortable lounge chairs and a built-in cooler for drinks.",
+            "price": 200
+        },
+        {
+            "name": "High-Resolution GPS System",
+            "description": "Advanced GPS system with real-time navigation and detailed marine charts.",
+            "price": 250
+        },
+        {
+            "name": "Underwater LED Lights",
+            "description": "Bright LED lights installed underwater to enhance night-time visibility and create a stunning effect.",
+            "price": 180
+        },
+        {
+            "name": "Portable BBQ Grill",
+            "description": "Compact and easy-to-use BBQ grill for cooking meals while on the water.",
+            "price": 120
+        },
+        {
+            "name": "Premium Sound System",
+            "description": "High-quality audio system with Bluetooth connectivity and marine-grade speakers.",
+            "price": 300
+        },
+        {
+            "name": "Climate Control Unit",
+            "description": "Air conditioning and heating system to ensure comfort in all weather conditions.",
+            "price": 400
+        },
+        {
+            "name": "Extended Bimini Top",
+            "description": "A larger Bimini top providing extra shade and protection from the elements.",
+            "price": 130
+        }
+    ],
+    "Actions": {
+        "Admin": [
+            "Log In: Access the admin dashboard.",
+            "View Pending Owner Accounts: Review all owner accounts that are awaiting approval.",
+            "Verify Owner Accounts: Approve or reject pending owner accounts.",
+            "View Pending Boats: Review all boats that are awaiting approval.",
+            "Verify Boat Listings: Approve or reject pending boat listings.",
+            "View Boat Reservations: Check all boat reservations, including those that are pending or confirmed.",
+            "View Canceled Boat Reservations: Review details of canceled boat reservations.",
+            "View Trips: Access information on all trips, including those that are active or confirmed.",
+            "View Canceled Trips: Review details of canceled trip reservations."
+        ],
+        "Owner": [
+            "Register: Create a new owner account.",
+            "Log In: Access your owner account.",
+            "Add Boats: List new boats for your account.",
+            "View All Boats: Review a list of all boats associated with your account.",
+            "Delete Boat: Remove a boat from your account.",
+            "View Boat Reservations: Check all reservations made for your boats.",
+            "View Canceled Boat Reservations: Review details of canceled boat reservations.",
+            "Add Trips: Schedule new trips for your boats.",
+            "View Trip Reservations: Check all reservations for your trips.",
+            "View Canceled Trip Reservations: Review details of canceled trip reservations.",
+            "View Profile: Access and review your account profile.",
+            "Update Profile Information: Edit and update your profile details.",
+            "Add Balance to Wallet: Deposit funds into your account wallet.",
+            "Request Refund: Initiate a refund for canceled bookings or other eligible transactions."
+        ],
+        "Customer": [
+            "Log In: Access your customer account.",
+            "Register: Create a new customer account.",
+            "View Available Boats: Browse all boats available for booking.",
+            "Book a Boat: Reserve a boat for your desired date and time.",
+            "View Boat Reservations: Check the status of all your boat reservations.",
+            "View Canceled Boat Reservations: Review details of canceled boat reservations.",
+            "Cancel Boat Reservation: Cancel a previously made boat reservation.",
+            "View Available Trips: Browse all trips available for booking.",
+            "Book a Trip: Reserve a trip that interests you.",
+            "View Canceled Trip Reservations: Review details of canceled trip reservations.",
+            "Cancel Trip Reservation: Cancel a previously made trip reservation.",
+            "View Profile: Access and review your customer profile.",
+            "Update Profile Information: Edit and update your profile details.",
+            "Add Balance: Deposit funds into your account balance."
+        ]
+    }
+}
